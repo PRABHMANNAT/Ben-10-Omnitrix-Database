@@ -1,0 +1,4853 @@
+// ═══════════════════════════════════════════════════════════
+// OMNITRIX DATABASE — Complete Alien Roster (72 Aliens)
+// ═══════════════════════════════════════════════════════════
+
+const aliens = [
+  {
+    "id": 1,
+    "name": "Heatblast",
+    "species": "Pyronite",
+    "homeworld": "Pyros",
+    "series": [
+      "Original Series"
+    ],
+    "tier": "S",
+    "rank": 5,
+    "stats": {
+      "power": 85,
+      "speed": 60,
+      "strength": 65,
+      "intelligence": 45,
+      "durability": 75,
+      "agility": 55,
+      "utility": 80,
+      "stealth": 10,
+      "range": 85,
+      "overall": 72
+    },
+    "height": "1.8m",
+    "weight": "100kg",
+    "age": "Unknown",
+    "abilities": [
+      "Pyrokinesis",
+      "Fire Absorption",
+      "Supernova Blasts",
+      "Lava Projection",
+      "Fire Flight",
+      "Heat Immunity"
+    ],
+    "weaknesses": [
+      "Water can extinguish flames",
+      "Crabdozer",
+      "Extreme cold"
+    ],
+    "tags": [
+      "FIRE",
+      "ELEMENTAL",
+      "RANGED",
+      "POWERHOUSE"
+    ],
+    "shortDesc": "A living humanoid of fire capable of projecting intense flames and heat.",
+    "fullDesc": "Heatblast is a magma-based lifeform whose body is composed of a bright inner plasma core covered by dark rock-like skin. He can generate and manipulate intense heat and fire at will, launch fireballs, create fire walls, and even ride jets of flame for flight. He was the first alien Ben ever transformed into.",
+    "sigMove": "Supernova Blast — concentrates all heat into a star-level explosion.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/6d/Heatblast_ov.png/revision/latest&w=400&output=png",
+    "firstAppearance": "And Then There Were 10",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Heatblast was the very first alien Ben transformed into.",
+      "His fire can reach temperatures hotter than the sun.",
+      "Baby Heatblast sneezed fire in the original series."
+    ],
+    "notableVictories": [
+      "Vilgax (first encounter)",
+      "Dr. Animo's mutants",
+      "Kevin 11"
+    ],
+    "notableDefeats": [
+      "Crabdozer"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Elemental",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 2,
+    "name": "Wildmutt",
+    "species": "Vulpimancer",
+    "homeworld": "Vulpin",
+    "series": [
+      "Original Series",
+      "Ultimate Alien"
+    ],
+    "tier": "C",
+    "rank": 50,
+    "stats": {
+      "power": 45,
+      "speed": 70,
+      "strength": 60,
+      "intelligence": 20,
+      "durability": 55,
+      "agility": 85,
+      "utility": 30,
+      "stealth": 75,
+      "range": 10,
+      "overall": 42
+    },
+    "height": "1.5m",
+    "weight": "120kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Senses",
+      "Echolocation",
+      "Sharp Claws",
+      "Enhanced Agility",
+      "Enhanced Strength",
+      "Quill Projection"
+    ],
+    "weaknesses": [
+      "No eyes — blind",
+      "Cannot speak",
+      "Sensitive to high-frequency sounds"
+    ],
+    "tags": [
+      "BEAST",
+      "STEALTH",
+      "MELEE",
+      "AGILE"
+    ],
+    "shortDesc": "A blind, dog-like alien with incredible senses and feral agility.",
+    "fullDesc": "Wildmutt is an orange, eyeless, dog-like alien who relies on gills on his neck to sense vibrations and smell. Despite lacking sight, his other senses are extraordinary, allowing him to track anything. He is extremely agile and can fight ferociously with his sharp teeth and claws.",
+    "sigMove": "Sonic Howl — unleashes a disorienting roar detectable across miles.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/c/ca/Wildmutt_os.png/revision/latest&w=400&output=png",
+    "firstAppearance": "And Then There Were 10",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Wildmutt cannot speak any language.",
+      "His species lives on one of the most dangerous planets.",
+      "He navigates entirely through smell and vibration."
+    ],
+    "notableVictories": [
+      "Vilgax's drones"
+    ],
+    "notableDefeats": [
+      "Khyber's Panuncian"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Stealth",
+    "difficultyToUse": "Medium",
+    "rarity": "Common"
+  },
+  {
+    "id": 3,
+    "name": "Diamondhead",
+    "species": "Petrosapien",
+    "homeworld": "Petropia",
+    "series": [
+      "Original Series",
+      "Alien Force",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 20,
+    "stats": {
+      "power": 70,
+      "speed": 40,
+      "strength": 75,
+      "intelligence": 50,
+      "durability": 90,
+      "agility": 35,
+      "utility": 65,
+      "stealth": 15,
+      "range": 70,
+      "overall": 60
+    },
+    "height": "2.1m",
+    "weight": "200kg",
+    "age": "Unknown",
+    "abilities": [
+      "Crystallokinesis",
+      "Diamond Projectiles",
+      "Crystal Shields",
+      "Regeneration",
+      "Energy Refraction",
+      "Crystal Weapon Formation"
+    ],
+    "weaknesses": [
+      "Sonic vibrations can shatter",
+      "Heavy and slow",
+      "Can be cracked by extreme force"
+    ],
+    "tags": [
+      "TANK",
+      "CRYSTAL",
+      "RANGED",
+      "DURABLE"
+    ],
+    "shortDesc": "A silicon-based lifeform made entirely of living diamond crystal.",
+    "fullDesc": "Diamondhead is a Petrosapien whose body is composed of extremely durable organic green crystals. He can reshape his limbs into weapons, project crystal shards, create barriers, and even regenerate damaged parts. He is one of Ben's most reliable and frequently used aliens.",
+    "sigMove": "Crystal Prison — encases enemies in unbreakable diamond formations.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/d5/Diamondhead_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "And Then There Were 10",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Diamondhead defeated Vilgax in the Original Series finale.",
+      "His home planet Petropia was destroyed but later restored.",
+      "He can regenerate from almost any damage."
+    ],
+    "notableVictories": [
+      "Vilgax",
+      "Tetrax Shard (sparring)"
+    ],
+    "notableDefeats": [
+      "Chromastone (absorbed his attacks)"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Tank",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 4,
+    "name": "XLR8",
+    "species": "Kineceleran",
+    "homeworld": "Kinet",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 22,
+    "stats": {
+      "power": 35,
+      "speed": 100,
+      "strength": 30,
+      "intelligence": 55,
+      "durability": 35,
+      "agility": 95,
+      "utility": 60,
+      "stealth": 50,
+      "range": 20,
+      "overall": 55
+    },
+    "height": "1.8m",
+    "weight": "70kg",
+    "age": "Unknown",
+    "abilities": [
+      "Super Speed",
+      "Vortex Creation",
+      "Enhanced Reflexes",
+      "Speed Cutting",
+      "Wall Running",
+      "Time Perception Slowdown"
+    ],
+    "weaknesses": [
+      "Low durability",
+      "Magnets can affect wheels",
+      "Needs traction to run"
+    ],
+    "tags": [
+      "SPEED",
+      "AGILE",
+      "VORTEX",
+      "FAST"
+    ],
+    "shortDesc": "A raptor-like speedster capable of running at speeds exceeding 888 mph.",
+    "fullDesc": "XLR8 is a semi-armored velociraptor-like alien with orbs on his feet that act as wheels, letting him reach incredible speeds. He can create tornadoes, run on water, and his reflexes are so fast that time appears to slow down around him. His visor protects his face while running.",
+    "sigMove": "Speed Storm — runs so fast he creates a devastating tornado.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/6a/XLR8_Original.png/revision/latest&w=400&output=png",
+    "firstAppearance": "And Then There Were 10",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "XLR8 can run faster than 888 mph.",
+      "His name is a play on 'accelerate'.",
+      "He has a visor that protects his face at high speeds."
+    ],
+    "notableVictories": [
+      "Kevin 11 (outran)",
+      "Multiple robots"
+    ],
+    "notableDefeats": [
+      "Fasttrack comparison debates"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Speed",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 5,
+    "name": "Grey Matter",
+    "species": "Galvan",
+    "homeworld": "Galvan Prime",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 45,
+    "stats": {
+      "power": 10,
+      "speed": 30,
+      "strength": 5,
+      "intelligence": 100,
+      "durability": 10,
+      "agility": 70,
+      "utility": 90,
+      "stealth": 90,
+      "range": 5,
+      "overall": 40
+    },
+    "height": "0.15m",
+    "weight": "1kg",
+    "age": "Unknown",
+    "abilities": [
+      "Super Intelligence",
+      "Technology Manipulation",
+      "Hacking",
+      "Tiny Size Infiltration",
+      "Enhanced Agility",
+      "Analytical Mind"
+    ],
+    "weaknesses": [
+      "Extremely small and fragile",
+      "Low combat ability",
+      "Can be stepped on"
+    ],
+    "tags": [
+      "GENIUS",
+      "TECH",
+      "STEALTH",
+      "TINY"
+    ],
+    "shortDesc": "A tiny genius alien with intellect rivaling the smartest minds in the universe.",
+    "fullDesc": "Grey Matter is a tiny grey-skinned Galvan, only 6 inches tall, but possesses one of the highest intellects in the known universe. He can understand and manipulate any technology, hack any system, and devise strategies that outmatch opponents thousands of times his size. His species created the Omnitrix.",
+    "sigMove": "System Override — hacks and reprograms any technology in seconds.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/c/c4/Grey_Matter_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Washington B.C.",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Grey Matter's species, the Galvan, created the Omnitrix.",
+      "He is only 6 inches tall.",
+      "Azmuth, creator of the Omnitrix, is a Galvan."
+    ],
+    "notableVictories": [
+      "Hacked Vilgax's ship",
+      "Outsmarted Cerebrocrustaceans"
+    ],
+    "notableDefeats": [
+      "Any physically strong opponent"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Tech",
+    "difficultyToUse": "Hard",
+    "rarity": "Common"
+  },
+  {
+    "id": 6,
+    "name": "Four Arms",
+    "species": "Tetramand",
+    "homeworld": "Khoros",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 18,
+    "stats": {
+      "power": 80,
+      "speed": 35,
+      "strength": 95,
+      "intelligence": 30,
+      "durability": 85,
+      "agility": 25,
+      "utility": 30,
+      "stealth": 5,
+      "range": 15,
+      "overall": 55
+    },
+    "height": "3.6m",
+    "weight": "360kg",
+    "age": "Unknown",
+    "abilities": [
+      "Super Strength",
+      "Shockwave Claps",
+      "Enhanced Durability",
+      "Four-Armed Combat",
+      "Ground Pound",
+      "Enhanced Jump"
+    ],
+    "weaknesses": [
+      "Slow and bulky",
+      "Low intelligence in combat",
+      "Easily outsmarted"
+    ],
+    "tags": [
+      "POWERHOUSE",
+      "TANK",
+      "MELEE",
+      "STRONG"
+    ],
+    "shortDesc": "A four-armed brute with strength rivaling the mightiest aliens.",
+    "fullDesc": "Four Arms is a 12-foot tall, red-skinned, muscular humanoid with four powerful arms. He is one of Ben's strongest aliens in terms of raw physical power, capable of creating shockwaves with his claps, lifting incredible weights, and withstanding extreme punishment. He's straightforward but devastatingly effective.",
+    "sigMove": "Thunderclap — claps all four hands creating a shockwave that levels buildings.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/a/a5/Four_Arms_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Washington B.C.",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Four Arms was Ben's go-to for heavy lifting.",
+      "Tetramands have a warrior culture.",
+      "Princess Looma wanted to marry Ben because of Four Arms."
+    ],
+    "notableVictories": [
+      "Kevin 11",
+      "Vilgax",
+      "Techadon robots"
+    ],
+    "notableDefeats": [
+      "Vilgax (later encounters)"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 7,
+    "name": "Stinkfly",
+    "species": "Lepidopterran",
+    "homeworld": "Lepidopterra",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 42,
+    "stats": {
+      "power": 40,
+      "speed": 65,
+      "strength": 35,
+      "intelligence": 40,
+      "durability": 30,
+      "agility": 80,
+      "utility": 55,
+      "stealth": 30,
+      "range": 60,
+      "overall": 42
+    },
+    "height": "1.8m",
+    "weight": "80kg",
+    "age": "Unknown",
+    "abilities": [
+      "Flight",
+      "Slime Projection",
+      "Poison Gas",
+      "Enhanced Agility",
+      "Tail Stinger",
+      "360 Vision"
+    ],
+    "weaknesses": [
+      "Fragile wings",
+      "Water weighs down wings",
+      "Strong smells can overwhelm"
+    ],
+    "tags": [
+      "FLIGHT",
+      "RANGED",
+      "INSECT",
+      "AGILE"
+    ],
+    "shortDesc": "A bug-like alien with flight and various slime-based projectile attacks.",
+    "fullDesc": "Stinkfly is a large insectoid alien with four eye stalks, large wings, and a sharp tail. He can fly at high speeds and shoot sticky, slippery, or acidic slime from his eyes and mouth. Despite his gross appearance, he is a versatile and mobile combatant.",
+    "sigMove": "Acid Rain — flies overhead and rains corrosive slime on enemies.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/b/b8/Stinkfly_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Washington B.C.",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Stinkfly's slime can be either sticky or slippery.",
+      "He has four eye stalks for 360-degree vision.",
+      "His species lives in giant hive colonies."
+    ],
+    "notableVictories": [
+      "Clancy",
+      "Various drones"
+    ],
+    "notableDefeats": [
+      "Water-based enemies"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Common"
+  },
+  {
+    "id": 8,
+    "name": "Ripjaws",
+    "species": "Piscciss Volann",
+    "homeworld": "Piscciss",
+    "series": [
+      "Original Series"
+    ],
+    "tier": "C",
+    "rank": 48,
+    "stats": {
+      "power": 55,
+      "speed": 70,
+      "strength": 65,
+      "intelligence": 35,
+      "durability": 50,
+      "agility": 75,
+      "utility": 25,
+      "stealth": 60,
+      "range": 10,
+      "overall": 40
+    },
+    "height": "1.8m",
+    "weight": "90kg",
+    "age": "Unknown",
+    "abilities": [
+      "Underwater Breathing",
+      "Steel-Jaw Bite",
+      "Enhanced Swimming",
+      "Tail Formation",
+      "Deep Sea Pressure Resistance",
+      "Bioluminescence"
+    ],
+    "weaknesses": [
+      "Needs water to survive long",
+      "Dehydrates on land",
+      "Limited on dry terrain"
+    ],
+    "tags": [
+      "AQUATIC",
+      "MELEE",
+      "STEALTH",
+      "SWIMMER"
+    ],
+    "shortDesc": "An anglerfish-like alien built for aquatic combat and deep-sea operations.",
+    "fullDesc": "Ripjaws is a fierce aquatic alien that resembles an anglerfish with legs. He has powerful jaws that can bite through almost anything, can breathe underwater, and is an incredibly fast swimmer. However, he needs water to survive and quickly weakens on dry land.",
+    "sigMove": "Abyssal Crush — unleashes a mega bite with jaw force exceeding a hydraulic press.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/07/Ripjaws_DNA_Force.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Krakken",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Ripjaws can transform his legs into a fish tail.",
+      "He is rarely used due to his water dependency.",
+      "His bite force is among the strongest of Ben's aliens."
+    ],
+    "notableVictories": [
+      "The Krakken"
+    ],
+    "notableDefeats": [
+      "Any prolonged land battle"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Stealth",
+    "difficultyToUse": "Hard",
+    "rarity": "Common"
+  },
+  {
+    "id": 9,
+    "name": "Upgrade",
+    "species": "Galvanic Mechamorph",
+    "homeworld": "Galvan B",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 12,
+    "stats": {
+      "power": 70,
+      "speed": 50,
+      "strength": 50,
+      "intelligence": 80,
+      "durability": 60,
+      "agility": 55,
+      "utility": 95,
+      "stealth": 40,
+      "range": 60,
+      "overall": 68
+    },
+    "height": "1.8m",
+    "weight": "Variable",
+    "age": "Unknown",
+    "abilities": [
+      "Technology Merging",
+      "Machine Enhancement",
+      "Optic Beam",
+      "Shape Shifting",
+      "Technology Control",
+      "Regeneration"
+    ],
+    "weaknesses": [
+      "Electromagnetic pulses",
+      "Cannot merge with organic material",
+      "Acid"
+    ],
+    "tags": [
+      "TECH",
+      "UTILITY",
+      "UPGRADE",
+      "VERSATILE"
+    ],
+    "shortDesc": "A living circuit that can merge with and upgrade any technology.",
+    "fullDesc": "Upgrade is a liquid-metal alien made of nanotechnology. He can merge with any machine to enhance and control it, shoot a powerful optic beam from his eye, and reshape his body. He turns ordinary tech into superweapons and is one of Ben's most versatile aliens.",
+    "sigMove": "Total System Takeover — merges with an entire building's tech network.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/e/ea/Upgrade_OV_1.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Permanent Retirement",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Upgrade's species was accidentally created by the Galvan.",
+      "He once merged with a space shuttle.",
+      "Ship, a young Mechamorph, became Julie's pet."
+    ],
+    "notableVictories": [
+      "Vilgax's mechs",
+      "Various tech enemies"
+    ],
+    "notableDefeats": [
+      "EMP attacks"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Tech",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 10,
+    "name": "Ghostfreak",
+    "species": "Ectonurite",
+    "homeworld": "Anur Phaetos",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 11,
+    "stats": {
+      "power": 65,
+      "speed": 55,
+      "strength": 40,
+      "intelligence": 75,
+      "durability": 70,
+      "agility": 60,
+      "utility": 80,
+      "stealth": 100,
+      "range": 40,
+      "overall": 65
+    },
+    "height": "Variable",
+    "weight": "Weightless",
+    "age": "Unknown",
+    "abilities": [
+      "Intangibility",
+      "Invisibility",
+      "Possession",
+      "Flight",
+      "Telekinesis",
+      "Tentacle Projection",
+      "Energy Beams"
+    ],
+    "weaknesses": [
+      "Sunlight (true form)",
+      "Can lose control to Zs'Skayr",
+      "UV light"
+    ],
+    "tags": [
+      "STEALTH",
+      "PSYCHIC",
+      "POSSESSION",
+      "GHOST"
+    ],
+    "shortDesc": "A terrifying ghost alien capable of possession and intangibility.",
+    "fullDesc": "Ghostfreak is an Ectonurite — a ghost-like alien that can turn invisible, intangible, and possess other beings by phasing into them. His true form, revealed when his protective skin is peeled back, is far more terrifying with a single eye and tentacles. The original Ghostfreak DNA (Zs'Skayr) was sentient and escaped the Omnitrix.",
+    "sigMove": "Soul Possession — phases into a target and takes complete control.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/f/f7/Ghostfreak_Original_Series.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Permanent Retirement",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Ghostfreak's DNA was sentient and escaped the Omnitrix.",
+      "Zs'Skayr is one of Ben's recurring villains.",
+      "His true form is weak to sunlight."
+    ],
+    "notableVictories": [
+      "Zombozo",
+      "Various possessed enemies"
+    ],
+    "notableDefeats": [
+      "Sunlight exposure",
+      "Zs'Skayr taking control"
+    ],
+    "unlockedIn": "Original Series Season 1",
+    "classification": "Psychic",
+    "difficultyToUse": "Extreme",
+    "rarity": "Rare"
+  },
+  {
+    "id": 11,
+    "name": "Cannonbolt",
+    "species": "Arburian Pelarota",
+    "homeworld": "Arburia",
+    "series": [
+      "Original Series",
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 19,
+    "stats": {
+      "power": 65,
+      "speed": 75,
+      "strength": 70,
+      "intelligence": 30,
+      "durability": 90,
+      "agility": 50,
+      "utility": 40,
+      "stealth": 10,
+      "range": 15,
+      "overall": 52
+    },
+    "height": "2.4m",
+    "weight": "300kg",
+    "age": "Unknown",
+    "abilities": [
+      "Sphere Transformation",
+      "Enhanced Durability",
+      "Rollout Attack",
+      "Deflection",
+      "Enhanced Speed (sphere)",
+      "Impact Resistance"
+    ],
+    "weaknesses": [
+      "Limited attack variety",
+      "Cannot see while rolling",
+      "Can be stopped by sticky surfaces"
+    ],
+    "tags": [
+      "TANK",
+      "ROLLING",
+      "DURABLE",
+      "POWERHOUSE"
+    ],
+    "shortDesc": "A hulking alien that curls into an unstoppable armored ball.",
+    "fullDesc": "Cannonbolt is a bulky, tick-shaped alien who can curl into a near-indestructible ball and roll at high speeds, bowling through anything in his path. His shell is incredibly tough, able to withstand reentry from space. He was one of Ben's most frequently used aliens across multiple series.",
+    "sigMove": "Meteor Strike — launches into orbit and crashes down like a meteor.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/3/3e/Cannonbolt_ov.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Big Tick",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Cannonbolt's species is believed to be extinct.",
+      "He survived atmospheric reentry.",
+      "He was the first additional alien unlocked beyond the original 10."
+    ],
+    "notableVictories": [
+      "The Great One",
+      "Various Highbreed"
+    ],
+    "notableDefeats": [
+      "Sticky terrain traps"
+    ],
+    "unlockedIn": "Original Series Season 2",
+    "classification": "Tank",
+    "difficultyToUse": "Easy",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 12,
+    "name": "Wildvine",
+    "species": "Florauna",
+    "homeworld": "Flors Verdance",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 40,
+    "stats": {
+      "power": 50,
+      "speed": 40,
+      "strength": 55,
+      "intelligence": 45,
+      "durability": 45,
+      "agility": 60,
+      "utility": 65,
+      "stealth": 50,
+      "range": 55,
+      "overall": 45
+    },
+    "height": "2.4m",
+    "weight": "130kg",
+    "age": "Unknown",
+    "abilities": [
+      "Vine Stretching",
+      "Seed Bombs",
+      "Regeneration",
+      "Chlorokinesis",
+      "Merging with Plants",
+      "Elastic Body"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Herbicides",
+      "Cold temperatures",
+      "Deforestation zones"
+    ],
+    "tags": [
+      "ELEMENTAL",
+      "PLANT",
+      "RANGED",
+      "SUPPORT"
+    ],
+    "shortDesc": "A plant-based alien who can control vegetation and launch explosive seeds.",
+    "fullDesc": "Wildvine is a living plant alien with vine-like limbs that can stretch, wrap, and entangle enemies. He can grow seed bombs, regenerate from damage, and merge with surrounding plant life to grow in power. He thrives in nature-rich environments.",
+    "sigMove": "Botanical Barrage — launches a volley of explosive seed grenades.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/e/e4/Wildvine_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Camp Fear",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Wildvine can grow to enormous sizes by merging with plants.",
+      "His seed bombs have different effects.",
+      "He can regenerate lost limbs quickly."
+    ],
+    "notableVictories": [
+      "Mycelium creature"
+    ],
+    "notableDefeats": [
+      "Fire-based enemies"
+    ],
+    "unlockedIn": "Original Series Season 2",
+    "classification": "Elemental",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 13,
+    "name": "Blitzwolfer",
+    "species": "Loboan",
+    "homeworld": "Luna Lobo",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 38,
+    "stats": {
+      "power": 55,
+      "speed": 65,
+      "strength": 65,
+      "intelligence": 40,
+      "durability": 55,
+      "agility": 70,
+      "utility": 35,
+      "stealth": 60,
+      "range": 50,
+      "overall": 47
+    },
+    "height": "2.1m",
+    "weight": "140kg",
+    "age": "Unknown",
+    "abilities": [
+      "Sonic Howl",
+      "Enhanced Senses",
+      "Enhanced Strength",
+      "Enhanced Agility",
+      "Claws",
+      "Night Vision"
+    ],
+    "weaknesses": [
+      "Sensitive hearing",
+      "Ultrasonic frequencies",
+      "Silver (folklore)"
+    ],
+    "tags": [
+      "BEAST",
+      "SONIC",
+      "MELEE",
+      "AGILE"
+    ],
+    "shortDesc": "A werewolf-like alien with a devastating sonic howl attack.",
+    "fullDesc": "Blitzwolfer (originally Benwolf) is a werewolf-like alien from the moon Luna Lobo. His most powerful ability is splitting his muzzle into four sections to unleash a devastating sonic howl. He also has enhanced strength, agility, and senses befitting a predator.",
+    "sigMove": "Quad-Sonic Howl — splits muzzle four ways and blasts a devastating sound wave.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/1/18/Blitzwolfer_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Benwolf",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "He was originally called Benwolf.",
+      "His sonic howl can shatter steel.",
+      "Luna Lobo is always in a state of perpetual night."
+    ],
+    "notableVictories": [
+      "Yenaldooshi"
+    ],
+    "notableDefeats": [
+      "Ultrasonic attacks"
+    ],
+    "unlockedIn": "Original Series Season 3",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 14,
+    "name": "Snare-oh",
+    "species": "Thep Khufan",
+    "homeworld": "Anur Khufos",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 44,
+    "stats": {
+      "power": 45,
+      "speed": 45,
+      "strength": 50,
+      "intelligence": 50,
+      "durability": 55,
+      "agility": 55,
+      "utility": 60,
+      "stealth": 65,
+      "range": 40,
+      "overall": 44
+    },
+    "height": "2.1m",
+    "weight": "100kg",
+    "age": "Unknown",
+    "abilities": [
+      "Bandage Manipulation",
+      "Shape Shifting",
+      "Regeneration",
+      "Bandage Stretching",
+      "Separation",
+      "Bandage Cocoon"
+    ],
+    "weaknesses": [
+      "Fire",
+      "Can be unraveled",
+      "Sharp blades"
+    ],
+    "tags": [
+      "MUMMY",
+      "STEALTH",
+      "SHAPESHIFTER",
+      "UTILITY"
+    ],
+    "shortDesc": "A mummy alien who controls his bandage body for capture and combat.",
+    "fullDesc": "Snare-oh (originally Benmummy) is a mummy-like alien composed entirely of living bandages. He can reshape his body, stretch his bandages to great lengths, squeeze through tight spaces, and ensnare enemies. He can also regenerate by rewrapping himself.",
+    "sigMove": "Eternal Binding — wraps enemies in inescapable living bandages.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/f/fa/Snare-oh_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Under Wraps",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Originally called Benmummy.",
+      "His bandages are nearly indestructible.",
+      "He comes from the Anur system, home to all 'horror' aliens."
+    ],
+    "notableVictories": [
+      "The Mummy (original)"
+    ],
+    "notableDefeats": [
+      "Fire attacks"
+    ],
+    "unlockedIn": "Original Series Season 3",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 15,
+    "name": "Frankenstrike",
+    "species": "Transylian",
+    "homeworld": "Anur Transyl",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 39,
+    "stats": {
+      "power": 65,
+      "speed": 35,
+      "strength": 75,
+      "intelligence": 55,
+      "durability": 70,
+      "agility": 25,
+      "utility": 50,
+      "stealth": 15,
+      "range": 50,
+      "overall": 47
+    },
+    "height": "2.7m",
+    "weight": "250kg",
+    "age": "Unknown",
+    "abilities": [
+      "Electrokinesis",
+      "Enhanced Strength",
+      "Electromagnetic Control",
+      "Lightning Bolts",
+      "Conductivity",
+      "Electro-Punches"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Vulnerable when discharged",
+      "Insulating materials"
+    ],
+    "tags": [
+      "ELECTRIC",
+      "POWERHOUSE",
+      "TANK",
+      "MELEE"
+    ],
+    "shortDesc": "A Frankenstein-like alien with immense strength and electrical powers.",
+    "fullDesc": "Frankenstrike (originally Benvicktor) is a massive Transylian resembling Frankenstein's monster. He combines incredible physical strength with electrokinesis, able to generate and project lightning bolts and enhance his punches with electrical charges. His bolts on his back act as conductors.",
+    "sigMove": "Gigavolt Slam — charges fists with megawatts and delivers an earth-shattering punch.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/0b/Frankenstrike_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Be Afraid of the Dark",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Originally called Benvicktor.",
+      "He co-generated lightning with Dr. Viktor.",
+      "His species comes from the 'horror' Anur system."
+    ],
+    "notableVictories": [
+      "Dr. Viktor",
+      "Ghostfreak (Zs'Skayr)"
+    ],
+    "notableDefeats": [
+      "Grounded enemies immune to electricity"
+    ],
+    "unlockedIn": "Original Series Season 3",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 16,
+    "name": "Upchuck",
+    "species": "Gourmand",
+    "homeworld": "Peptos XI",
+    "series": [
+      "Original Series",
+      "Alien Force",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 25,
+    "stats": {
+      "power": 70,
+      "speed": 35,
+      "strength": 40,
+      "intelligence": 45,
+      "durability": 60,
+      "agility": 40,
+      "utility": 75,
+      "stealth": 20,
+      "range": 70,
+      "overall": 50
+    },
+    "height": "0.9m",
+    "weight": "80kg",
+    "age": "Unknown",
+    "abilities": [
+      "Matter Ingestion",
+      "Energy Vomiting",
+      "Acid Spit",
+      "Elastic Tongues",
+      "Solid Energy Expulsion",
+      "Eating Anything"
+    ],
+    "weaknesses": [
+      "Small size",
+      "Slow runner",
+      "Overeating can cause nausea"
+    ],
+    "tags": [
+      "UTILITY",
+      "RANGED",
+      "SMALL",
+      "EXPLOSIVE"
+    ],
+    "shortDesc": "A small alien that devours any matter and spits it as explosive energy blasts.",
+    "fullDesc": "Upchuck is a small, rotund Gourmand with multiple stomachs and long elastic tongues. He can eat virtually any material — metal, rock, energy — and then spit it back as explosive energy blasts. His appetite is limitless and his energy vomit packs a devastating punch.",
+    "sigMove": "Gluttony Blast — swallows an entire vehicle and spits it as a concentrated energy bomb.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/5/53/Upchuck_Perk_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Visitor",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Upchuck has two subspecies: Perk and Murk.",
+      "His planet has been destroyed and rebuilt 11 times.",
+      "He once ate a nuclear bomb."
+    ],
+    "notableVictories": [
+      "Vilgax (swallowed his attacks)"
+    ],
+    "notableDefeats": [
+      "Opponents too fast to hit"
+    ],
+    "unlockedIn": "Original Series Season 2",
+    "classification": "Support",
+    "difficultyToUse": "Easy",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 17,
+    "name": "Ditto",
+    "species": "Splixson",
+    "homeworld": "Hathor",
+    "series": [
+      "Original Series"
+    ],
+    "tier": "D",
+    "rank": 55,
+    "stats": {
+      "power": 25,
+      "speed": 45,
+      "strength": 25,
+      "intelligence": 40,
+      "durability": 20,
+      "agility": 55,
+      "utility": 50,
+      "stealth": 40,
+      "range": 10,
+      "overall": 30
+    },
+    "height": "1.2m",
+    "weight": "55kg",
+    "age": "Unknown",
+    "abilities": [
+      "Duplication",
+      "Enhanced Agility",
+      "Enhanced Flexibility",
+      "Underwater Breathing",
+      "Numerical Advantage"
+    ],
+    "weaknesses": [
+      "Pain shared between clones",
+      "Weak individually",
+      "Limited powers per clone"
+    ],
+    "tags": [
+      "CLONE",
+      "SWARM",
+      "UTILITY",
+      "WEAK"
+    ],
+    "shortDesc": "A small alien that duplicates himself but shares pain across all copies.",
+    "fullDesc": "Ditto is a small white Splixson who can duplicate himself into any number of copies. However, each clone feels what the others feel — if one is hurt, they all are. This makes him useful for swarming but risky in serious combat.",
+    "sigMove": "Thousand Ditto Swarm — creates hundreds of clones for an overwhelming numerical assault.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/4/44/Ditto.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Divided We Stand",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "All Ditto clones share pain.",
+      "He needs to recombine before timing out.",
+      "Echo Echo is considered his superior replacement."
+    ],
+    "notableVictories": [
+      "Dr. Animo (through sheer numbers)"
+    ],
+    "notableDefeats": [
+      "Any strong single opponent"
+    ],
+    "unlockedIn": "Original Series Season 3",
+    "classification": "Support",
+    "difficultyToUse": "Hard",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 18,
+    "name": "Eye Guy",
+    "species": "Opticoid",
+    "homeworld": "Sightra",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 41,
+    "stats": {
+      "power": 60,
+      "speed": 40,
+      "strength": 45,
+      "intelligence": 50,
+      "durability": 50,
+      "agility": 45,
+      "utility": 60,
+      "stealth": 25,
+      "range": 80,
+      "overall": 45
+    },
+    "height": "2.1m",
+    "weight": "130kg",
+    "age": "Unknown",
+    "abilities": [
+      "Optic Beams",
+      "360 Vision",
+      "Fire Beams",
+      "Freeze Beams",
+      "Electric Beams",
+      "Chest Eye Mega Blast"
+    ],
+    "weaknesses": [
+      "Sensitive eyes",
+      "Can be blinded",
+      "Slow movement"
+    ],
+    "tags": [
+      "RANGED",
+      "VERSATILE",
+      "BEAMS",
+      "OPTIC"
+    ],
+    "shortDesc": "An alien covered in eyes that each shoot different types of energy beams.",
+    "fullDesc": "Eye Guy's entire body is covered in eyes, each capable of firing different types of beams — fire, ice, electricity, and sticky goo. His most powerful attack comes from merging all his eyes into one giant chest eye that fires a devastating mega beam.",
+    "sigMove": "Optic Apocalypse — merges all eyes into chest and fires an all-element mega beam.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/b/be/Eye_Guy_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10 vs. the Negative 10: Part 2",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Eye Guy has no eyes on his face — they're everywhere else.",
+      "His chest eye is his most powerful weapon.",
+      "He can fire different beam types from different eyes simultaneously."
+    ],
+    "notableVictories": [
+      "Negative 10"
+    ],
+    "notableDefeats": [
+      "Flash grenades"
+    ],
+    "unlockedIn": "Original Series Season 4",
+    "classification": "Elemental",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 19,
+    "name": "Way Big",
+    "species": "To'kustar",
+    "homeworld": "Cosmic Storms",
+    "series": [
+      "Original Series",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "GOD",
+    "rank": 3,
+    "stats": {
+      "power": 95,
+      "speed": 55,
+      "strength": 100,
+      "intelligence": 40,
+      "durability": 95,
+      "agility": 20,
+      "utility": 40,
+      "stealth": 0,
+      "range": 80,
+      "overall": 85
+    },
+    "height": "30m",
+    "weight": "Unknown tons",
+    "age": "Unknown",
+    "abilities": [
+      "Colossal Size",
+      "Cosmic Ray",
+      "Super Strength",
+      "Enhanced Durability",
+      "Cosmic Storm Manipulation",
+      "Powerful Kicks"
+    ],
+    "weaknesses": [
+      "Slow due to size",
+      "Target for attacks",
+      "Cosmic storms can harm"
+    ],
+    "tags": [
+      "COSMIC",
+      "GIANT",
+      "POWERHOUSE",
+      "GOD"
+    ],
+    "shortDesc": "A colossal 100-foot alien born from cosmic storms with devastating power.",
+    "fullDesc": "Way Big is a colossal To'kustar standing approximately 100 feet tall, born in the center of cosmic storms. He can fire a devastating cosmic ray by crossing his arms in an L-shape and possesses strength proportional to his enormous size. He is one of Ben's most powerful aliens.",
+    "sigMove": "Cosmic Ray — crosses arms and fires a beam capable of destroying planets.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/5/54/Way_Big_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Secret of the Omnitrix",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Way Big is born in cosmic storms.",
+      "His cosmic ray can one-shot most enemies.",
+      "He was the final alien used against Vilgax in the OS movie."
+    ],
+    "notableVictories": [
+      "Vilgax",
+      "Evil Way Big",
+      "Diagon's army"
+    ],
+    "notableDefeats": [
+      "Trumbipulor (briefly)"
+    ],
+    "unlockedIn": "Original Series Movie",
+    "classification": "Cosmic Entity",
+    "difficultyToUse": "Easy",
+    "rarity": "Legendary"
+  },
+  {
+    "id": 20,
+    "name": "Swampfire",
+    "species": "Methanosian",
+    "homeworld": "Methanos",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 21,
+    "stats": {
+      "power": 75,
+      "speed": 45,
+      "strength": 70,
+      "intelligence": 45,
+      "durability": 70,
+      "agility": 40,
+      "utility": 70,
+      "stealth": 20,
+      "range": 65,
+      "overall": 58
+    },
+    "height": "1.8m",
+    "weight": "100kg",
+    "age": "Unknown",
+    "abilities": [
+      "Chlorokinesis",
+      "Fire Projection",
+      "Regeneration",
+      "Methane Generation",
+      "Plant Control",
+      "Seed Bombs"
+    ],
+    "weaknesses": [
+      "Can be frozen",
+      "Vulnerable before blossoming",
+      "Limited without plants"
+    ],
+    "tags": [
+      "ELEMENTAL",
+      "FIRE",
+      "PLANT",
+      "REGENERATION"
+    ],
+    "shortDesc": "A plant-fire hybrid alien with regeneration and dual elemental control.",
+    "fullDesc": "Swampfire is a Methanosian who combines plant-based powers with fire abilities. He can regenerate from virtually any damage, control plant life, shoot fire, and produce methane gas. He later underwent a natural 'blossoming' that upgraded his appearance and powers.",
+    "sigMove": "Inferno Garden — erupts the ground with fire-spewing vines.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/0e/Swampfire_AF.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10 Returns: Part 1",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Swampfire was the first alien Ben used in Alien Force.",
+      "He goes through a natural 'blossoming' phase.",
+      "He smells terrible — like a swamp."
+    ],
+    "notableVictories": [
+      "DNAliens",
+      "Highbreed soldiers"
+    ],
+    "notableDefeats": [
+      "Vilgax (initially)"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Elemental",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 21,
+    "name": "Echo Echo",
+    "species": "Sonorosian",
+    "homeworld": "Sonorosia",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 23,
+    "stats": {
+      "power": 65,
+      "speed": 50,
+      "strength": 25,
+      "intelligence": 55,
+      "durability": 40,
+      "agility": 55,
+      "utility": 70,
+      "stealth": 30,
+      "range": 80,
+      "overall": 52
+    },
+    "height": "0.3m",
+    "weight": "10kg",
+    "age": "Unknown",
+    "abilities": [
+      "Sonic Screams",
+      "Duplication",
+      "Sound Barriers",
+      "Echo Chamber",
+      "Sonic Doom",
+      "Sound Manipulation"
+    ],
+    "weaknesses": [
+      "Physically fragile",
+      "Clones can be picked off",
+      "Needs air to produce sound"
+    ],
+    "tags": [
+      "SONIC",
+      "CLONE",
+      "RANGED",
+      "SWARM"
+    ],
+    "shortDesc": "A tiny sonic alien that duplicates and unleashes devastating sound attacks.",
+    "fullDesc": "Echo Echo is a small, white, living speaker who can duplicate himself and unleash powerful sonic screams. Unlike Ditto, his clones don't share pain. His most devastating attack is the Wall of Sound, where all clones scream simultaneously.",
+    "sigMove": "Wall of Sound — all clones form a circle and blast sonic waves inward.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/a/a2/Echo_Echo_AF_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10 Returns: Part 1",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Echo Echo is the improved version of Ditto.",
+      "His clones don't share pain.",
+      "He can create sonic force fields."
+    ],
+    "notableVictories": [
+      "Highbreed",
+      "Forever Knights"
+    ],
+    "notableDefeats": [
+      "Sound-absorbing environments"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Common"
+  },
+  {
+    "id": 22,
+    "name": "Humungousaur",
+    "species": "Vaxasaurian",
+    "homeworld": "Terradino",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 10,
+    "stats": {
+      "power": 85,
+      "speed": 40,
+      "strength": 95,
+      "intelligence": 35,
+      "durability": 90,
+      "agility": 20,
+      "utility": 35,
+      "stealth": 5,
+      "range": 15,
+      "overall": 65
+    },
+    "height": "3.6m (up to 18m)",
+    "weight": "450kg",
+    "age": "Unknown",
+    "abilities": [
+      "Size Manipulation",
+      "Super Strength",
+      "Enhanced Durability",
+      "Tail Whip",
+      "Powerful Charge",
+      "Earthquake Generation"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Easy target",
+      "Not very intelligent in combat"
+    ],
+    "tags": [
+      "POWERHOUSE",
+      "TANK",
+      "GIANT",
+      "MELEE"
+    ],
+    "shortDesc": "A massive dinosaur alien that can grow up to 60 feet tall.",
+    "fullDesc": "Humungousaur is a massive, humanoid dinosaur with the ability to grow from 12 to 60 feet tall. His strength and durability increase proportionally with his size. He is Ben's most-used alien in Alien Force and Ultimate Alien, serving as the go-to powerhouse.",
+    "sigMove": "Tectonic Slam — grows to max size and punches the ground, creating an earthquake.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/b/b1/Humungousaur_AF.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10 Returns: Part 1",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Humungousaur is Ben's most-used alien in AF/UA.",
+      "He can grow up to 60 feet tall.",
+      "His species once fought in gladiatorial arenas."
+    ],
+    "notableVictories": [
+      "Vilgax",
+      "Aggregor",
+      "Various Highbreed"
+    ],
+    "notableDefeats": [
+      "Malware"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 23,
+    "name": "Jetray",
+    "species": "Aerophibian",
+    "homeworld": "Aeropela",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 24,
+    "stats": {
+      "power": 55,
+      "speed": 95,
+      "strength": 35,
+      "intelligence": 45,
+      "durability": 45,
+      "agility": 90,
+      "utility": 50,
+      "stealth": 35,
+      "range": 70,
+      "overall": 55
+    },
+    "height": "1.8m",
+    "weight": "80kg",
+    "age": "Unknown",
+    "abilities": [
+      "Flight",
+      "Neuroshock Beams",
+      "Super Speed Flight",
+      "Underwater Flight",
+      "Space Survivability",
+      "Energy Blasts"
+    ],
+    "weaknesses": [
+      "Fragile body",
+      "Close combat weakness",
+      "Can be grounded"
+    ],
+    "tags": [
+      "FLIGHT",
+      "SPEED",
+      "RANGED",
+      "AGILE"
+    ],
+    "shortDesc": "A manta ray alien capable of neuroshock blasts and hypersonic flight.",
+    "fullDesc": "Jetray is an Aerophibian that can fly at incredible speeds — faster in the air than XLR8 on the ground. He shoots neuroshock beams from his eyes and tail, can fly through water and even space, making him one of Ben's most mobile aliens.",
+    "sigMove": "Neuroshock Barrage — fires rapid neuroshock blasts while performing aerial maneuvers.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/1/13/Jetray_AF_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Everybody Talks About the Weather",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Jetray is faster than XLR8 in the air.",
+      "He can survive in space.",
+      "His neuroshock beams can paralyze enemies."
+    ],
+    "notableVictories": [
+      "Various Forever Knights"
+    ],
+    "notableDefeats": [
+      "Strong energy shields"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Speed",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 24,
+    "name": "Big Chill",
+    "species": "Necrofriggian",
+    "homeworld": "Kylmyys",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 9,
+    "stats": {
+      "power": 70,
+      "speed": 60,
+      "strength": 50,
+      "intelligence": 55,
+      "durability": 65,
+      "agility": 65,
+      "utility": 75,
+      "stealth": 85,
+      "range": 60,
+      "overall": 65
+    },
+    "height": "1.8m",
+    "weight": "Weightless",
+    "age": "Unknown",
+    "abilities": [
+      "Cryokinesis",
+      "Intangibility",
+      "Flight",
+      "Freeze Breath",
+      "Ice Beams",
+      "Underwater Breathing",
+      "Cold Immunity"
+    ],
+    "weaknesses": [
+      "Fire-based attacks",
+      "Extreme heat",
+      "Pyronites"
+    ],
+    "tags": [
+      "ICE",
+      "STEALTH",
+      "FLIGHT",
+      "INTANGIBLE"
+    ],
+    "shortDesc": "A moth-like phantom with ice powers and the ability to phase through matter.",
+    "fullDesc": "Big Chill is a blue, moth-like alien who can fly, turn intangible, and freeze anything with his breath or touch. He can phase through solid matter while leaving it frozen. He even has a unique reproductive cycle where he asexually lays eggs.",
+    "sigMove": "Absolute Zero — phases through enemies, flash-freezing them from the inside out.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/01/Big_Chill_AF.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Kevin's Big Score",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Big Chill asexually reproduced in one episode.",
+      "He can freeze objects by phasing through them.",
+      "His species goes through a reproduction cycle every 80 years."
+    ],
+    "notableVictories": [
+      "DNAliens",
+      "Highbreed"
+    ],
+    "notableDefeats": [
+      "NRG's radiation heat"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Stealth",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 25,
+    "name": "Chromastone",
+    "species": "Crystalsapien",
+    "homeworld": "Petropia",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 8,
+    "stats": {
+      "power": 80,
+      "speed": 50,
+      "strength": 65,
+      "intelligence": 55,
+      "durability": 85,
+      "agility": 40,
+      "utility": 75,
+      "stealth": 15,
+      "range": 90,
+      "overall": 68
+    },
+    "height": "2.1m",
+    "weight": "200kg",
+    "age": "Unknown",
+    "abilities": [
+      "Energy Absorption",
+      "Ultraviolet Beams",
+      "Energy Redirection",
+      "Flight",
+      "Enhanced Durability",
+      "Rainbow Energy Blasts"
+    ],
+    "weaknesses": [
+      "Can be shattered by extreme force",
+      "Overload from too much energy",
+      "Diamondhead connection"
+    ],
+    "tags": [
+      "ENERGY",
+      "CRYSTAL",
+      "RANGED",
+      "DURABLE"
+    ],
+    "shortDesc": "A crystal alien that absorbs any energy and redirects it as ultraviolet beams.",
+    "fullDesc": "Chromastone is a Crystalsapien who can absorb virtually any type of energy — lasers, electricity, mana — and redirect it as powerful ultraviolet beams. He serves as the guardian of Petropia and has a mysterious connection to Diamondhead.",
+    "sigMove": "Prismatic Overload — absorbs massive energy and releases it as a devastating rainbow beam.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/a/a0/Chromastone_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "All That Glitters",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Chromastone is the guardian of Petropia.",
+      "He was shattered by Vilgax but reformed.",
+      "He has a deep connection to Diamondhead."
+    ],
+    "notableVictories": [
+      "Vilgax (energy absorption)",
+      "Darkstar"
+    ],
+    "notableDefeats": [
+      "Vilgax (was shattered)"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Tank",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 26,
+    "name": "Brainstorm",
+    "species": "Cerebrocrustacean",
+    "homeworld": "Encephalonus IV",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 26,
+    "stats": {
+      "power": 60,
+      "speed": 35,
+      "strength": 25,
+      "intelligence": 95,
+      "durability": 55,
+      "agility": 30,
+      "utility": 80,
+      "stealth": 20,
+      "range": 65,
+      "overall": 52
+    },
+    "height": "1.8m",
+    "weight": "110kg",
+    "age": "Unknown",
+    "abilities": [
+      "Electrokinesis",
+      "Super Intelligence",
+      "Force Fields",
+      "Levitation",
+      "Mind Control",
+      "Electric Blasts"
+    ],
+    "weaknesses": [
+      "Physical weakness",
+      "Shell can be cracked",
+      "Overconfidence"
+    ],
+    "tags": [
+      "GENIUS",
+      "ELECTRIC",
+      "PSYCHIC",
+      "RANGED"
+    ],
+    "shortDesc": "A crab-like genius with electric brain powers and unmatched intellect.",
+    "fullDesc": "Brainstorm is a crab-like alien with an enormous brain visible under his shell plates. He can generate electrical storms from his brain, create force fields, levitate objects, and even control minds. His intelligence rivals Grey Matter's but he also has significant combat abilities.",
+    "sigMove": "Neural Storm — unleashes a devastating electrical brain blast.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/9/97/Brainstorm_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Pier Pressure",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Brainstorm speaks with an exaggerated intellectual accent.",
+      "His brain is exposed when his shell opens.",
+      "He and Grey Matter have different types of intelligence."
+    ],
+    "notableVictories": [
+      "Captain Nemesis",
+      "Various robots"
+    ],
+    "notableDefeats": [
+      "Physically strong opponents"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Psychic",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 27,
+    "name": "Spidermonkey",
+    "species": "Arachnichimp",
+    "homeworld": "Aranhaschimmia",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 35,
+    "stats": {
+      "power": 40,
+      "speed": 70,
+      "strength": 50,
+      "intelligence": 45,
+      "durability": 40,
+      "agility": 95,
+      "utility": 55,
+      "stealth": 60,
+      "range": 40,
+      "overall": 48
+    },
+    "height": "1.2m",
+    "weight": "60kg",
+    "age": "Unknown",
+    "abilities": [
+      "Web Shooting",
+      "Wall Climbing",
+      "Enhanced Agility",
+      "Prehensile Tail",
+      "Enhanced Strength",
+      "Acrobatics"
+    ],
+    "weaknesses": [
+      "Webs can be cut or burned",
+      "Small and fragile",
+      "Not very strong"
+    ],
+    "tags": [
+      "AGILE",
+      "WEB",
+      "STEALTH",
+      "ACROBAT"
+    ],
+    "shortDesc": "An agile monkey-spider hybrid with web-slinging and wall-crawling abilities.",
+    "fullDesc": "Spidermonkey is a small, blue, monkey-like alien with four arms and a spider's ability to shoot webs and climb walls. He is incredibly agile and acrobatic, swinging through environments with ease. Though not very powerful, his mobility makes him hard to hit.",
+    "sigMove": "Web Cage — rapidly encases enemies in unbreakable web cocoons.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/7/7b/Spidermonkey_AF.png/revision/latest&w=400&output=png",
+    "firstAppearance": "What Are Little Girls Made Of?",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Spidermonkey has four arms like a real spider would.",
+      "He has a prehensile tail for extra grip.",
+      "His webs are extremely strong."
+    ],
+    "notableVictories": [
+      "Vulkanus",
+      "DNAliens"
+    ],
+    "notableDefeats": [
+      "Stronger opponents"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Stealth",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 28,
+    "name": "Goop",
+    "species": "Polymorph",
+    "homeworld": "Viscosia",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 28,
+    "stats": {
+      "power": 55,
+      "speed": 45,
+      "strength": 55,
+      "intelligence": 45,
+      "durability": 75,
+      "agility": 70,
+      "utility": 65,
+      "stealth": 50,
+      "range": 35,
+      "overall": 52
+    },
+    "height": "Variable",
+    "weight": "Variable",
+    "age": "Unknown",
+    "abilities": [
+      "Shape Shifting",
+      "Acid Generation",
+      "Elasticity",
+      "Regeneration",
+      "Anti-Gravity Projector",
+      "Slime Mimicry"
+    ],
+    "weaknesses": [
+      "Depends on anti-gravity projector",
+      "Can be vacuumed up",
+      "Separated from projector is helpless"
+    ],
+    "tags": [
+      "SHAPESHIFTER",
+      "ACID",
+      "UTILITY",
+      "VERSATILE"
+    ],
+    "shortDesc": "A shapeless slime alien held together by an anti-gravity projector disc.",
+    "fullDesc": "Goop is a shapeless, green, slime-like alien held in a humanoid form by an anti-gravity projector disc above his head. He can morph into any shape, generate acid, stretch, and reform after being torn apart. Without his projector, he's just a helpless puddle.",
+    "sigMove": "Acid Tsunami — transforms into a massive wave of corrosive slime.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/4/47/Goop_AF_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Gauntlet",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Goop is useless without his anti-gravity projector.",
+      "He can generate highly corrosive acid.",
+      "His entire body is a single-celled organism."
+    ],
+    "notableVictories": [
+      "Techadon robots"
+    ],
+    "notableDefeats": [
+      "Losing his projector"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 29,
+    "name": "Alien X",
+    "species": "Celestialsapien",
+    "homeworld": "Forge of Creation",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "GOD",
+    "rank": 1,
+    "stats": {
+      "power": 100,
+      "speed": 40,
+      "strength": 100,
+      "intelligence": 95,
+      "durability": 100,
+      "agility": 35,
+      "utility": 100,
+      "stealth": 20,
+      "range": 100,
+      "overall": 99
+    },
+    "height": "Unknown",
+    "weight": "Unknown",
+    "age": "Billions of years",
+    "abilities": [
+      "Reality Warping",
+      "Time Manipulation",
+      "Matter Creation",
+      "Omnipotence",
+      "Flight",
+      "Invulnerability"
+    ],
+    "weaknesses": [
+      "Requires Serena and Bellicus to agree",
+      "Decision paralysis",
+      "Celestialsapien antibodies"
+    ],
+    "tags": [
+      "OMNIPOTENT",
+      "REALITY WARP",
+      "IMMORTAL",
+      "GOD"
+    ],
+    "shortDesc": "The most powerful being in the multiverse. Can rewrite reality itself.",
+    "fullDesc": "Alien X is a Celestialsapien whose body is a black, humanoid void filled with tiny stars and cosmic energy. He contains three personalities: Ben, Serena (love and compassion), and Bellicus (rage and aggression). When at least two agree, Alien X is nigh-omnipotent.",
+    "sigMove": "Reality Rewrite — casually undoes the Big Bang and restarts the universe.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/e/ee/Alien_X_2.png/revision/latest&w=400&output=png",
+    "firstAppearance": "X = Ben + 2",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Alien X recreated the universe after it was destroyed.",
+      "Serena and Bellicus are references to serene and bellicose.",
+      "Ben rarely uses Alien X due to the risk of internal debate."
+    ],
+    "notableVictories": [
+      "Dagon",
+      "Alien X of another timeline",
+      "The Annihilarg"
+    ],
+    "notableDefeats": [
+      "Temporarily frozen by Maltruant"
+    ],
+    "unlockedIn": "Alien Force Season 1",
+    "classification": "Cosmic Entity",
+    "difficultyToUse": "Extreme",
+    "rarity": "Legendary"
+  },
+  {
+    "id": 30,
+    "name": "Lodestar",
+    "species": "Biosovortian",
+    "homeworld": "Unknown",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 27,
+    "stats": {
+      "power": 65,
+      "speed": 45,
+      "strength": 50,
+      "intelligence": 55,
+      "durability": 60,
+      "agility": 45,
+      "utility": 75,
+      "stealth": 25,
+      "range": 75,
+      "overall": 55
+    },
+    "height": "1.8m",
+    "weight": "120kg",
+    "age": "Unknown",
+    "abilities": [
+      "Magnetism Control",
+      "Magnetic Force Fields",
+      "Metal Manipulation",
+      "Magnetic Levitation",
+      "Regeneration",
+      "Polarity Reversal"
+    ],
+    "weaknesses": [
+      "Non-metallic enemies",
+      "Wooden or plastic weapons",
+      "Strong enough force can overcome"
+    ],
+    "tags": [
+      "MAGNETIC",
+      "RANGED",
+      "UTILITY",
+      "TECH"
+    ],
+    "shortDesc": "A magnetic alien that controls all metal and magnetic fields at will.",
+    "fullDesc": "Lodestar is a Biosovortian with a floating metal head between magnetic shoulders. He can control magnetic fields, manipulate any metal, create force fields, and levitate. He can even regenerate by pulling his parts back together magnetically.",
+    "sigMove": "Magnetic Apocalypse — rips all metal from the environment and hurls it at enemies.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/a/a6/Lodestar_AF.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Simple",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Lodestar's head floats between his shoulders.",
+      "He can regenerate by magnetically pulling himself together.",
+      "His powers are useless against non-metallic foes."
+    ],
+    "notableVictories": [
+      "Vilgax (metal armor)"
+    ],
+    "notableDefeats": [
+      "Non-metallic opponents"
+    ],
+    "unlockedIn": "Alien Force Season 3",
+    "classification": "Tech",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 31,
+    "name": "Nanomech",
+    "species": "Nanomechian",
+    "homeworld": "None (hybrid)",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien"
+    ],
+    "tier": "D",
+    "rank": 60,
+    "stats": {
+      "power": 40,
+      "speed": 55,
+      "strength": 10,
+      "intelligence": 60,
+      "durability": 20,
+      "agility": 80,
+      "utility": 55,
+      "stealth": 95,
+      "range": 30,
+      "overall": 35
+    },
+    "height": "Microscopic (1cm)",
+    "weight": "Negligible",
+    "age": "Unknown",
+    "abilities": [
+      "Size Shifting",
+      "Bio-Electric Blasts",
+      "Flight",
+      "Infiltration",
+      "Microscopic Travel",
+      "Enhanced Agility"
+    ],
+    "weaknesses": [
+      "Extremely tiny",
+      "Minimal physical power",
+      "Can be swatted away"
+    ],
+    "tags": [
+      "TINY",
+      "STEALTH",
+      "ELECTRIC",
+      "TECH"
+    ],
+    "shortDesc": "A microscopic human-nanochip hybrid for infiltration and tiny-scale combat.",
+    "fullDesc": "Nanomech is a unique human-nanochip hybrid, the smallest alien in Ben's arsenal. He can fly, shoot bio-electric blasts, and shrink to microscopic size. He was critical in defeating the Nanochip Queen by entering her body.",
+    "sigMove": "Micro Assault — shrinks to cellular level and destroys targets from inside.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/da/Nanomech_af.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10: Alien Swarm",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Nanomech is the smallest alien in the Omnitrix.",
+      "He's a hybrid of human and alien nanochip DNA.",
+      "He was first used in the Alien Swarm movie."
+    ],
+    "notableVictories": [
+      "Nanochip Queen"
+    ],
+    "notableDefeats": [
+      "Any macro-scale combat"
+    ],
+    "unlockedIn": "Alien Force Movie",
+    "classification": "Tech",
+    "difficultyToUse": "Hard",
+    "rarity": "Rare"
+  },
+  {
+    "id": 32,
+    "name": "Rath",
+    "species": "Appoplexian",
+    "homeworld": "Appoplexia",
+    "series": [
+      "Alien Force",
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 13,
+    "stats": {
+      "power": 80,
+      "speed": 60,
+      "strength": 90,
+      "intelligence": 20,
+      "durability": 80,
+      "agility": 65,
+      "utility": 25,
+      "stealth": 5,
+      "range": 10,
+      "overall": 58
+    },
+    "height": "2.7m",
+    "weight": "250kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Strength",
+      "Retractable Claw",
+      "Wrestling Moves",
+      "Rage Enhancement",
+      "Enhanced Durability",
+      "Shockwave Slam"
+    ],
+    "weaknesses": [
+      "Extremely angry and irrational",
+      "Can't strategize",
+      "Loud and obvious"
+    ],
+    "tags": [
+      "POWERHOUSE",
+      "MELEE",
+      "BERSERKER",
+      "STRONG"
+    ],
+    "shortDesc": "An angry tiger wrestler who fights with rage and devastating wrestling moves.",
+    "fullDesc": "Rath is an Appoplexian — a muscular, tiger-like alien in constant rage. He refers to himself in third person, trash-talks constantly, and uses devastating wrestling moves. Despite his lack of strategy, his raw power and aggression make him formidable.",
+    "sigMove": "Polaris Piledriver — grabs an enemy and pile-drives them through the ground.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/2/23/Rath_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Con of Rath",
+    "firstSeries": "Alien Force",
+    "funFacts": [
+      "Rath always talks in third person.",
+      "LET ME TELL YOU SOMETHING is his catchphrase.",
+      "He once threatened to fight the entire galaxy."
+    ],
+    "notableVictories": [
+      "Vulkanus",
+      "Incursean soldiers",
+      "Kevin"
+    ],
+    "notableDefeats": [
+      "Strategic opponents"
+    ],
+    "unlockedIn": "Alien Force Season 3",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 33,
+    "name": "AmpFibian",
+    "species": "Amperi",
+    "homeworld": "Tesslos",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 14,
+    "stats": {
+      "power": 70,
+      "speed": 55,
+      "strength": 30,
+      "intelligence": 70,
+      "durability": 55,
+      "agility": 65,
+      "utility": 80,
+      "stealth": 70,
+      "range": 75,
+      "overall": 62
+    },
+    "height": "1.8m",
+    "weight": "Negligible",
+    "age": "Unknown",
+    "abilities": [
+      "Electrokinesis",
+      "Intangibility",
+      "Flight",
+      "Mind Reading",
+      "Electric Absorption",
+      "Underwater Breathing"
+    ],
+    "weaknesses": [
+      "Physically weak",
+      "Insulating materials",
+      "Can be trapped in containers"
+    ],
+    "tags": [
+      "ELECTRIC",
+      "STEALTH",
+      "PSYCHIC",
+      "INTANGIBLE"
+    ],
+    "shortDesc": "A jellyfish-like alien with electrical powers and the ability to read minds.",
+    "fullDesc": "AmpFibian is a blue, jellyfish-like Amperi who can generate and absorb electricity, turn intangible, read minds, and fly. He is extremely versatile but physically fragile. His electric powers work especially well in water.",
+    "sigMove": "Neural Overload — reads an enemy's mind while shocking their nervous system.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/6c/Ampfibian_ua.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Fused",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "AmpFibian can read minds through electrical signals.",
+      "He was one of 5 aliens scanned from the Andromeda galaxy.",
+      "His species can live in space."
+    ],
+    "notableVictories": [
+      "Aggregor",
+      "Ra'ad"
+    ],
+    "notableDefeats": [
+      "Insulated enemies"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Psychic",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 34,
+    "name": "Armodrillo",
+    "species": "Talpaedan",
+    "homeworld": "Terraexcava",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 29,
+    "stats": {
+      "power": 75,
+      "speed": 40,
+      "strength": 85,
+      "intelligence": 35,
+      "durability": 85,
+      "agility": 25,
+      "utility": 50,
+      "stealth": 10,
+      "range": 30,
+      "overall": 52
+    },
+    "height": "3m",
+    "weight": "350kg",
+    "age": "Unknown",
+    "abilities": [
+      "Drill Arms",
+      "Earthquake Generation",
+      "Enhanced Strength",
+      "Enhanced Durability",
+      "Burrowing",
+      "Jackhammer Arms"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Limited range",
+      "Water can rust mechanisms"
+    ],
+    "tags": [
+      "TANK",
+      "DRILL",
+      "POWERHOUSE",
+      "MELEE"
+    ],
+    "shortDesc": "A robotic armadillo with pneumatic drill arms and earthquake powers.",
+    "fullDesc": "Armodrillo is a massive, yellow, armadillo-like alien with drill arms. He can create earthquakes, tunnel underground rapidly, and his jackhammer arms deliver devastating punches. He is one of the Andromeda Five aliens.",
+    "sigMove": "Seismic Drill — drills into the earth and creates a localized earthquake.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/2/2e/Armodrillo_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Andreas' Fault",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Armodrillo's arms work like pneumatic drills.",
+      "He was scanned from Andreas.",
+      "His species is enslaved for their drilling abilities."
+    ],
+    "notableVictories": [
+      "Andreas",
+      "Trumbipulor"
+    ],
+    "notableDefeats": [
+      "Faster opponents"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 35,
+    "name": "Terraspin",
+    "species": "Geochelone Aerio",
+    "homeworld": "Aldabra",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 36,
+    "stats": {
+      "power": 45,
+      "speed": 40,
+      "strength": 40,
+      "intelligence": 45,
+      "durability": 70,
+      "agility": 30,
+      "utility": 65,
+      "stealth": 20,
+      "range": 55,
+      "overall": 42
+    },
+    "height": "1.8m",
+    "weight": "150kg",
+    "age": "Unknown",
+    "abilities": [
+      "Aerokinesis",
+      "Wind Blasts",
+      "Flight",
+      "Shell Shield",
+      "Mana Immunity",
+      "Tornado Creation"
+    ],
+    "weaknesses": [
+      "Slow on ground",
+      "Not very strong",
+      "Limited offensive power"
+    ],
+    "tags": [
+      "WIND",
+      "TANK",
+      "SUPPORT",
+      "ELEMENTAL"
+    ],
+    "shortDesc": "A turtle alien that generates powerful winds and is immune to magic.",
+    "fullDesc": "Terraspin is a turtle-like alien who can retract into his shell and spin to generate powerful winds and tornadoes. His most unique trait is immunity to mana and magic, making him invaluable against magical foes like Charmcaster.",
+    "sigMove": "Hurricane Shell — retracts and spins to create a category-5 hurricane.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/3/38/Terraspin_UA_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Reflected Glory",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Terraspin is immune to mana/magic.",
+      "He was key to defeating Addwaitya.",
+      "His species is naturally peaceful."
+    ],
+    "notableVictories": [
+      "Addwaitya",
+      "Charmcaster"
+    ],
+    "notableDefeats": [
+      "Physical combat"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Elemental",
+    "difficultyToUse": "Easy",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 36,
+    "name": "NRG",
+    "species": "Prypiatosian-B",
+    "homeworld": "Unknown",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "S",
+    "rank": 6,
+    "stats": {
+      "power": 90,
+      "speed": 35,
+      "strength": 75,
+      "intelligence": 45,
+      "durability": 95,
+      "agility": 20,
+      "utility": 65,
+      "stealth": 10,
+      "range": 85,
+      "overall": 72
+    },
+    "height": "2.4m",
+    "weight": "350kg (in suit)",
+    "age": "Unknown",
+    "abilities": [
+      "Radiation Blasts",
+      "Nuclear Energy",
+      "Heat Generation",
+      "Radiation Immunity",
+      "Enhanced Strength",
+      "Energy Absorption"
+    ],
+    "weaknesses": [
+      "Suit limits mobility",
+      "Can harm allies with radiation",
+      "Heavy"
+    ],
+    "tags": [
+      "NUCLEAR",
+      "POWERHOUSE",
+      "TANK",
+      "RADIATION"
+    ],
+    "shortDesc": "A nuclear radiation entity contained in a virtually indestructible suit.",
+    "fullDesc": "NRG is a Prypiatosian-B, a being of pure radiation energy contained in a heavy, virtually indestructible containment suit. Outside his suit, he is incredibly powerful but dangerous to everything nearby. His radiation blasts can devastate entire areas.",
+    "sigMove": "Nuclear Meltdown — exits his suit and unleashes uncontrolled radioactive devastation.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/4/46/NRG_UA_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Too Hot to Handle",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "NRG's true form is pure radioactive energy.",
+      "His suit is nearly indestructible.",
+      "Outside his suit, he is one of Ben's most dangerous aliens."
+    ],
+    "notableVictories": [
+      "P'andor",
+      "Various enemies"
+    ],
+    "notableDefeats": [
+      "Lead-lined environments"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 37,
+    "name": "Fasttrack",
+    "species": "Citrakayah",
+    "homeworld": "Chalybeas",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "C",
+    "rank": 37,
+    "stats": {
+      "power": 40,
+      "speed": 90,
+      "strength": 45,
+      "intelligence": 40,
+      "durability": 40,
+      "agility": 85,
+      "utility": 35,
+      "stealth": 40,
+      "range": 15,
+      "overall": 44
+    },
+    "height": "1.8m",
+    "weight": "75kg",
+    "age": "Unknown",
+    "abilities": [
+      "Super Speed",
+      "Enhanced Strength",
+      "Enhanced Agility",
+      "Speed Strikes",
+      "Quick Reflexes",
+      "Momentum Attacks"
+    ],
+    "weaknesses": [
+      "Not as fast as XLR8",
+      "Average durability",
+      "Friction burn"
+    ],
+    "tags": [
+      "SPEED",
+      "MELEE",
+      "AGILE",
+      "FAST"
+    ],
+    "shortDesc": "A feline speedster, similar to XLR8 but with more strength-oriented speed.",
+    "fullDesc": "Fasttrack is a blue and black, cat-like alien capable of running at incredible speeds. While not quite as fast as XLR8, he is physically stronger and can deliver more powerful speed-enhanced strikes. He is essentially a stronger but slower alternative to XLR8.",
+    "sigMove": "Mach Punch — delivers a supersonic punch at near light-speed.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/4/49/Fasttrack_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Basic Training",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Fasttrack is often compared to XLR8.",
+      "He is stronger but slower than XLR8.",
+      "His species are natural-born hunters."
+    ],
+    "notableVictories": [
+      "Various Forever Knights"
+    ],
+    "notableDefeats": [
+      "XLR8 (in speed comparisons)"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Speed",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 38,
+    "name": "ChamAlien",
+    "species": "Merlinisapien",
+    "homeworld": "Unknown",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "C",
+    "rank": 43,
+    "stats": {
+      "power": 35,
+      "speed": 60,
+      "strength": 45,
+      "intelligence": 50,
+      "durability": 40,
+      "agility": 75,
+      "utility": 70,
+      "stealth": 100,
+      "range": 10,
+      "overall": 44
+    },
+    "height": "1.8m",
+    "weight": "70kg",
+    "age": "Unknown",
+    "abilities": [
+      "Camouflage",
+      "Invisibility",
+      "Wall Climbing",
+      "Enhanced Agility",
+      "Tail Whip",
+      "Shadow Blending"
+    ],
+    "weaknesses": [
+      "Fragile",
+      "Low combat power",
+      "Can be detected by heat sensors"
+    ],
+    "tags": [
+      "STEALTH",
+      "CAMOUFLAGE",
+      "AGILE",
+      "SPY"
+    ],
+    "shortDesc": "A chameleon alien with perfect camouflage and stealth abilities.",
+    "fullDesc": "ChamAlien is a reptilian alien who can change his skin color to perfectly blend with any environment, becoming effectively invisible. He is an expert infiltrator with enhanced agility and a prehensile tail. His stealthy nature makes him ideal for espionage.",
+    "sigMove": "Shadow Strike — turns invisible and delivers a surprise attack from nowhere.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/f/f4/ChamAlien_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Prisoner Number 775 Is Missing",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "ChamAlien can match any surface pattern.",
+      "His name is a play on chameleon and alien.",
+      "He was used primarily for stealth missions."
+    ],
+    "notableVictories": [
+      "Area 51 guards"
+    ],
+    "notableDefeats": [
+      "Thermal imaging"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Stealth",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 39,
+    "name": "Eatle",
+    "species": "Oryctini",
+    "homeworld": "Unknown",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 34,
+    "stats": {
+      "power": 65,
+      "speed": 40,
+      "strength": 70,
+      "intelligence": 35,
+      "durability": 75,
+      "agility": 30,
+      "utility": 55,
+      "stealth": 10,
+      "range": 60,
+      "overall": 46
+    },
+    "height": "2.7m",
+    "weight": "250kg",
+    "age": "Unknown",
+    "abilities": [
+      "Matter Ingestion",
+      "Energy Blasts",
+      "Enhanced Strength",
+      "Enhanced Durability",
+      "Horn Attack",
+      "Laser Horn"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Large target",
+      "Limited intelligence"
+    ],
+    "tags": [
+      "POWERHOUSE",
+      "TANK",
+      "RANGED",
+      "MELEE"
+    ],
+    "shortDesc": "A beetle-like alien that eats matter and shoots energy beams from its horn.",
+    "fullDesc": "Eatle is a large, beetle-like alien that can eat virtually any material and convert it into a powerful energy beam fired from his horn. He combines Upchuck's eating ability with greater physical strength and durability.",
+    "sigMove": "Horn Cannon — devours metal and fires a concentrated energy blast from his horn.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/7/79/Eatle_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "A Knight to Remember",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Eatle is similar to Upchuck but larger and stronger.",
+      "His horn acts as an energy cannon.",
+      "He was redesigned significantly in Omniverse."
+    ],
+    "notableVictories": [
+      "Forever Knights"
+    ],
+    "notableDefeats": [
+      "Faster opponents"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 40,
+    "name": "Jury Rigg",
+    "species": "Planchakule",
+    "homeworld": "Aul-Turrhen",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "D",
+    "rank": 56,
+    "stats": {
+      "power": 15,
+      "speed": 60,
+      "strength": 20,
+      "intelligence": 75,
+      "durability": 15,
+      "agility": 80,
+      "utility": 85,
+      "stealth": 50,
+      "range": 5,
+      "overall": 35
+    },
+    "height": "0.6m",
+    "weight": "15kg",
+    "age": "Unknown",
+    "abilities": [
+      "Machine Dismantling",
+      "Rapid Repair",
+      "Technology Intuition",
+      "Enhanced Speed",
+      "Enhanced Agility",
+      "Rebuilding"
+    ],
+    "weaknesses": [
+      "Compulsive dismantling",
+      "Tiny and weak",
+      "No combat ability"
+    ],
+    "tags": [
+      "TECH",
+      "UTILITY",
+      "TINY",
+      "GREMLIN"
+    ],
+    "shortDesc": "A gremlin-like alien compelled to break and rebuild machines at super speed.",
+    "fullDesc": "Jury Rigg is a tiny, red, gremlin-like alien who is compulsively driven to break apart and rebuild machinery. He works at incredible speed and can fix or modify any machine. His main weakness is that he cannot resist the urge to dismantle things.",
+    "sigMove": "Speed Build — disassembles and rebuilds a machine into something better in seconds.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/67/Jury_Rigg_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Eggman Cometh",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Jury Rigg literally cannot stop himself from dismantling machines.",
+      "His name is a play on 'jury rig'.",
+      "He shares a homeworld with Crashhopper."
+    ],
+    "notableVictories": [
+      "Fixed the Rustbucket III"
+    ],
+    "notableDefeats": [
+      "Any combat situation"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Tech",
+    "difficultyToUse": "Hard",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 41,
+    "name": "Water Hazard",
+    "species": "Orishan",
+    "homeworld": "Kiusana",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 30,
+    "stats": {
+      "power": 65,
+      "speed": 45,
+      "strength": 65,
+      "intelligence": 45,
+      "durability": 75,
+      "agility": 40,
+      "utility": 60,
+      "stealth": 25,
+      "range": 65,
+      "overall": 52
+    },
+    "height": "2.1m",
+    "weight": "180kg",
+    "age": "Unknown",
+    "abilities": [
+      "Hydrokinesis",
+      "Water Blasts",
+      "Moisture Absorption",
+      "Enhanced Durability",
+      "Enhanced Strength",
+      "Armor Plating"
+    ],
+    "weaknesses": [
+      "Needs water source for full power",
+      "Electricity",
+      "Ice attacks"
+    ],
+    "tags": [
+      "WATER",
+      "TANK",
+      "RANGED",
+      "ELEMENTAL"
+    ],
+    "shortDesc": "An armored crab alien with powerful hydrokinetic water blasts.",
+    "fullDesc": "Water Hazard is an armored, red, crab-like alien who can absorb and blast water at high pressure from his palms. His exoskeleton is extremely durable, and he can absorb moisture from the environment. He is one of the Andromeda Five aliens.",
+    "sigMove": "Hydro Cannon — fires a pressurized water blast that cuts through steel.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/2/24/Water_Hazard_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Too Hot to Handle",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Water Hazard was scanned from Bivalvan.",
+      "His water blasts can cut through metal.",
+      "He is one of the Andromeda Five."
+    ],
+    "notableVictories": [
+      "P'andor (NRG)",
+      "Fire-based enemies"
+    ],
+    "notableDefeats": [
+      "Electric attacks"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Tank",
+    "difficultyToUse": "Easy",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 42,
+    "name": "Clockwork",
+    "species": "Chronosapien",
+    "homeworld": "Unknown",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "GOD",
+    "rank": 2,
+    "stats": {
+      "power": 85,
+      "speed": 20,
+      "strength": 40,
+      "intelligence": 90,
+      "durability": 70,
+      "agility": 15,
+      "utility": 100,
+      "stealth": 10,
+      "range": 95,
+      "overall": 90
+    },
+    "height": "2.1m",
+    "weight": "180kg",
+    "age": "Timeless",
+    "abilities": [
+      "Time Manipulation",
+      "Time Rays",
+      "Time Travel",
+      "Age Acceleration",
+      "Age Reversal",
+      "Temporal Paradox Creation"
+    ],
+    "weaknesses": [
+      "Extremely slow physically",
+      "Vulnerable to physical attacks",
+      "Time powers have limits"
+    ],
+    "tags": [
+      "TIME",
+      "GOD",
+      "COSMIC",
+      "UTILITY"
+    ],
+    "shortDesc": "A clockwork automaton with absolute control over the flow of time.",
+    "fullDesc": "Clockwork is a Chronosapien — a living time machine made of gears and clockwork. He can fire time rays that age or de-age targets, travel through time, slow or speed up time, and even create temporal paradoxes. His control over time makes him one of Ben's most powerful aliens.",
+    "sigMove": "Chrono Storm — freezes all of time except himself in a localized area.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/d8/Clockwork_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10,000 Returns",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Clockwork can travel to any point in time.",
+      "His time rays can age things to dust or restore them.",
+      "Maltruant is an evil Chronosapien villain."
+    ],
+    "notableVictories": [
+      "Eon",
+      "Various time-based threats"
+    ],
+    "notableDefeats": [
+      "Maltruant (sometimes)"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Cosmic Entity",
+    "difficultyToUse": "Extreme",
+    "rarity": "Legendary"
+  },
+  {
+    "id": 43,
+    "name": "Shocksquatch",
+    "species": "Gimlinopithecus",
+    "homeworld": "Pattersonea",
+    "series": [
+      "Ultimate Alien",
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 31,
+    "stats": {
+      "power": 70,
+      "speed": 50,
+      "strength": 75,
+      "intelligence": 35,
+      "durability": 70,
+      "agility": 45,
+      "utility": 45,
+      "stealth": 15,
+      "range": 55,
+      "overall": 52
+    },
+    "height": "2.4m",
+    "weight": "200kg",
+    "age": "Unknown",
+    "abilities": [
+      "Electrokinesis",
+      "Enhanced Strength",
+      "Electric Punches",
+      "Lightning Generation",
+      "Thunder Clap",
+      "Electric Field"
+    ],
+    "weaknesses": [
+      "Not very intelligent",
+      "Conductible to water",
+      "Insulated enemies"
+    ],
+    "tags": [
+      "ELECTRIC",
+      "POWERHOUSE",
+      "MELEE",
+      "TANK"
+    ],
+    "shortDesc": "A yeti-like alien with immense strength combined with electrical powers.",
+    "fullDesc": "Shocksquatch is a large, yeti-like alien who combines ape-like strength with powerful electrokinesis. He can generate electricity, electrify his punches, and create electrical fields. His combination of brawn and electricity makes him a formidable brawler.",
+    "sigMove": "Thunder Fist — charges his fists with megavolts and delivers electrified punches.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/2/2b/Shocksquatch_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10,000 Returns",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Shocksquatch talks like a stereotypical Canadian.",
+      "He combines strength with electricity.",
+      "He was originally a Ben 10,000 alien."
+    ],
+    "notableVictories": [
+      "Eon's minions"
+    ],
+    "notableDefeats": [
+      "Insulated opponents"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 44,
+    "name": "Ultimate Swampfire",
+    "species": "Evolved Methanosian",
+    "homeworld": "Methanos",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "S",
+    "rank": 7,
+    "stats": {
+      "power": 90,
+      "speed": 50,
+      "strength": 80,
+      "intelligence": 50,
+      "durability": 85,
+      "agility": 45,
+      "utility": 75,
+      "stealth": 15,
+      "range": 80,
+      "overall": 75
+    },
+    "height": "2.4m",
+    "weight": "150kg",
+    "age": "Unknown",
+    "abilities": [
+      "Blue Fire Blasts",
+      "Enhanced Regeneration",
+      "Vine Control",
+      "Fire Bombs",
+      "Enhanced Strength",
+      "Napalm Grenades"
+    ],
+    "weaknesses": [
+      "Still vulnerable to ice",
+      "Time limit on Ultimate form",
+      "Higher energy consumption"
+    ],
+    "tags": [
+      "FIRE",
+      "EVOLVED",
+      "POWERHOUSE",
+      "RANGED"
+    ],
+    "shortDesc": "The evolved form of Swampfire with blue fire and vastly enhanced powers.",
+    "fullDesc": "Ultimate Swampfire is the evolved form of Swampfire, trading his green plant look for a more wooden, armored appearance. His fire burns blue and far hotter, his regeneration is enhanced, and he can launch powerful napalm grenades. He is significantly more powerful than base Swampfire.",
+    "sigMove": "Blue Inferno — unleashes a devastating blue firestorm.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/a/ab/Ultimate_Swampfire_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Final Battle: Part 1",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "His fire burns blue — much hotter than regular Swampfire.",
+      "He has a wooden, armored appearance.",
+      "He was one of the first Ultimate forms shown."
+    ],
+    "notableVictories": [
+      "Vilgax",
+      "Various threats"
+    ],
+    "notableDefeats": [
+      "Extreme cold"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Epic"
+  },
+  {
+    "id": 45,
+    "name": "Ultimate Echo Echo",
+    "species": "Evolved Sonorosian",
+    "homeworld": "Sonorosia",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "S",
+    "rank": 4,
+    "stats": {
+      "power": 95,
+      "speed": 55,
+      "strength": 50,
+      "intelligence": 60,
+      "durability": 75,
+      "agility": 50,
+      "utility": 80,
+      "stealth": 20,
+      "range": 95,
+      "overall": 80
+    },
+    "height": "1.8m",
+    "weight": "100kg",
+    "age": "Unknown",
+    "abilities": [
+      "Sonic Doom",
+      "Sonic Discs",
+      "Flight",
+      "Force Fields",
+      "Sonic Destruction",
+      "Enhanced Sonic Screams"
+    ],
+    "weaknesses": [
+      "Time limit on Ultimate form",
+      "Sound-proof environments",
+      "High energy drain"
+    ],
+    "tags": [
+      "SONIC",
+      "EVOLVED",
+      "RANGED",
+      "POWERHOUSE"
+    ],
+    "shortDesc": "The evolved Echo Echo — a sonic powerhouse with devastating disc attacks.",
+    "fullDesc": "Ultimate Echo Echo is a blue, robotic-looking evolved Sonorosian. Instead of duplicating, he releases sonic discs from his body that can fly independently and blast enemies from all angles. His Sonic Doom attack is one of the most devastating techniques in Ben's arsenal.",
+    "sigMove": "Sonic Doom — surrounds the enemy with sonic discs and blasts from all directions.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/5/50/Ultimate_Echo_Echo_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Map of Infinity",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Sonic Doom is considered one of Ben's most powerful attacks.",
+      "He can fly unlike base Echo Echo.",
+      "Ben used him to defeat Ultimate Kevin."
+    ],
+    "notableVictories": [
+      "Ultimate Kevin",
+      "Diagon's army"
+    ],
+    "notableDefeats": [
+      "Sound-dampening fields"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Medium",
+    "rarity": "Epic"
+  },
+  {
+    "id": 46,
+    "name": "Ultimate Humungousaur",
+    "species": "Evolved Vaxasaurian",
+    "homeworld": "Terradino",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "S",
+    "rank": 5,
+    "stats": {
+      "power": 95,
+      "speed": 35,
+      "strength": 100,
+      "intelligence": 30,
+      "durability": 95,
+      "agility": 15,
+      "utility": 30,
+      "stealth": 0,
+      "range": 60,
+      "overall": 72
+    },
+    "height": "6m",
+    "weight": "800kg",
+    "age": "Unknown",
+    "abilities": [
+      "Missile Hands",
+      "Bio-Gatling Gun",
+      "Enhanced Strength",
+      "Enhanced Durability",
+      "Spiked Armor",
+      "Missile Generation"
+    ],
+    "weaknesses": [
+      "Extremely slow",
+      "Huge target",
+      "Low intelligence"
+    ],
+    "tags": [
+      "EVOLVED",
+      "POWERHOUSE",
+      "TANK",
+      "RANGED"
+    ],
+    "shortDesc": "The evolved form with missile-launching hands and spiked armor plating.",
+    "fullDesc": "Ultimate Humungousaur is the evolved form of Humungousaur, featuring spiked, ankylosaurus-like armor and the ability to transform his hands into bio-organic missile launchers. He combines overwhelming physical power with ranged firepower.",
+    "sigMove": "Bio-Missile Barrage — transforms both hands into gatling guns and unleashes a missile salvo.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/2/28/Ultimate_Humungousaur_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Too Hot to Handle",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "His hands transform into missile launchers.",
+      "He has ankylosaurus-like spiked armor.",
+      "He is one of Ben's most-used Ultimate forms."
+    ],
+    "notableVictories": [
+      "Aggregor",
+      "Vilgax"
+    ],
+    "notableDefeats": [
+      "Diagon"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Epic"
+  },
+  {
+    "id": 47,
+    "name": "Ultimate Big Chill",
+    "species": "Evolved Necrofriggian",
+    "homeworld": "Kylmyys",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "S",
+    "rank": 8,
+    "stats": {
+      "power": 80,
+      "speed": 65,
+      "strength": 55,
+      "intelligence": 55,
+      "durability": 70,
+      "agility": 60,
+      "utility": 75,
+      "stealth": 80,
+      "range": 70,
+      "overall": 70
+    },
+    "height": "2.1m",
+    "weight": "Weightless",
+    "age": "Unknown",
+    "abilities": [
+      "Ice Flames",
+      "Intangibility",
+      "Flight",
+      "Freeze Breath",
+      "Fire-Ice Blasts",
+      "Enhanced Cold Powers"
+    ],
+    "weaknesses": [
+      "Time limit",
+      "Can still be overwhelmed",
+      "Extreme heat"
+    ],
+    "tags": [
+      "ICE",
+      "FIRE",
+      "EVOLVED",
+      "STEALTH"
+    ],
+    "shortDesc": "The evolved Big Chill who breathes ice flames that burn AND freeze.",
+    "fullDesc": "Ultimate Big Chill is a red, flame-patterned evolved form of Big Chill. His unique ability is projecting 'ice flames' — fire that freezes instead of burns. He retains intangibility and flight while gaining significantly enhanced cryogenic powers.",
+    "sigMove": "Ice Flames — breathes fire that flash-freezes everything it touches.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/9/9f/Ultimate_Big_Chill_official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Hit 'Em Where They Live",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "His flames freeze instead of burn.",
+      "He has a bright red coloration unlike blue Big Chill.",
+      "His ice flames can freeze lava."
+    ],
+    "notableVictories": [
+      "Zombozo",
+      "Various villains"
+    ],
+    "notableDefeats": [
+      "Extreme heat sources"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Stealth",
+    "difficultyToUse": "Medium",
+    "rarity": "Epic"
+  },
+  {
+    "id": 48,
+    "name": "Ultimate Spidermonkey",
+    "species": "Evolved Arachnichimp",
+    "homeworld": "Aranhaschimmia",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 32,
+    "stats": {
+      "power": 70,
+      "speed": 55,
+      "strength": 80,
+      "intelligence": 40,
+      "durability": 65,
+      "agility": 75,
+      "utility": 55,
+      "stealth": 35,
+      "range": 50,
+      "overall": 55
+    },
+    "height": "2.4m",
+    "weight": "180kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Web Shooting",
+      "Super Strength",
+      "Six Arms",
+      "Wall Climbing",
+      "Web Breath",
+      "Enhanced Durability"
+    ],
+    "weaknesses": [
+      "Webs still flammable",
+      "Time limit",
+      "Less agile than base form"
+    ],
+    "tags": [
+      "EVOLVED",
+      "WEB",
+      "POWERHOUSE",
+      "MELEE"
+    ],
+    "shortDesc": "A gorilla-sized evolved spider alien with web breath and immense strength.",
+    "fullDesc": "Ultimate Spidermonkey evolves from a small monkey into a large, gorilla-like arachnid with six arms, enhanced strength, and the ability to spit webs from his mouth rather than his tail. He trades agility for raw power.",
+    "sigMove": "Web Gorilla Slam — webs enemies and then pummels them with six fists.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/9/9f/Ultimate_Spidermonkey_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Creature from Beyond",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "He grows from monkey-sized to gorilla-sized.",
+      "He shoots webs from his mouth.",
+      "He has six arms instead of four."
+    ],
+    "notableVictories": [
+      "Lucubra"
+    ],
+    "notableDefeats": [
+      "Fire attacks"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Epic"
+  },
+  {
+    "id": 49,
+    "name": "Ultimate Cannonbolt",
+    "species": "Evolved Arburian Pelarota",
+    "homeworld": "Arburia",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 33,
+    "stats": {
+      "power": 75,
+      "speed": 80,
+      "strength": 80,
+      "intelligence": 30,
+      "durability": 95,
+      "agility": 45,
+      "utility": 40,
+      "stealth": 5,
+      "range": 20,
+      "overall": 57
+    },
+    "height": "2.7m",
+    "weight": "400kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Sphere Mode",
+      "Spike Protrusions",
+      "Enhanced Durability",
+      "Devastating Rollout",
+      "Impact Absorption",
+      "Momentum Control"
+    ],
+    "weaknesses": [
+      "Still limited attack variety",
+      "Very heavy",
+      "Time limit"
+    ],
+    "tags": [
+      "EVOLVED",
+      "TANK",
+      "ROLLING",
+      "DURABLE"
+    ],
+    "shortDesc": "The evolved Cannonbolt with metallic spikes and enhanced rolling power.",
+    "fullDesc": "Ultimate Cannonbolt gains metallic, spike-like protrusions across his shell, making his rollout attacks even more devastating. His shell is even more durable, and his spikes shred anything he rolls over.",
+    "sigMove": "Spike Meteor — launches into the air and comes down as a spiked wrecking ball.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/d1/Ultimate_Cannonbolt_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Too Hot to Handle",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "His spikes make his rolling attacks lethal.",
+      "He has a metallic gray coloration.",
+      "He is even harder to stop than base Cannonbolt."
+    ],
+    "notableVictories": [
+      "Aggregor (briefly)"
+    ],
+    "notableDefeats": [
+      "Powerful enough opponents"
+    ],
+    "unlockedIn": "Ultimate Alien Season 1",
+    "classification": "Tank",
+    "difficultyToUse": "Easy",
+    "rarity": "Epic"
+  },
+  {
+    "id": 50,
+    "name": "Ultimate Way Big",
+    "species": "Evolved To'kustar",
+    "homeworld": "Cosmic Storms",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "GOD",
+    "rank": 2,
+    "stats": {
+      "power": 100,
+      "speed": 50,
+      "strength": 100,
+      "intelligence": 40,
+      "durability": 100,
+      "agility": 20,
+      "utility": 45,
+      "stealth": 0,
+      "range": 90,
+      "overall": 90
+    },
+    "height": "60m",
+    "weight": "Unknown",
+    "age": "Unknown",
+    "abilities": [
+      "Cosmic Discs",
+      "Enhanced Cosmic Ray",
+      "Colossal Strength",
+      "Near-Invulnerability",
+      "Cosmic Storm Creation",
+      "Size"
+    ],
+    "weaknesses": [
+      "Enormous target",
+      "Cosmic storms",
+      "Time limit"
+    ],
+    "tags": [
+      "EVOLVED",
+      "COSMIC",
+      "GOD",
+      "GIANT"
+    ],
+    "shortDesc": "The evolved Way Big — twice as tall with cosmic disc attacks and ultimate power.",
+    "fullDesc": "Ultimate Way Big is the evolved form of Way Big, standing even taller with enhanced cosmic powers. He can generate cosmic discs from his arms, fire an enhanced cosmic ray, and his physical power is nearly unmatched. He is among the most powerful aliens in Ben's arsenal.",
+    "sigMove": "Cosmic Devastation — fires cosmic discs that slice through mountains.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/5/57/Ultimate_Way_Big_UA.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Ultimate Enemy: Part 2",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "He is roughly twice the height of regular Way Big.",
+      "He can generate cosmic disc projectiles.",
+      "He was used to defeat Diagon."
+    ],
+    "notableVictories": [
+      "Diagon",
+      "Evil Way Big"
+    ],
+    "notableDefeats": [
+      "Dagon (initially)"
+    ],
+    "unlockedIn": "Ultimate Alien Season 3",
+    "classification": "Cosmic Entity",
+    "difficultyToUse": "Easy",
+    "rarity": "Legendary"
+  },
+  {
+    "id": 51,
+    "name": "Ultimate Wildmutt",
+    "species": "Evolved Vulpimancer",
+    "homeworld": "Vulpin",
+    "series": [
+      "Ultimate Alien"
+    ],
+    "tier": "B",
+    "rank": 33,
+    "stats": {
+      "power": 60,
+      "speed": 75,
+      "strength": 70,
+      "intelligence": 25,
+      "durability": 65,
+      "agility": 80,
+      "utility": 30,
+      "stealth": 65,
+      "range": 15,
+      "overall": 48
+    },
+    "height": "2.1m",
+    "weight": "180kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Senses",
+      "Tail Stinger",
+      "Enhanced Strength",
+      "Enhanced Speed",
+      "Speech",
+      "Quill Shooting"
+    ],
+    "weaknesses": [
+      "Still blind",
+      "Limited intelligence",
+      "Sensitive to high frequencies"
+    ],
+    "tags": [
+      "EVOLVED",
+      "BEAST",
+      "MELEE",
+      "AGILE"
+    ],
+    "shortDesc": "The evolved Wildmutt with a scorpion tail stinger and enhanced senses.",
+    "fullDesc": "Ultimate Wildmutt is larger and more feral than his base form, with the addition of a scorpion-like tail stinger. He is stronger, faster, and notably can now speak — something base Wildmutt cannot do.",
+    "sigMove": "Venom Sting — strikes with his scorpion tail delivering paralytic venom.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/e/e2/Ultimate_Wildmutt.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Prisoner Number 775 Is Missing",
+    "firstSeries": "Ultimate Alien",
+    "funFacts": [
+      "Unlike base Wildmutt, the Ultimate form can talk.",
+      "He has a scorpion-like tail.",
+      "He is significantly larger than regular Wildmutt."
+    ],
+    "notableVictories": [
+      "Area 51 guards"
+    ],
+    "notableDefeats": [
+      "Stronger opponents"
+    ],
+    "unlockedIn": "Ultimate Alien Season 2",
+    "classification": "Stealth",
+    "difficultyToUse": "Medium",
+    "rarity": "Epic"
+  },
+  {
+    "id": 52,
+    "name": "Ultimate Rath",
+    "species": "Evolved Appoplexian",
+    "homeworld": "Appoplexia",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "A",
+    "rank": 15,
+    "stats": {
+      "power": 90,
+      "speed": 65,
+      "strength": 95,
+      "intelligence": 20,
+      "durability": 90,
+      "agility": 60,
+      "utility": 20,
+      "stealth": 5,
+      "range": 10,
+      "overall": 62
+    },
+    "height": "3.6m",
+    "weight": "400kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Strength",
+      "Spiked Knuckles",
+      "Enhanced Durability",
+      "Rage Mode",
+      "Shockwave Punches",
+      "Intimidation"
+    ],
+    "weaknesses": [
+      "Even more irrational",
+      "No strategy",
+      "Predictable"
+    ],
+    "tags": [
+      "EVOLVED",
+      "BERSERKER",
+      "POWERHOUSE",
+      "MELEE"
+    ],
+    "shortDesc": "The evolved Rath — larger, angrier, with spiked knuckle guards.",
+    "fullDesc": "Ultimate Rath is an even larger, more muscular version with a spiked helmet-like crest and spiked knuckle guards. His rage and power are amplified to extreme levels, though his already-poor intelligence drops even further.",
+    "sigMove": "Cosmic Piledriver — grabs enemies and pile-drives them through the planet's crust.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/e/ee/Ultimate_rath.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Most Dangerous Game Show",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "He is even angrier than regular Rath.",
+      "His spiked knuckle guards increase punch damage.",
+      "He still talks in third person but louder."
+    ],
+    "notableVictories": [
+      "Various game show opponents"
+    ],
+    "notableDefeats": [
+      "Tactical opponents"
+    ],
+    "unlockedIn": "Omniverse Season 6",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Epic"
+  },
+  {
+    "id": 53,
+    "name": "Feedback",
+    "species": "Conductoid",
+    "homeworld": "Teslavorr",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "S",
+    "rank": 9,
+    "stats": {
+      "power": 90,
+      "speed": 55,
+      "strength": 55,
+      "intelligence": 50,
+      "durability": 65,
+      "agility": 60,
+      "utility": 85,
+      "stealth": 20,
+      "range": 85,
+      "overall": 70
+    },
+    "height": "1.8m",
+    "weight": "90kg",
+    "age": "Unknown",
+    "abilities": [
+      "Energy Absorption",
+      "Energy Redirection",
+      "Electric Blasts",
+      "Flight",
+      "Power Draining",
+      "Unlimited Energy Storage"
+    ],
+    "weaknesses": [
+      "Overload possible",
+      "Without energy source is weaker",
+      "Addictive to use"
+    ],
+    "tags": [
+      "ENERGY",
+      "ELECTRIC",
+      "RANGED",
+      "POWERHOUSE"
+    ],
+    "shortDesc": "An energy-absorbing alien that was once Ben's absolute favorite transformation.",
+    "fullDesc": "Feedback is a Conductoid with gold and black coloring and a plug-like tail. He can absorb any form of energy — electricity, mana, radiation — through his fingers and tail, then redirect it as powerful blasts. Young Ben was so addicted to using Feedback that Malware specifically targeted him.",
+    "sigMove": "Omega Feedback Loop — absorbs a universe-ending energy burst and fires it back.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/f/f8/Feedback_OV_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The More Things Change: Part 1",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "11-year-old Ben was addicted to using Feedback.",
+      "Malware destroyed Feedback's DNA, traumatizing Ben.",
+      "Feedback absorbed the Annihilarg's energy to save the universe."
+    ],
+    "notableVictories": [
+      "Malware (final battle)",
+      "The Annihilarg"
+    ],
+    "notableDefeats": [
+      "Malware (initially destroyed his DNA)"
+    ],
+    "unlockedIn": "Omniverse Season 1",
+    "classification": "Elemental",
+    "difficultyToUse": "Easy",
+    "rarity": "Rare"
+  },
+  {
+    "id": 54,
+    "name": "Gravattack",
+    "species": "Galilean",
+    "homeworld": "Keplorr",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "S",
+    "rank": 10,
+    "stats": {
+      "power": 85,
+      "speed": 30,
+      "strength": 70,
+      "intelligence": 75,
+      "durability": 85,
+      "agility": 20,
+      "utility": 90,
+      "stealth": 10,
+      "range": 80,
+      "overall": 72
+    },
+    "height": "3m",
+    "weight": "500kg",
+    "age": "Unknown",
+    "abilities": [
+      "Gravikinesis",
+      "Gravity Fields",
+      "Orbital Control",
+      "Black Hole Creation",
+      "Levitation",
+      "Gravity Crush"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Large target",
+      "Core vulnerability"
+    ],
+    "tags": [
+      "GRAVITY",
+      "COSMIC",
+      "POWERHOUSE",
+      "UTILITY"
+    ],
+    "shortDesc": "A living planet alien with complete control over gravitational forces.",
+    "fullDesc": "Gravattack is a Galilean — a rock-based alien resembling a small planet with a molten core. He has complete control over gravity, able to increase or decrease gravitational fields, levitate objects, pin enemies down, and even create small black holes. His power is immense but he is slow.",
+    "sigMove": "Singularity — creates a localized black hole that pulls in everything.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/d8/Gravattack_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The More Things Change: Part 1",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Gravattack is literally a living planet.",
+      "He can create miniature black holes.",
+      "His core is his weak point."
+    ],
+    "notableVictories": [
+      "Malware",
+      "Various opponents"
+    ],
+    "notableDefeats": [
+      "Core attacks"
+    ],
+    "unlockedIn": "Omniverse Season 1",
+    "classification": "Cosmic Entity",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 55,
+    "name": "Bloxx",
+    "species": "Segmentasapien",
+    "homeworld": "Polyominus",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 46,
+    "stats": {
+      "power": 50,
+      "speed": 40,
+      "strength": 60,
+      "intelligence": 40,
+      "durability": 65,
+      "agility": 45,
+      "utility": 70,
+      "stealth": 10,
+      "range": 45,
+      "overall": 45
+    },
+    "height": "2.7m",
+    "weight": "200kg",
+    "age": "Unknown",
+    "abilities": [
+      "Shape Shifting",
+      "Building Block Formation",
+      "Regeneration",
+      "Wall Creation",
+      "Weapon Formation",
+      "Elasticity"
+    ],
+    "weaknesses": [
+      "Can be shattered",
+      "Acid dissolves blocks",
+      "Limited combat creativity"
+    ],
+    "tags": [
+      "SHAPESHIFTER",
+      "TANK",
+      "UTILITY",
+      "BUILDING"
+    ],
+    "shortDesc": "A LEGO-like alien that reshapes his building-block body into structures and weapons.",
+    "fullDesc": "Bloxx is a colorful, gorilla-shaped alien made of building blocks similar to LEGO. He can reshape his body into walls, weapons, catapults, and various structures. He can regenerate by reattaching his blocks and is surprisingly versatile despite his simple appearance.",
+    "sigMove": "Fortress Mode — transforms his entire body into an impenetrable wall fortress.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/db/Bloxx_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The More Things Change: Part 1",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Bloxx looks like he's made of LEGO blocks.",
+      "He can form complex structures with his body.",
+      "He can regenerate by reattaching blocks."
+    ],
+    "notableVictories": [
+      "Malware (briefly)"
+    ],
+    "notableDefeats": [
+      "Acid attacks"
+    ],
+    "unlockedIn": "Omniverse Season 1",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 56,
+    "name": "Crashhopper",
+    "species": "Orthopterran",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 47,
+    "stats": {
+      "power": 55,
+      "speed": 65,
+      "strength": 60,
+      "intelligence": 35,
+      "durability": 60,
+      "agility": 85,
+      "utility": 30,
+      "stealth": 25,
+      "range": 20,
+      "overall": 43
+    },
+    "height": "2.4m",
+    "weight": "150kg",
+    "age": "Unknown",
+    "abilities": [
+      "Super Jump",
+      "Enhanced Strength",
+      "Enhanced Durability",
+      "Crash Landing",
+      "Headbutt",
+      "Wall Climbing"
+    ],
+    "weaknesses": [
+      "Limited ranged attacks",
+      "Predictable trajectory",
+      "Can be caught mid-air"
+    ],
+    "tags": [
+      "AGILE",
+      "MELEE",
+      "JUMPING",
+      "POWERHOUSE"
+    ],
+    "shortDesc": "A grasshopper alien with devastating jump-powered headbutt attacks.",
+    "fullDesc": "Crashhopper is a large, green, grasshopper-like alien with a hard helmet-like head. He can jump incredible distances and heights, using his momentum for devastating headbutt attacks. He is simple but effective in combat.",
+    "sigMove": "Meteor Headbutt — leaps to extreme height and crashes down headfirst.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/6c/Crashhopper_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "It Was Them",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "His head is his hardest body part.",
+      "He can jump across entire cities.",
+      "He uses momentum for his strongest attacks."
+    ],
+    "notableVictories": [
+      "Mutant ants"
+    ],
+    "notableDefeats": [
+      "Ranged opponents"
+    ],
+    "unlockedIn": "Omniverse Season 1",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 57,
+    "name": "Ball Weevil",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "D",
+    "rank": 58,
+    "stats": {
+      "power": 45,
+      "speed": 55,
+      "strength": 15,
+      "intelligence": 45,
+      "durability": 20,
+      "agility": 70,
+      "utility": 55,
+      "stealth": 60,
+      "range": 50,
+      "overall": 33
+    },
+    "height": "0.3m",
+    "weight": "5kg",
+    "age": "Unknown",
+    "abilities": [
+      "Plasma Ball Generation",
+      "Explosive Orbs",
+      "Enhanced Agility",
+      "Wall Climbing",
+      "Ball Rolling",
+      "Chain Reactions"
+    ],
+    "weaknesses": [
+      "Extremely small",
+      "Fragile",
+      "Low combat power"
+    ],
+    "tags": [
+      "TINY",
+      "EXPLOSIVE",
+      "UTILITY",
+      "AGILE"
+    ],
+    "shortDesc": "A tiny insect alien that spits explosive plasma balls that grow as they roll.",
+    "fullDesc": "Ball Weevil is a tiny, orange, beetle-like alien who spits out small plasma balls that grow larger as they roll, eventually exploding on impact. Despite his small size, his explosions can be quite powerful. He is one of Ben's smallest aliens.",
+    "sigMove": "Mega Plasma Bomb — rolls a plasma ball until it reaches building-size and detonates.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/f/fd/Ball_Weevil_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Of Predators and Prey: Part 1",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "His plasma balls grow as they roll.",
+      "He is one of Ben's tiniest aliens.",
+      "His explosions are surprisingly powerful for his size."
+    ],
+    "notableVictories": [
+      "Khyber's pet"
+    ],
+    "notableDefeats": [
+      "Being stepped on"
+    ],
+    "unlockedIn": "Omniverse Season 1",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Common"
+  },
+  {
+    "id": 58,
+    "name": "Walkatrout",
+    "species": "Ickthyperambuloid",
+    "homeworld": "Gilli-Perambulous Promenade",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "F",
+    "rank": 70,
+    "stats": {
+      "power": 5,
+      "speed": 25,
+      "strength": 5,
+      "intelligence": 20,
+      "durability": 15,
+      "agility": 30,
+      "utility": 10,
+      "stealth": 35,
+      "range": 5,
+      "overall": 10
+    },
+    "height": "0.3m",
+    "weight": "3kg",
+    "age": "Unknown",
+    "abilities": [
+      "Slippery Body",
+      "Underwater Breathing",
+      "Small Size",
+      "Walking on Land",
+      "Enhanced Flexibility"
+    ],
+    "weaknesses": [
+      "Virtually useless",
+      "No combat ability",
+      "Extremely weak"
+    ],
+    "tags": [
+      "USELESS",
+      "AQUATIC",
+      "TINY",
+      "WEAK"
+    ],
+    "shortDesc": "A tiny walking fish with virtually no useful abilities whatsoever.",
+    "fullDesc": "Walkatrout is widely considered the most useless alien in the Omnitrix. He is a tiny, flapping fish that can walk on land and breathe underwater, but has no notable combat abilities, powers, or useful traits. Ben transforms into him accidentally far too often.",
+    "sigMove": "Flop Attack — flops on the ground. That's it.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/8/8c/Walkatrout.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Outbreak",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Walkatrout is considered the most useless alien.",
+      "Ben almost never intentionally transforms into him.",
+      "His only real ability is walking on land as a fish."
+    ],
+    "notableVictories": [
+      "None"
+    ],
+    "notableDefeats": [
+      "Everything"
+    ],
+    "unlockedIn": "Omniverse Season 2",
+    "classification": "Support",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 59,
+    "name": "Pesky Dust",
+    "species": "Nemuina",
+    "homeworld": "Nemunimos IV",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 49,
+    "stats": {
+      "power": 30,
+      "speed": 50,
+      "strength": 10,
+      "intelligence": 55,
+      "durability": 15,
+      "agility": 65,
+      "utility": 75,
+      "stealth": 60,
+      "range": 30,
+      "overall": 38
+    },
+    "height": "0.15m",
+    "weight": "1kg",
+    "age": "Unknown",
+    "abilities": [
+      "Dream Manipulation",
+      "Sleep Dust",
+      "Flight",
+      "Dream Vision",
+      "Mind Probing",
+      "Hallucination Induction"
+    ],
+    "weaknesses": [
+      "Extremely fragile",
+      "Tiny",
+      "No physical power"
+    ],
+    "tags": [
+      "PSYCHIC",
+      "TINY",
+      "SUPPORT",
+      "SLEEP"
+    ],
+    "shortDesc": "A tiny fairy alien that puts enemies to sleep and controls their dreams.",
+    "fullDesc": "Pesky Dust is a tiny, fairy-like Nemuina who can release a sleep-inducing dust that knocks out enemies instantly. Once asleep, he can enter and control their dreams, extracting information or trapping them in nightmares. Despite looking weak, his dream manipulation is incredibly powerful.",
+    "sigMove": "Eternal Nightmare — traps an enemy in an inescapable dream loop.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/f/f3/Pesky_Dust_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Outbreak",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Pesky Dust looks adorable but is surprisingly useful.",
+      "He can extract information from sleeping minds.",
+      "His dream control is nearly absolute."
+    ],
+    "notableVictories": [
+      "Psyphon (extracted info)"
+    ],
+    "notableDefeats": [
+      "Enemies immune to sleep"
+    ],
+    "unlockedIn": "Omniverse Season 2",
+    "classification": "Psychic",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 60,
+    "name": "Mole-Stache",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "F",
+    "rank": 68,
+    "stats": {
+      "power": 35,
+      "speed": 30,
+      "strength": 50,
+      "intelligence": 25,
+      "durability": 40,
+      "agility": 35,
+      "utility": 30,
+      "stealth": 20,
+      "range": 10,
+      "overall": 22
+    },
+    "height": "0.6m",
+    "weight": "20kg",
+    "age": "Unknown",
+    "abilities": [
+      "Prehensile Mustache",
+      "Enhanced Strength (mustache)",
+      "Mustache Weapons",
+      "Burrowing",
+      "Mustache Fists"
+    ],
+    "weaknesses": [
+      "Small",
+      "Limited powers",
+      "Ridiculous appearance"
+    ],
+    "tags": [
+      "WEIRD",
+      "MELEE",
+      "SMALL",
+      "MUSTACHE"
+    ],
+    "shortDesc": "A small alien whose giant mustache serves as prehensile limbs and weapons.",
+    "fullDesc": "Mole-Stache is a small, mole-like alien whose enormous mustache is prehensile and can be shaped into fists, tools, and various weapons. Despite his ridiculous appearance, his mustache is surprisingly strong and versatile.",
+    "sigMove": "Mustache Hammer — shapes his mustache into a giant fist and slams enemies.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/62/Mole-Stache_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Outbreak",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "His entire fighting style revolves around his mustache.",
+      "He can shape his mustache into any form.",
+      "He is one of Ben's most ridiculous aliens."
+    ],
+    "notableVictories": [
+      "Minor thugs"
+    ],
+    "notableDefeats": [
+      "Serious opponents"
+    ],
+    "unlockedIn": "Omniverse Season 2",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Common"
+  },
+  {
+    "id": 61,
+    "name": "The Worst",
+    "species": "Atrocian",
+    "homeworld": "Atrocius 0",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "F",
+    "rank": 71,
+    "stats": {
+      "power": 5,
+      "speed": 15,
+      "strength": 10,
+      "intelligence": 15,
+      "durability": 100,
+      "agility": 10,
+      "utility": 5,
+      "stealth": 5,
+      "range": 5,
+      "overall": 12
+    },
+    "height": "0.9m",
+    "weight": "60kg",
+    "age": "Unknown",
+    "abilities": [
+      "Indestructibility",
+      "Pain Absorption",
+      "Enhanced Durability",
+      "Cannot Be Destroyed"
+    ],
+    "weaknesses": [
+      "Feels all pain despite indestructibility",
+      "No offensive power",
+      "Cannot fight back"
+    ],
+    "tags": [
+      "INDESTRUCTIBLE",
+      "USELESS",
+      "TANK",
+      "PAIN"
+    ],
+    "shortDesc": "An indestructible blob that feels every hit but cannot fight back.",
+    "fullDesc": "The Worst is a small, yellow, blob-like alien who is essentially indestructible — but can feel every single bit of pain inflicted on him. He has no offensive capabilities whatsoever. He just stands there, getting hit, feeling it all, and surviving. The ultimate tank with zero attack.",
+    "sigMove": "Endure — stands there and takes damage forever. That's the move.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/e/e0/The_Worst_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Outbreak",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "He is indestructible but feels all pain.",
+      "His species name 'Atrocian' says it all.",
+      "He is arguably the worst alien in the Omnitrix — hence the name."
+    ],
+    "notableVictories": [
+      "None — he just survives"
+    ],
+    "notableDefeats": [
+      "He can't lose, but he can't win either"
+    ],
+    "unlockedIn": "Omniverse Season 2",
+    "classification": "Tank",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 62,
+    "name": "Gutrot",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 28,
+    "stats": {
+      "power": 55,
+      "speed": 40,
+      "strength": 50,
+      "intelligence": 80,
+      "durability": 60,
+      "agility": 35,
+      "utility": 90,
+      "stealth": 30,
+      "range": 60,
+      "overall": 55
+    },
+    "height": "2.1m",
+    "weight": "150kg",
+    "age": "Unknown",
+    "abilities": [
+      "Gas Generation",
+      "Chemical Manipulation",
+      "Knockout Gas",
+      "Acid Gas",
+      "Smoke Screen",
+      "Antidote Creation"
+    ],
+    "weaknesses": [
+      "Needs specific elements to create gases",
+      "Wind can disperse gases",
+      "Gas mask users"
+    ],
+    "tags": [
+      "UTILITY",
+      "CHEMICAL",
+      "RANGED",
+      "SUPPORT"
+    ],
+    "shortDesc": "A chemical factory alien that generates any gaseous compound at will.",
+    "fullDesc": "Gutrot is a mechanical-looking alien with a chamber-like torso that can internally synthesize and project virtually any gas or chemical compound. From knockout gas to acid clouds to antidotes, his internal chemistry set makes him incredibly versatile in support roles.",
+    "sigMove": "Neurotoxin Cloud — synthesizes and releases a custom gas mixture that incapacitates all enemies.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/7/7f/Gutrot_OV_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Animo Crackers",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Gutrot can create any gas compound internally.",
+      "He has nozzles on his body for gas release.",
+      "He knows the chemical composition of every gas he creates."
+    ],
+    "notableVictories": [
+      "Dr. Animo"
+    ],
+    "notableDefeats": [
+      "Gas mask-wearing enemies"
+    ],
+    "unlockedIn": "Omniverse Season 5",
+    "classification": "Support",
+    "difficultyToUse": "Hard",
+    "rarity": "Rare"
+  },
+  {
+    "id": 63,
+    "name": "Whampire",
+    "species": "Vladat",
+    "homeworld": "Anur Transyl",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "B",
+    "rank": 26,
+    "stats": {
+      "power": 65,
+      "speed": 55,
+      "strength": 65,
+      "intelligence": 60,
+      "durability": 55,
+      "agility": 65,
+      "utility": 70,
+      "stealth": 75,
+      "range": 40,
+      "overall": 58
+    },
+    "height": "2.1m",
+    "weight": "130kg",
+    "age": "Unknown",
+    "abilities": [
+      "Corruptura Mind Control",
+      "Flight",
+      "Enhanced Strength",
+      "Hypnosis",
+      "Energy Draining",
+      "Sonic Screech"
+    ],
+    "weaknesses": [
+      "Sunlight",
+      "Requires hosts for full power",
+      "Garlic-based substances"
+    ],
+    "tags": [
+      "VAMPIRE",
+      "PSYCHIC",
+      "STEALTH",
+      "FLIGHT"
+    ],
+    "shortDesc": "A vampire alien that fires mind-control projectiles and drains energy.",
+    "fullDesc": "Whampire is a Vladat — a vampire-like alien who can fire Corrupturas, small parasites that attach to victims and put them under his mental control. He can also fly, drain life energy, and has enhanced strength. His species once ruled Anur Transyl through fear.",
+    "sigMove": "Corruptura Swarm — launches multiple mind-control parasites at once.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/6/62/Whampire_OV_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Vampire Strikes Back",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Whampire's Corrupturas give him mind control.",
+      "His species was feared across Anur Transyl.",
+      "Lord Transyl is a villain of the same species."
+    ],
+    "notableVictories": [
+      "Lord Transyl"
+    ],
+    "notableDefeats": [
+      "Sunlight exposure"
+    ],
+    "unlockedIn": "Omniverse Season 4",
+    "classification": "Psychic",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 64,
+    "name": "Atomix",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "S",
+    "rank": 3,
+    "stats": {
+      "power": 98,
+      "speed": 50,
+      "strength": 90,
+      "intelligence": 60,
+      "durability": 90,
+      "agility": 40,
+      "utility": 70,
+      "stealth": 10,
+      "range": 90,
+      "overall": 85
+    },
+    "height": "2.1m",
+    "weight": "200kg",
+    "age": "Unknown",
+    "abilities": [
+      "Nuclear Energy Blasts",
+      "Nuclear Punches",
+      "Flight",
+      "Nuclear Explosions",
+      "Energy Construction",
+      "Fusion Manipulation"
+    ],
+    "weaknesses": [
+      "Arrogant",
+      "Overkill for most situations",
+      "Radiation danger"
+    ],
+    "tags": [
+      "NUCLEAR",
+      "POWERHOUSE",
+      "RANGED",
+      "GOD"
+    ],
+    "shortDesc": "Ben's second most powerful alien — a nuclear powerhouse of atomic energy.",
+    "fullDesc": "Atomix is arguably Ben's second most powerful alien after Alien X. He is a robotic-looking being who controls nuclear energy at a fundamental level. He can create nuclear explosions, fire devastating energy blasts, and his 'HAA-MEE-NA' attack can level landscapes. He speaks dramatically and announces his attacks.",
+    "sigMove": "HAA-MEE-NA HAA-MEE-NA HAA-MEE-NA-HA! — Nuclear energy blast of devastating power.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/01/Atomix_OV_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "The Ultimates",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Atomix is considered the second strongest alien after Alien X.",
+      "He announces all his attacks dramatically.",
+      "His catchphrase is HAA-MEE-NA."
+    ],
+    "notableVictories": [
+      "Ultimate Humungousaur",
+      "Various threats"
+    ],
+    "notableDefeats": [
+      "Alien X (obviously)"
+    ],
+    "unlockedIn": "Omniverse Season 5",
+    "classification": "Powerhouse",
+    "difficultyToUse": "Medium",
+    "rarity": "Legendary"
+  },
+  {
+    "id": 65,
+    "name": "Astrodactyl",
+    "species": "Unknown",
+    "homeworld": "Terradino",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 51,
+    "stats": {
+      "power": 45,
+      "speed": 70,
+      "strength": 40,
+      "intelligence": 35,
+      "durability": 40,
+      "agility": 80,
+      "utility": 50,
+      "stealth": 30,
+      "range": 55,
+      "overall": 42
+    },
+    "height": "1.8m",
+    "weight": "80kg",
+    "age": "Unknown",
+    "abilities": [
+      "Flight",
+      "Energy Whips",
+      "Star Power Blasts",
+      "Enhanced Agility",
+      "Propulsion Flight",
+      "Energy Projection"
+    ],
+    "weaknesses": [
+      "Fragile wings",
+      "Limited ground combat",
+      "Average power"
+    ],
+    "tags": [
+      "FLIGHT",
+      "RANGED",
+      "AGILE",
+      "ENERGY"
+    ],
+    "shortDesc": "A pterodactyl alien with energy whips and star-powered propulsion.",
+    "fullDesc": "Astrodactyl is a small, pterodactyl-like alien with a jetpack-like organ on his back. He can fly using internal star power propulsion and create energy whips from his feet. He is a mobile and versatile flyer, though not particularly powerful.",
+    "sigMove": "Star Whip — creates energy whips and lashes enemies while flying at high speed.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/8/8e/Astrodactyl_OV_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "While You Were Away",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Astrodactyl uses internal star power for propulsion.",
+      "He can create energy whips from his feet.",
+      "He is from the same planet as Humungousaur."
+    ],
+    "notableVictories": [
+      "Incursean soldiers"
+    ],
+    "notableDefeats": [
+      "Grounded combat"
+    ],
+    "unlockedIn": "Omniverse Season 3",
+    "classification": "Speed",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 66,
+    "name": "Bullfrag",
+    "species": "Incursean",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 52,
+    "stats": {
+      "power": 50,
+      "speed": 55,
+      "strength": 60,
+      "intelligence": 55,
+      "durability": 50,
+      "agility": 70,
+      "utility": 40,
+      "stealth": 45,
+      "range": 30,
+      "overall": 45
+    },
+    "height": "2.4m",
+    "weight": "180kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Strength",
+      "Tongue Lash",
+      "Enhanced Jumping",
+      "Enhanced Agility",
+      "Infiltration",
+      "Strong Legs"
+    ],
+    "weaknesses": [
+      "Average power level",
+      "Tongue can be grabbed",
+      "No special abilities"
+    ],
+    "tags": [
+      "AGILE",
+      "MELEE",
+      "INFILTRATOR",
+      "FROG"
+    ],
+    "shortDesc": "A frog alien used for infiltrating the Incursean army through disguise.",
+    "fullDesc": "Bullfrag is a tall, muscular, frog-like Incursean alien. Ben primarily used him to infiltrate the Incursean empire by blending in with their species. He has enhanced strength, a powerful prehensile tongue, and impressive jumping ability.",
+    "sigMove": "Tongue Whip — launches his sticky tongue to grab and slam enemies.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/08/Bullfrag_OV_Official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Tummy Trouble",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Bullfrag was used to infiltrate the Incursean army.",
+      "Attea, the Incursean princess, had a crush on Bullfrag.",
+      "He has a powerful prehensile tongue."
+    ],
+    "notableVictories": [
+      "Incursean soldiers"
+    ],
+    "notableDefeats": [
+      "Powerful enemies"
+    ],
+    "unlockedIn": "Omniverse Season 3",
+    "classification": "Stealth",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 67,
+    "name": "Kickin Hawk",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 53,
+    "stats": {
+      "power": 55,
+      "speed": 60,
+      "strength": 60,
+      "intelligence": 35,
+      "durability": 50,
+      "agility": 75,
+      "utility": 30,
+      "stealth": 30,
+      "range": 15,
+      "overall": 43
+    },
+    "height": "2.1m",
+    "weight": "130kg",
+    "age": "Unknown",
+    "abilities": [
+      "Enhanced Strength",
+      "Powerful Kicks",
+      "Retractable Talons",
+      "Enhanced Agility",
+      "Enhanced Speed",
+      "Wing Blades"
+    ],
+    "weaknesses": [
+      "Limited range",
+      "No special powers",
+      "Average stats"
+    ],
+    "tags": [
+      "MELEE",
+      "AGILE",
+      "MARTIAL ARTS",
+      "BIRD"
+    ],
+    "shortDesc": "A hawk alien skilled in close combat with devastating kicking attacks.",
+    "fullDesc": "Kickin Hawk is a humanoid hawk alien specializing in close-quarters combat. He uses powerful kicks, retractable talons, and his sharp wing blades to fight. He is essentially a martial artist alien, excelling in hand-to-hand (or foot-to-face) combat.",
+    "sigMove": "Talon Tornado — spins rapidly while extending talons, creating a deadly vortex.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/1/1e/Kickin_Hawk_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Bros in Space",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Kickin Hawk excels in martial arts combat.",
+      "His talons can retract and extend.",
+      "He fights primarily with kicks."
+    ],
+    "notableVictories": [
+      "Liam",
+      "Various thugs"
+    ],
+    "notableDefeats": [
+      "Ranged opponents"
+    ],
+    "unlockedIn": "Omniverse Season 3",
+    "classification": "Speed",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  },
+  {
+    "id": 68,
+    "name": "Toepick",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "S",
+    "rank": 11,
+    "stats": {
+      "power": 80,
+      "speed": 25,
+      "strength": 55,
+      "intelligence": 40,
+      "durability": 65,
+      "agility": 20,
+      "utility": 80,
+      "stealth": 30,
+      "range": 50,
+      "overall": 55
+    },
+    "height": "2.4m",
+    "weight": "200kg",
+    "age": "Unknown",
+    "abilities": [
+      "Fear Aura",
+      "Face Reveal",
+      "Terror Inducement",
+      "Psychological Warfare",
+      "Enhanced Strength",
+      "Intimidation"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Blind enemies unaffected",
+      "Must show face"
+    ],
+    "tags": [
+      "FEAR",
+      "PSYCHIC",
+      "UTILITY",
+      "HORROR"
+    ],
+    "shortDesc": "An alien whose face is so horrifying it induces primal fear in any being.",
+    "fullDesc": "Toepick has a cage-like helmet covering his face. When he opens it, the face beneath is so utterly terrifying that it induces absolute fear in anyone who sees it — even beings who don't normally experience fear. His face has never been shown to the audience.",
+    "sigMove": "Face of Nightmares — opens his cage to reveal his face, paralyzing all enemies with fear.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/d/d5/Toepick_OV.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Special Delivery",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Toepick's face has never been shown to viewers.",
+      "Even Psyphon was terrified into submission.",
+      "His face induces fear in all sentient beings."
+    ],
+    "notableVictories": [
+      "Psyphon",
+      "Zombozo"
+    ],
+    "notableDefeats": [
+      "Blind enemies"
+    ],
+    "unlockedIn": "Omniverse Season 4",
+    "classification": "Psychic",
+    "difficultyToUse": "Easy",
+    "rarity": "Rare"
+  },
+  {
+    "id": 69,
+    "name": "Portaler",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "D",
+    "rank": 62,
+    "stats": {
+      "power": 20,
+      "speed": 50,
+      "strength": 15,
+      "intelligence": 50,
+      "durability": 20,
+      "agility": 60,
+      "utility": 75,
+      "stealth": 55,
+      "range": 80,
+      "overall": 35
+    },
+    "height": "0.6m",
+    "weight": "10kg",
+    "age": "Unknown",
+    "abilities": [
+      "Portal Creation",
+      "Dimensional Travel",
+      "Teleportation",
+      "Enhanced Agility",
+      "Surprise Attacks",
+      "Escape"
+    ],
+    "weaknesses": [
+      "Tiny",
+      "Fragile",
+      "Limited combat ability"
+    ],
+    "tags": [
+      "PORTAL",
+      "UTILITY",
+      "TINY",
+      "STEALTH"
+    ],
+    "shortDesc": "A small alien that creates portals for teleportation and dimensional travel.",
+    "fullDesc": "Portaler is a small, chipmunk-like alien who can create portals that link two locations together. He can teleport himself and others across distances, making him useful for travel and surprise attacks, but he lacks any real combat ability.",
+    "sigMove": "Void Hop — opens a rapid series of portals for disorienting hit-and-run tactics.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/b/bd/Portaler_official.png/revision/latest&w=400&output=png",
+    "firstAppearance": "It's a Mad, Mad, Mad Ben World: Part 1",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Portaler can create portals between dimensions.",
+      "He is one of Ben's smallest aliens.",
+      "He is primarily used for transportation, not combat."
+    ],
+    "notableVictories": [
+      "Escaped dangerous situations"
+    ],
+    "notableDefeats": [
+      "Any direct combat"
+    ],
+    "unlockedIn": "Omniverse Season 7",
+    "classification": "Support",
+    "difficultyToUse": "Medium",
+    "rarity": "Rare"
+  },
+  {
+    "id": 70,
+    "name": "Sandbox",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "C",
+    "rank": 54,
+    "stats": {
+      "power": 45,
+      "speed": 40,
+      "strength": 40,
+      "intelligence": 35,
+      "durability": 60,
+      "agility": 50,
+      "utility": 55,
+      "stealth": 40,
+      "range": 45,
+      "overall": 40
+    },
+    "height": "1.8m",
+    "weight": "Variable",
+    "age": "Unknown",
+    "abilities": [
+      "Sand Manipulation",
+      "Sandstorm Creation",
+      "Body Reformation",
+      "Shapeshifting",
+      "Sand Projection",
+      "Desiccation"
+    ],
+    "weaknesses": [
+      "Water solidifies body",
+      "Glass creation from heat",
+      "Wind dispersal"
+    ],
+    "tags": [
+      "ELEMENTAL",
+      "SAND",
+      "SHAPESHIFTER",
+      "UTILITY"
+    ],
+    "shortDesc": "A sand-based alien that controls and reshapes sand at will.",
+    "fullDesc": "Sandbox is a sand-based alien who can control, project, and reshape sand. He can create sandstorms, reform his body after being scattered, and manipulate sand in the environment. He is versatile but vulnerable to water.",
+    "sigMove": "Desert Storm — transforms into a massive sandstorm engulfing the entire area.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/b/ba/Sandbox_ov.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Collect This",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Sandbox can reform even if scattered.",
+      "Water is his greatest weakness.",
+      "He can create localized sandstorms."
+    ],
+    "notableVictories": [
+      "Minor enemies"
+    ],
+    "notableDefeats": [
+      "Water attacks"
+    ],
+    "unlockedIn": "Omniverse Season 5",
+    "classification": "Elemental",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 71,
+    "name": "Snakepit",
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "series": [
+      "Omniverse"
+    ],
+    "tier": "D",
+    "rank": 63,
+    "stats": {
+      "power": 35,
+      "speed": 45,
+      "strength": 35,
+      "intelligence": 30,
+      "durability": 40,
+      "agility": 55,
+      "utility": 40,
+      "stealth": 50,
+      "range": 30,
+      "overall": 32
+    },
+    "height": "1.8m",
+    "weight": "90kg",
+    "age": "Unknown",
+    "abilities": [
+      "Snake Projection",
+      "Constriction",
+      "Venomous Bite",
+      "Enhanced Flexibility",
+      "Snake Army",
+      "Regeneration"
+    ],
+    "weaknesses": [
+      "Cold blooded",
+      "Limited power",
+      "Average abilities"
+    ],
+    "tags": [
+      "BEAST",
+      "SNAKE",
+      "MELEE",
+      "STEALTH"
+    ],
+    "shortDesc": "A serpentine alien that projects and controls multiple snakes from its body.",
+    "fullDesc": "Snakepit is a serpentine alien whose body is composed of multiple intertwined snakes. He can project snakes from his body to attack, constrict enemies, and deliver venomous bites. He is a mid-tier alien without particularly outstanding abilities.",
+    "sigMove": "Serpent Swarm — releases dozens of snakes from his body to overwhelm enemies.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/4/49/Snakepit_ov.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Collect This",
+    "firstSeries": "Omniverse",
+    "funFacts": [
+      "Snakepit is made up of multiple snakes.",
+      "His body can split into individual snakes.",
+      "He is one of Ben's lesser-used aliens."
+    ],
+    "notableVictories": [
+      "Minor enemies"
+    ],
+    "notableDefeats": [
+      "Cold environments"
+    ],
+    "unlockedIn": "Omniverse Season 5",
+    "classification": "Stealth",
+    "difficultyToUse": "Medium",
+    "rarity": "Uncommon"
+  },
+  {
+    "id": 72,
+    "name": "Spitter",
+    "species": "Spheroid",
+    "homeworld": "Scalpasc",
+    "series": [
+      "Original Series",
+      "Omniverse"
+    ],
+    "tier": "D",
+    "rank": 64,
+    "stats": {
+      "power": 45,
+      "speed": 30,
+      "strength": 35,
+      "intelligence": 30,
+      "durability": 50,
+      "agility": 25,
+      "utility": 40,
+      "stealth": 15,
+      "range": 65,
+      "overall": 30
+    },
+    "height": "1.5m",
+    "weight": "150kg",
+    "age": "Unknown",
+    "abilities": [
+      "Slime Spitting",
+      "Acid Projection",
+      "Enhanced Durability",
+      "Inflation",
+      "Projectile Range",
+      "Bouncing"
+    ],
+    "weaknesses": [
+      "Slow",
+      "Bulky",
+      "Limited abilities"
+    ],
+    "tags": [
+      "RANGED",
+      "ACID",
+      "UTILITY",
+      "TANK"
+    ],
+    "shortDesc": "A pufferfish alien that inflates and spits high-pressure slime projectiles.",
+    "fullDesc": "Spitter is a round, green, pufferfish-like alien that can inflate his body and spit out a stream of highly pressurized, sticky slime at enemies. The slime can be acidic or adhesive depending on need. He is bulky and slow but has decent range.",
+    "sigMove": "Slime Geyser — inflates to maximum and unleashes a pressurized slime torrent.",
+    "image": "https://wsrv.nl/?url=static.wikia.nocookie.net/ben10/images/0/01/Spitter_OS.png/revision/latest&w=400&output=png",
+    "firstAppearance": "Ben 10 vs. the Negative 10",
+    "firstSeries": "Original Series",
+    "funFacts": [
+      "Spitter was rarely used by Ben.",
+      "He can inflate like a pufferfish.",
+      "His slime can be either sticky or acidic."
+    ],
+    "notableVictories": [
+      "Negative 10 (assisted)"
+    ],
+    "notableDefeats": [
+      "Faster enemies"
+    ],
+    "unlockedIn": "Original Series Season 4",
+    "classification": "Support",
+    "difficultyToUse": "Easy",
+    "rarity": "Common"
+  }
+];
+
+export default aliens;
