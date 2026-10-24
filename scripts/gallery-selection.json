@@ -1044,6 +1044,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Ben10-character-ghostfreak.png",
+        "caption": "Ghostfreak — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ghostfreak/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/71/Ben10-character-ghostfreak.png/revision/latest?cb=20260216135105",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ben10-character-ghostfreak.png",
+        "width": 3431,
+        "height": 4720,
+        "enhance": false
+      },
+      {
+        "file": "Ghostfreak forward.png",
+        "caption": "Ghostfreak — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ghostfreak/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/fc/Ghostfreak_forward.png/revision/latest?cb=20210219025212",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ghostfreak_forward.png",
+        "width": 836,
+        "height": 1372,
+        "enhance": false
+      },
+      {
+        "file": "Ghostfreak OS AP1.png",
+        "caption": "Ghostfreak — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ghostfreak/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/0/03/Ghostfreak_OS_AP1.png/revision/latest?cb=20210318143706",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ghostfreak_OS_AP1.png",
+        "width": 1280,
+        "height": 1238,
+        "enhance": false
+      },
+      {
+        "file": "CS (434).png",
+        "caption": "Flight/Enhanced Speed",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ghostfreak",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/1e/CS_%28434%29.png/revision/latest?cb=20141025120602",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:CS_(434).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
