@@ -5064,6 +5064,58 @@
         "width": 1024,
         "height": 576,
         "enhance": true
+      },
+      {
+        "file": "Ultimate Big Chill Portfolio.png",
+        "caption": "Ultimate Big Chill — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Big Chill/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/bd/Ultimate_Big_Chill_Portfolio.png/revision/latest?cb=20171022040101",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ultimate_Big_Chill_Portfolio.png",
+        "width": 1320,
+        "height": 960,
+        "enhance": false
+      },
+      {
+        "file": "UltimateBigChill2.png",
+        "caption": "Ultimate Big Chill — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Big Chill/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/cb/UltimateBigChill2.png/revision/latest?cb=20210319233127",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UltimateBigChill2.png",
+        "width": 991,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "HEWTL (551).png",
+        "caption": "Freezing Breath",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Big Chill",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/1f/HEWTL_%28551%29.png/revision/latest?cb=20150912121453",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:HEWTL_(551).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "EfA (172).png",
+        "caption": "Plasmokinesis",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Big Chill",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/16/EfA_%28172%29.png/revision/latest?cb=20150905172331",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:EfA_(172).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
