@@ -33,6 +33,8 @@ button, a, select, input { outline-offset: 5px; }
 input, select { min-width: 0; color: var(--text); }
 input::placeholder { color: #848584; }
 select { color-scheme: dark; }
+select option, select optgroup { background-color: var(--surface-raised); color: var(--text); }
+select option:checked { background-color: #30342c; color: var(--text); }
 img { display: block; max-width: 100%; }
 svg { width: 20px; height: 20px; flex-shrink: 0; }
 h1, h2, h3, p { margin: 0; }

@@ -80,7 +80,7 @@
 .team-picker-search:has(input:focus-visible) { outline: 1px solid #91938f; outline-offset: 4px; }
 .team-picker-search button { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; }
 .team-picker-search button svg { width: 13px; height: 13px; }
-.team-picker-toolbar > select { font-size: 11px; max-width: 160px; background: transparent; border: 0; border-left: 1px solid #4a4b48; padding: 0 0 0 12px; cursor: pointer; }
+.team-picker-toolbar > select { font-size: 11px; max-width: 160px; background-color: var(--surface-raised); color: var(--text); color-scheme: dark; border: 0; border-left: 1px solid #4a4b48; padding: 0 0 0 12px; cursor: pointer; }
 .team-picker-results { display: flex; justify-content: space-between; gap: 10px; padding: 13px 25px; font-size: 9px; color: #a4a5a2; flex-shrink: 0; }
 .team-picker-results > span:last-child { color: #80827e; }
 .team-picker-scroll { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 25px 20px; }
