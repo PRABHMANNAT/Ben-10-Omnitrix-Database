@@ -4072,6 +4072,58 @@
         "width": 1024,
         "height": 576,
         "enhance": true
+      },
+      {
+        "file": "PN775IM (472).png",
+        "caption": "ChamAlien in Prisoner Number 775 is Missing",
+        "kind": "scene",
+        "section": "Prisoner Number 775 is Missing",
+        "source": "Chamalien/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/54/PN775IM_%28472%29.png/revision/latest?cb=20150817184355",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(472).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "PN775IM (477).png",
+        "caption": "ChamAlien in Prisoner Number 775 is Missing",
+        "kind": "scene",
+        "section": "Prisoner Number 775 is Missing",
+        "source": "Chamalien/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/79/PN775IM_%28477%29.png/revision/latest?cb=20150817184358",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(477).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "PN775IM (473).png",
+        "caption": "ChamAlien in Prisoner Number 775 is Missing",
+        "kind": "scene",
+        "section": "Prisoner Number 775 is Missing",
+        "source": "Chamalien/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c3/PN775IM_%28473%29.png/revision/latest?cb=20150817184356",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(473).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "PN775IM (474).png",
+        "caption": "ChamAlien in Prisoner Number 775 is Missing",
+        "kind": "scene",
+        "section": "Prisoner Number 775 is Missing",
+        "source": "Chamalien/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/87/PN775IM_%28474%29.png/revision/latest?cb=20150817184357",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(474).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
