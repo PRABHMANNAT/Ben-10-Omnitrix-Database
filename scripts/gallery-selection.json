@@ -5394,6 +5394,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "TUE2 (92).png",
+        "caption": "Cosmic Rays",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Way Big",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/60/TUE2_%2892%29.png/revision/latest?cb=20150801193734",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TUE2_(92).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Ultimate Way Big 005.png",
+        "caption": "Cosmic Saws",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Way Big",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/34/Ultimate_Way_Big_005.png/revision/latest?cb=20140531181412",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ultimate_Way_Big_005.png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "TUE2 (61).png",
+        "caption": "Ultimate Way Big in The Ultimate Enemy: Part 2",
+        "kind": "scene",
+        "section": "The Ultimate Enemy: Part 2",
+        "source": "Ultimate Way Big/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/98/TUE2_%2861%29.png/revision/latest?cb=20150801193601",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TUE2_(61).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "TUE2 (53).png",
+        "caption": "Ultimate Way Big in The Ultimate Enemy: Part 2",
+        "kind": "scene",
+        "section": "The Ultimate Enemy: Part 2",
+        "source": "Ultimate Way Big/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/e1/TUE2_%2853%29.png/revision/latest?cb=20150801193343",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TUE2_(53).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
