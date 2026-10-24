@@ -6882,6 +6882,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "FaFBM (695).png",
+        "caption": "Flight/Enhanced Speed",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Atomix",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c8/FaFBM_%28695%29.png/revision/latest?cb=20160113193744",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FaFBM_(695).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "FaFBM (642).png",
+        "caption": "Atomix in For a Few Brains More",
+        "kind": "scene",
+        "section": "For a Few Brains More",
+        "source": "Atomix/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/ba/FaFBM_%28642%29.png/revision/latest?cb=20160113193116",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FaFBM_(642).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "FaFBM (710).png",
+        "caption": "\"Nuclear Winner\"",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Atomix",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/fa/FaFBM_%28710%29.png/revision/latest?cb=20160113193742",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FaFBM_(710).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "VSB (416).png",
+        "caption": "Photokinesis/\"Fusion Cuisine\"",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Atomix",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/53/VSB_%28416%29.png/revision/latest?cb=20151031073035",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:VSB_(416).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
