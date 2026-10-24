@@ -1484,6 +1484,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Snare-Oh Pose 2.png",
+        "caption": "Snare-oh — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Snare-Oh/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/34/Snare-Oh_Pose_2.png/revision/latest?cb=20260814080711",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Snare-Oh_Pose_2.png",
+        "width": 1510,
+        "height": 2048,
+        "enhance": false
+      },
+      {
+        "file": "Ben10omni snareoh 174x252.png",
+        "caption": "Snare-oh — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Snare-Oh/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/20/Ben10omni_snareoh_174x252.png/revision/latest?cb=20260814080437",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ben10omni_snareoh_174x252.png",
+        "width": 1250,
+        "height": 2048,
+        "enhance": false
+      },
+      {
+        "file": "Benmummy Ken 10 1.PNG",
+        "caption": "Ben 10,000 as Snare-Oh",
+        "kind": "design",
+        "section": "Profile",
+        "source": "Snare-Oh/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c2/Benmummy_Ken_10_1.PNG/revision/latest?cb=20200506081635",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Benmummy_Ken_10_1.PNG",
+        "width": 636,
+        "height": 1079,
+        "enhance": false
+      },
+      {
+        "file": "Return (448).png",
+        "caption": "Snare-oh in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Snare-Oh/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/3d/Return_%28448%29.png/revision/latest?cb=20200930110054",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Return_(448).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
