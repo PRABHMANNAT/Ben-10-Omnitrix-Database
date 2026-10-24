@@ -5284,6 +5284,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Ultimate Cannonbolt (2).png",
+        "caption": "Ultimate Cannonbolt — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Cannonbolt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f9/Pedro_Astudillo_Ultimate_Cannonbolt_%282%29.png/revision/latest?cb=20220223185719",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Ultimate_Cannonbolt_(2).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "Ultimate Cannonbolt Model.png",
+        "caption": "Ultimate Cannonbolt — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Cannonbolt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/20/Ultimate_Cannonbolt_Model.png/revision/latest?cb=20210314024839",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ultimate_Cannonbolt_Model.png",
+        "width": 1280,
+        "height": 1195,
+        "enhance": false
+      },
+      {
+        "file": "INEBG (431).png",
+        "caption": "Enhanced Strength/Shock Wave Generation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Cannonbolt",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b1/INEBG_%28431%29.png/revision/latest?cb=20150819152741",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:INEBG_(431).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "INEBG (426).png",
+        "caption": "Speed Rotation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Cannonbolt",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/2e/INEBG_%28426%29.png/revision/latest?cb=20150819152723",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:INEBG_(426).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
