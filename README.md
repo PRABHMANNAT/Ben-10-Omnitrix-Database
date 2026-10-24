@@ -61,7 +61,7 @@ The Black Edition pairs charcoal surfaces, rounded character cards and controls,
 <details>
   <summary><strong>See the latest interface refinements</strong></summary>
   <br />
-  <a href="docs/assets/screenshots/rounded-interface.jpg"><img src="docs/assets/screenshots/rounded-interface.jpg" alt="Current archive with rounded alien cards, dark controls, blue ability filters, and the highlighted GitHub button." width="100%" /></a>
+  <a href="docs/assets/screenshots/rounded-interface.jpg"><img src="docs/assets/screenshots/rounded-interface.jpg" alt="Current archive with the Aceternity card hover backdrop, rounded alien cards, dark controls, and blue ability filters." width="100%" /></a>
   <br />
   <table><tr>
     <td width="72%" valign="top"><img src="docs/assets/screenshots/team-library-compact.jpg" alt="Compact creator team preview with Alien X, Feedback, and XLR8 visible beside the creator credit and lineup button." width="100%" /></td>
@@ -167,24 +167,48 @@ Open the local URL printed by Vite, usually **http://localhost:5173**. No API ke
 | :--- | :--- |
 | `npm run dev` | Start the development server with hot reload |
 | `npm start` | Alias for the Vite development server |
-| `npm run build` | Build the production site into `dist/` |
+| `npm run build` | Type-check UI components and build the production site into `dist/` |
+| `npm run typecheck` | Check TypeScript UI components without emitting files |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Check React source, JavaScript utilities, tests, and maintenance scripts with ESLint |
 | `npm test` | Run all 27 tests for abilities, team storage, presets, and gallery integrity |
 | `npm run test:watch` | Rerun tests while developing |
 | `npm run check` | Run lint, tests, and the production build in sequence |
 
-## React JavaScript project
+## Deploy on Vercel
 
-The application uses **React 19 with JavaScript and JSX**, built by **Vite**. React components live in `.jsx` files; hooks, data, and shared logic use `.js` modules. `index.html` loads `src/main.jsx`, which mounts `App` with React DOM and imports the shared styles. `App.jsx` composes the archive, filters, dialogs, and team builder. Team creation and image galleries load on demand.
+Import this GitHub repository into Vercel and use the repository root (`.`) as the **Root Directory**. The committed `vercel.json` supplies these settings:
 
-`jsconfig.json` configures JavaScript/JSX editor support and JSON imports. The React type-definition packages support editor completion; the application does not require a TypeScript build. ESLint applies React Hooks and Fast Refresh checks to browser components and Node globals to tests and maintenance scripts. The unused Vite starter styles and logos have been removed.
+| Setting | Value |
+| :--- | :--- |
+| Framework preset | Vite |
+| Install command | `npm ci` |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Node.js | 24.x recommended; 22.12+ supported |
+
+No environment variables, database, or backend are required. The build checks the typed UI components before bundling. The SPA fallback serves the app on direct navigation; alien links use hash URLs such as `/#alien-x`. All 560 gallery images are included in the static output.
+
+This repository is prepared for deployment; importing it into a Vercel project creates the deployment. See [Vercel’s Vite deployment guide](https://vercel.com/docs/frameworks/frontend/vite).
+
+## React JavaScript project with typed UI components
+
+The application uses **React 19 with JavaScript and JSX**, built by **Vite**. The existing application uses `.jsx` and `.js` files. The Aceternity hover components use TypeScript (`.tsx`), with a typed class-name utility in `.ts`. `index.html` loads `src/main.jsx`, which mounts `App` with React DOM and imports the shared styles. `App.jsx` composes the archive, filters, dialogs, and team builder. Team creation and image galleries load on demand.
+
+`tsconfig.json` checks the typed UI components, while `jsconfig.json` keeps JavaScript/JSX editor support. Both configs and Vite resolve `@/` imports to `src/`. The production build runs `tsc --noEmit` before Vite. ESLint checks JavaScript and TypeScript, React Hooks, Fast Refresh, and Node maintenance scripts. The unused Vite starter styles and logos have been removed.
+
+The archive grid adapts [Aceternity UI’s Card Hover Effect demo](https://ui.aceternity.com/components/card-hover-effect) by Manu Arora. The shared backdrop follows pointer hover and keyboard focus, uses the existing muted palette, and respects reduced-motion preferences. Existing profile, bookmark, and comparison buttons remain independent controls.
+
+- `src/components/card-hover-effect-demo.tsx`: connects the effect to the alien roster.
+- `src/components/ui/card-hover-effect.tsx`: reusable typed effect, adapted from the [requested registry source](https://ui.aceternity.com/registry/card-hover-effect-demo.json).
+- `src/lib/utils.ts`: shadcn-style `cn()` helper using `clsx` and `tailwind-merge`.
+- `components.json`: shadcn-compatible aliases and the `@aceternity` registry; Tailwind v4 remains configured through the Vite plugin and CSS import.
 
 For interface changes, start in `src/components/` and `src/styles/`. Keep reusable filtering, gallery, and team rules in `src/lib/`, with matching `.test.js` files. New tests are discovered by `npm test`. Optional asset download and encoding tools stay in `scripts/`; running the app only needs npm.
 
 ## Built with
 
-**React 19 · Vite 7 · Framer Motion · Tailwind CSS 4 · React Icons**
+**React 19 · Vite 7 · TypeScript UI components · Motion / Framer Motion · Tailwind CSS 4 · React Icons**
 
 The interface uses custom CSS, DM Sans, and IBM Plex Mono. Alien illustrations are served from the repository; Google Fonts requires a connection, with system font fallbacks available. Browser `localStorage` keeps your collection and team on the current browser and origin; it does not sync across devices.
 
@@ -201,7 +225,10 @@ public/aliens/        Cached character art and its source manifest
 public/gallery/       560 optimized full-resolution gallery images
 scripts/              Artwork and gallery cache / encoding utilities
 docs/assets/          README banner, custom icons, and app screenshots
+components.json       shadcn-compatible UI registry configuration
+tsconfig.json         Strict TypeScript checks for the new UI components
 jsconfig.json         JavaScript and JSX editor configuration
+vercel.json           Vite deployment settings and SPA fallback
 vite.config.js        React and Tailwind build plugins
 eslint.config.js      Browser React and Node tooling checks
 ```

@@ -1,0 +1,7 @@
+.hover-effect-item { position: relative; min-width: 0; isolation: isolate; }
+.hover-effect-content { position: relative; z-index: 1; height: 100%; }
+.hover-effect-content > .alien-card { height: 100%; }
+.hover-effect-background { background: #2a3125; border: 1px solid #5b684f; }
+@media (hover: none) and (pointer: coarse) {
+  .hover-effect-background { display: none; }
+}
