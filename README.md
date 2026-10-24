@@ -1,153 +1,121 @@
+<h1 align="center">omnipedia.</h1>
+<p align="center"><strong>THE BEN 10 ENCYCLOPEDIA · BLACK EDITION</strong></p>
+
 <p align="center">
-  <img src="docs/assets/banner.svg" alt="Omnipedia — Black Edition. Every form. One universe. A Ben 10 field guide with 72 transformations, four series, and your own top ten plus two." width="100%" />
+  Every form. One universe.<br />
+  A fan-made <strong>React Ben 10 encyclopedia</strong> with 72 transformations, 560 curated images,<br />
+  detailed transformation files, comparisons, and your own named Omnitrix lineups.
 </p>
 
 <p align="center">
-  A fan-made <strong>React JavaScript Ben 10 encyclopedia</strong> with a matte black interface,<br />
-  560 curated images, detailed transformation files, comparisons, and your own named Omnitrix lineups.
-</p>
-
-<p align="center">
-  <a href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database/stargazers"><img src="https://img.shields.io/github/stars/PRABHMANNAT/Ben-10-Omnitrix-Database?style=flat&amp;label=Stars&amp;labelColor=181b18&amp;color=bcc8a4" alt="GitHub stars" /></a>
-  <a href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database/forks"><img src="https://img.shields.io/github/forks/PRABHMANNAT/Ben-10-Omnitrix-Database?style=flat&amp;label=Forks&amp;labelColor=181b18&amp;color=bcc8a4" alt="GitHub forks" /></a>
-  <img src="https://img.shields.io/badge/React-19-181b18?style=flat&amp;labelColor=181b18&amp;color=bcc8a4" alt="React 19" />
-  <img src="https://img.shields.io/badge/Vite-7-181b18?style=flat&amp;labelColor=181b18&amp;color=bcc8a4" alt="Vite 7" />
-</p>
-
-<p align="center">
+  <a href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database/stargazers">Star on GitHub</a> ·
   <a href="#the-field-guide">Features</a> ·
-  <a href="#see-every-form-in-action">Image galleries</a> ·
+  <a href="#homepage-tour">Homepage tour</a> ·
+  <a href="#see-every-form-in-action">Galleries</a> ·
   <a href="#ten-picks-two-wildcards">Team builder</a> ·
-  <a href="#inside-the-archive">Screenshots</a> ·
-  <a href="#run-it-locally">Quick start</a> ·
-  <a href="#make-the-archive-better">Contribute</a>
+  <a href="#run-it-locally">Quick start</a>
 </p>
-
-<a href="docs/assets/screenshots/archive.jpg"><img src="docs/assets/screenshots/archive.jpg" alt="Current desktop home: Alien X, ability filters, archive search, and the Black Edition navigation." width="100%" /></a>
 
 ## The field guide
 
-From Heatblast to Alien X. Browse **72 transformations** across **Original Series, Alien Force, Ultimate Alien, and Omniverse**, including **nine Ultimate forms**. Explore an alien's species, homeworld, abilities, weaknesses, first appearance, and statistics in a dedicated dossier.
+Browse **72 transformations** across **Original Series, Alien Force, Ultimate Alien, and Omniverse**, including **nine Ultimate forms**. The Black Edition pairs charcoal surfaces, rounded cards, sage highlights, and muted blue ability filters.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="docs/assets/icons/archive.svg" width="40" height="40" alt="" /><br />
-      <strong>Find your next form</strong><br />
-      Search names, species, and abilities. Combine 21 ability filters with series, tier, classification, or stats. Switch between grid, list, and tier views.
-    </td>
-    <td width="50%" valign="top">
-      <img src="docs/assets/icons/team.svg" width="40" height="40" alt="" /><br />
-      <strong>Build your own Omnitrix</strong><br />
-      Create and name multiple teams. Rank ten transformations, add two optional bonus picks, and switch, copy, or rename your lineups. Duplicate picks within a team are prevented.
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <img src="docs/assets/icons/compare.svg" width="40" height="40" alt="" /><br />
-      <strong>Settle the friendly debate</strong><br />
-      Compare two or three forms across ten stats, power tiers, and homeworlds. Highest values are highlighted for a quick read.
-    </td>
-    <td valign="top">
-      <img src="docs/assets/icons/bookmark.svg" width="40" height="40" alt="" /><br />
-      <strong>Keep your favorites close</strong><br />
-      Bookmark a personal collection. Your collection and team are saved in this browser, with no account or backend to configure.
-    </td>
-  </tr>
-</table>
+| Feature | What you can do |
+| :--- | :--- |
+| Explore the archive | Search names, species, and abilities; switch between grid, list, and tier views. |
+| Find a form for the job | Combine 21 ability filters with series, power tier, classification, and statistics. |
+| Read a transformation file | Discover species, homeworld, abilities, weaknesses, first appearance, signature moves, and ten stats. |
+| Explore the visual archive | Browse 560 locally hosted images with alternate designs, episode stills, and powers in action. |
+| Build your own Omnitrix | Name multiple teams, rank ten aliens, and add two optional bonus picks to each lineup. |
+| Compare transformations | Put two or three forms side by side, with the highest statistics highlighted. |
+| Save your favorites | Bookmark a personal collection and keep your teams in this browser without an account. |
+| Navigate your way | Use responsive layouts, keyboard controls, focus-managed dialogs, and reduced-motion support. |
 
-The Black Edition pairs charcoal surfaces, rounded character cards and controls, sage highlights, and muted blue ability filters. A sliding navigation pill follows your current section and respects reduced-motion preferences. The Omnitrix identity includes SVG, multi-size ICO, and Apple touch icons, with a **Built by Prabhmannat Singh** credit in the sidebar. Responsive layouts, keyboard navigation, and focus-managed dialogs are built into the experience. Press **`/`** to search the archive or **`Esc`** to close a dialog.
+## Homepage tour
 
-<details>
-  <summary><strong>See the latest interface refinements</strong></summary>
-  <br />
-  <a href="docs/assets/screenshots/rounded-interface.jpg"><img src="docs/assets/screenshots/rounded-interface.jpg" alt="Current archive with the Aceternity card hover backdrop, rounded alien cards, dark controls, and blue ability filters." width="100%" /></a>
-  <br />
-  <table><tr>
-    <td width="72%" valign="top"><img src="docs/assets/screenshots/team-library-compact.jpg" alt="Compact creator team preview with Alien X, Feedback, and XLR8 visible beside the creator credit and lineup button." width="100%" /></td>
-    <td width="28%" valign="top"><img src="docs/assets/screenshots/navigation-mobile.jpg" alt="Mobile navigation with the active My top 10 pill and a compact illustrated creator card." width="100%" /></td>
-  </tr></table>
-</details>
+Ten screenshots show the current interface and its main features. Select any image to open the full-size capture.
 
-### Find a form for the job
+### 01 / Every form. One universe.
 
-Use **By ability** on the home screen or in the team picker. Start with **Can fly**, **Can swim**, **Uses fire**, or **Uses ice**. More options cover electricity, strength, speed, regeneration, water, plants, energy absorption, invisibility, phasing, shape-shifting, duplication, technology, mind powers, time, gravity, teleportation, and sonic attacks.
+The homepage introduces the archive, its four animated series, and a featured transformation. The sidebar keeps your collection, teams, and filters within reach.
 
-Selections combine: **Can fly + Uses fire** shows forms with both powers. Ability filters also work alongside search and series filters, with clear controls to reset them. Both search boxes understand phrases such as **can fly**, **can swim**, and **use fire**.
+<a href="docs/assets/screenshots/archive.jpg"><img src="docs/assets/screenshots/archive.jpg" alt="Desktop homepage with the Every form. One universe. introduction, Alien X feature card, and archive navigation." width="100%" /></a>
 
-Matches come from the archive's listed abilities. Weaknesses and elemental immunities do not grant an active power; “Can swim” also includes listed underwater breathing or movement.
+### 02 / Browse the cards
 
-<details>
-  <summary><strong>See combined ability filters in action</strong></summary>
-  <br />
-  <a href="docs/assets/screenshots/archive-abilities.jpg"><img src="docs/assets/screenshots/archive-abilities.jpg" alt="The archive with Can fly and Uses fire selected, returning Heatblast and Ultimate Big Chill." width="100%" /></a>
-</details>
+Character artwork, species, power tiers, and quick stats make the grid easy to scan. The Aceternity backdrop follows pointer hover and keyboard focus; profile and bookmark buttons work independently.
+
+<a href="docs/assets/screenshots/rounded-interface.jpg"><img src="docs/assets/screenshots/rounded-interface.jpg" alt="Homepage archive grid with Alien X, Clockwork, and Ultimate Way Big; the muted hover backdrop highlights Clockwork." width="100%" /></a>
+
+### 03 / Find a form for the job
+
+Combine **Can fly + Uses fire** to find transformations with both powers. Other filters include swimming, ice, electricity, strength, speed, regeneration, energy absorption, invisibility, phasing, technology, time, gravity, teleportation, and sonic attacks. Search also understands phrases such as **can swim** and **use fire**.
+
+<a href="docs/assets/screenshots/archive-abilities.jpg"><img src="docs/assets/screenshots/archive-abilities.jpg" alt="Homepage with Can fly and Uses fire selected, returning Heatblast and Ultimate Big Chill." width="100%" /></a>
+
+Selections combine with search, series, tier, classification, and stat filters. Matches come from listed abilities; weaknesses and elemental immunities do not grant an active power. “Can swim” includes listed underwater breathing or movement.
+
+### 04 / Switch your perspective
+
+Use the compact list to compare species, tiers, and overall ratings while browsing. Grid and tier views are available from the same toolbar, alongside sorting by name, individual stats, or series.
+
+<a href="docs/assets/screenshots/archive-list.jpg"><img src="docs/assets/screenshots/archive-list.jpg" alt="Homepage list view showing alien artwork, names, species, power tiers, overall ratings, and collection bookmarks." width="100%" /></a>
+
+## Transformation files
+
+### 05 / Get to know each alien
+
+Open a card for a dedicated dossier. Profile, Abilities, and Records organize the alien's origin, strengths, weaknesses, and appearances. Statistics sit above the image gallery, with previous and next controls for exploring the roster.
+
+<a href="docs/assets/screenshots/profile.jpg"><img src="docs/assets/screenshots/profile.jpg" alt="Alien X transformation file with character artwork, profile tabs, origin details, and signature move." width="100%" /></a>
 
 ## See every form in action
 
-Open an alien’s dossier and scroll below **Statistics** to see its gallery, or choose **Gallery** for quick access. Explore **560 locally hosted images across all 72 aliens**, with **seven or eight images for most transformations, five for Alien X, and four each for Sandbox and Snakepit**: alternate series designs, power demonstrations, episode stills, and game appearances where available. Galleries open on an action shot when one is available.
+### 06 / Explore the visual archive
 
-Select a picture from the four-column thumbnail grid or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
+Scroll below **Statistics**, or choose **Gallery** for quick access. Browse **560 images across all 72 aliens**: most transformations have seven or eight, Alien X has five, and Sandbox and Snakepit have four each. Galleries open on an action shot when one is available.
 
-<a href="docs/assets/screenshots/gallery-expanded.jpg"><img src="docs/assets/screenshots/gallery-expanded.jpg" alt="Ultimate Way Big visual archive below the statistics, eight images in two rows of four thumbnails." width="100%" /></a>
+<a href="docs/assets/screenshots/gallery-expanded.jpg"><img src="docs/assets/screenshots/gallery-expanded.jpg" alt="Ultimate Way Big gallery with a power demonstration, full-resolution image details, and eight thumbnails arranged in two rows of four." width="100%" /></a>
 
-<details>
-  <summary><strong>Alien X — the five-image replacement set</strong></summary>
-  <br />
-  <img src="docs/assets/screenshots/gallery-alien-x.jpg" alt="Alien X gallery on image five of five, showing the new forward flight pose with the full figure visible." width="100%" />
-</details>
+Images retain their aspect ratio and load when a gallery opens. Use the four-column thumbnails, image arrows, or **← / →**, **Home**, and **End** while a gallery control is focused. **Full resolution** opens the complete image; **Source & credits** links to the original file page.
 
-Most galleries preserve their existing images and include four additional choices. Alien X’s last two images are replaced by three clear action poses. Sandbox and Snakepit each retain only their first four images. Images retain their native resolution, including HD episode frames; a few smaller illustrations display their actual dimensions. **Eight smaller images are AI-enhanced** and visibly labeled, with original dimensions and a comparison link. The viewer always shows actual pixel dimensions. **Sandbox and Snakepit include explicitly labeled non-canon Thomas N. Perkins IV concepts and credited fan interpretations**; Portaler’s gameplay and concepts are labeled separately. See the [image sources, credits, and enhancement notes](docs/GALLERY_SOURCES.md).
-
-<details>
-  <summary><strong>Gallery on mobile</strong></summary>
-  <br />
-  <img src="docs/assets/screenshots/gallery-expanded-mobile.jpg" alt="The responsive image gallery on a narrow mobile screen." width="360" />
-</details>
+The viewer shows actual pixel dimensions. HD episode frames retain their native resolution; smaller artwork is not presented as HD. **Eight smaller images are AI-enhanced** and labeled with their original dimensions and a comparison link. **Sandbox and Snakepit include explicitly labeled non-canon Thomas N. Perkins IV concepts and credited fan interpretations**; Portaler's gameplay and concepts are labeled separately. See the [image sources, credits, and enhancement notes](docs/GALLERY_SOURCES.md).
 
 ## Ten picks. Two wildcards.
 
-Your Omnitrix, your rules. Open **My top 10** and use **New team** to name a lineup. Each team keeps its own ranked ten, two optional bonus picks, and bonus toggle. Switch between teams from **Your team library**, or use the rename, duplicate, and delete controls beside it. Your original saved team is upgraded automatically.
+### 07 / Create your own team library
 
-Select a slot to choose a transformation and use the arrows to change its rank. Enable **Add 2 bonus picks** to give that team a little extra range. A deletion asks for confirmation and keeps at least one personal team available.
+Open **My top 10**, choose **New team**, and name your lineup. Each team keeps its own ranked ten, two optional bonus picks, and bonus toggle. Switch, rename, duplicate, or delete teams from **Your team library**. Duplicate picks within a lineup are prevented, and rank arrows let you reorder your choices.
 
-<a href="docs/assets/screenshots/team-builder.jpg"><img src="docs/assets/screenshots/team-builder.jpg" alt="Example completed team: ten ranked aliens, including Heatblast, XLR8, and Alien X, with Way Big and Clockwork in the two separate bonus slots." width="100%" /></a>
+<a href="docs/assets/screenshots/team-builder.jpg"><img src="docs/assets/screenshots/team-builder.jpg" alt="Named team library and a completed top-ten lineup, with Way Big and Clockwork in two separate bonus slots." width="100%" /></a>
 
-<p align="center"><sub>A sample lineup captured in the running app. Team choices are saved locally on your own browser.</sub></p>
+<p align="center"><sub>A sample lineup captured in the app. Your collection and teams are stored in your browser and do not sync across devices.</sub></p>
 
-### Creator's favorites
+**Creator's favorites:** explore Prabhmannat Singh's built-in all-situation preset, with **Alien X, Clockwork, Atomix, Feedback, Gravattack, Big Chill, Upgrade, Grey Matter, Swampfire, and XLR8**, plus **Way Big** and **Ultimate Echo Echo** in reserve. Each pick has a role. Expand **Why these twelve?** for strengths and trade-offs, then choose **Make it yours** for an editable copy.
 
-Start with **Prabhmannat Singh's** built-in **Creator's favorites** preset: ten versatile picks for different situations, plus **Way Big** and **Ultimate Echo Echo** in reserve. The main ten are **Alien X, Clockwork, Atomix, Feedback, Gravattack, Big Chill, Upgrade, Grey Matter, Swampfire, and XLR8**.
+### 08 / Choose the right transformation
 
-Each pick has a role, with an expandable **Why these twelve?** guide covering strengths and trade-offs. Select **View lineup** to explore it, then **Make it yours** to create an editable copy. The original preset stays available.
+Select any team slot to open the picker. Search by name, species, or ability, combine power filters, and narrow candidates by series. Already selected forms are marked so every slot stays unique.
 
-<details>
-  <summary><strong>See the complete creator lineup</strong></summary>
-  <br />
-  <a href="docs/assets/screenshots/creator-team.jpg"><img src="docs/assets/screenshots/creator-team.jpg" alt="Creator's favorites by Prabhmannat Singh: ten aliens with distinct combat, rescue, technology, and strategy roles, plus Way Big and Ultimate Echo Echo as bonus picks." width="100%" /></a>
-</details>
+<a href="docs/assets/screenshots/team-picker.jpg"><img src="docs/assets/screenshots/team-picker.jpg" alt="Team picker with Can fly and Can swim selected, showing AmpFibian, Big Chill, and Jetray beside search and series controls." width="100%" /></a>
 
-## Inside the archive
+A team deletion asks for confirmation and keeps at least one personal team available. Existing saved lineups are upgraded automatically.
 
-Fresh screenshots from the current Black Edition, including galleries below the statistics, four-column thumbnails, and named team lineups. Select an image to see it at full size.
+## Compare transformations
 
-<table>
-  <tr>
-    <td width="50%"><a href="docs/assets/screenshots/profile.jpg"><img src="docs/assets/screenshots/profile.jpg" alt="Current Alien X dossier with artwork, profile tabs, species details, and origin facts." width="100%" /></a><br /><strong>01 / Transformation files</strong></td>
-    <td width="50%"><a href="docs/assets/screenshots/comparison.jpg"><img src="docs/assets/screenshots/comparison.jpg" alt="Heatblast, Diamondhead, and XLR8 compared side by side, with the best statistic in each row underlined." width="100%" /></a><br /><strong>02 / Side-by-side comparisons</strong></td>
-  </tr>
-</table>
+### 09 / Strengths, side by side
 
-<details>
-  <summary><strong>More screenshots — team picker and mobile layout</strong></summary>
-  <br />
-  <table>
-    <tr>
-      <td width="72%" valign="top"><a href="docs/assets/screenshots/team-picker.jpg"><img src="docs/assets/screenshots/team-picker.jpg" alt="Team picker with Can fly and Can swim selected, showing AmpFibian, Big Chill, and Jetray alongside search and series filters." width="100%" /></a><br /><strong>03 / Choose your transformation</strong></td>
-      <td width="28%" valign="top"><a href="docs/assets/screenshots/mobile.jpg"><img src="docs/assets/screenshots/mobile.jpg" alt="Mobile layout showing the navigation, archive introduction, and Alien X feature card." width="100%" /></a><br /><strong>04 / On the go</strong></td>
-    </tr>
-  </table>
-</details>
+Select two or three aliens to compare ten statistics, tiers, and homeworlds in one table. The highest value in each statistic is highlighted so different strengths are easy to spot. Ratings are a fan comparison tool.
+
+<a href="docs/assets/screenshots/comparison.jpg"><img src="docs/assets/screenshots/comparison.jpg" alt="Heatblast, Diamondhead, and XLR8 compared side by side, with the highest statistic in each row underlined." width="100%" /></a>
+
+## On the go
+
+### 10 / The archive in your pocket
+
+The homepage, navigation, filters, dossiers, galleries, and team builder adapt to smaller screens. On desktop, press **`/`** to search or **`Esc`** to close a dialog. The sliding navigation pill and card backdrop respect reduced-motion preferences.
+
+<p align="center"><a href="docs/assets/screenshots/mobile.jpg"><img src="docs/assets/screenshots/mobile.jpg" alt="Mobile homepage with compact navigation, the archive introduction, transformation counts, and Alien X feature card." width="375" /></a></p>
 
 ## Run it locally
 
