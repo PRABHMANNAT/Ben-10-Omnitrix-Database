@@ -1,0 +1,19 @@
+.alien-card { border-radius: 20px; border-color: #373b34; }
+.card-image-stage { margin: 7px 7px 0; border: 1px solid #30362d; border-radius: 15px; background: #22251f; }
+.artwork-button { border-radius: inherit; }
+.artwork-button:focus-visible { outline-offset: -4px; outline-width: 2px; }
+.alien-card:hover { border-color: #74816a; background: #191d17; }
+.alien-card:focus-within { border-color: #8c9d7c; }
+.save-button { border-radius: 50%; background: #151a13b8; }
+.card-open { border-radius: 50%; }
+.card-image-stage > .tier-label { border-radius: 7px; background: #20271ee8; }
+.card-image-stage:has(.scene-artwork) .entry-number { border-radius: 7px; }
+.featured-specimen { border-radius: 22px; }
+.team-slot { border-radius: 17px; }
+.team-candidate { border-radius: 15px; }
+.team-candidate-stage { border-radius: 11px; margin: 5px 5px 0; overflow: hidden; }
+.team-candidate:focus-visible { outline-offset: 3px; }
+@media (max-width: 720px) {
+  .alien-card { border-radius: 16px; }
+  .card-image-stage { margin: 5px 5px 0; border-radius: 12px; }
+}
