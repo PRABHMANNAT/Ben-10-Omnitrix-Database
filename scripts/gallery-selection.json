@@ -384,6 +384,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "XLR8 action pose.png",
+        "caption": "XLR8 — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "XLR8 (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/32/XLR8_action_pose.png/revision/latest?cb=20200509231608",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:XLR8_action_pose.png",
+        "width": 1026,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "OS XLR8 front pose.png",
+        "caption": "XLR8 — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "XLR8 (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/90/OS_XLR8_front_pose.png/revision/latest?cb=20210523135146",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OS_XLR8_front_pose.png",
+        "width": 902,
+        "height": 1246,
+        "enhance": false
+      },
+      {
+        "file": "S23 (423).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "XLR8 (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/6b/S23_%28423%29.png/revision/latest?cb=20160131172452",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:S23_(423).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "MW (618).png",
+        "caption": "XLR8 in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "XLR8 (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9b/MW_%28618%29.png/revision/latest?cb=20201228065433",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MW_(618).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
