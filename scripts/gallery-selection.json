@@ -1814,6 +1814,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Ditto OS AP1.png",
+        "caption": "Ditto — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ditto/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/7f/Ditto_OS_AP1.png/revision/latest?cb=20210317090213",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ditto_OS_AP1.png",
+        "width": 1280,
+        "height": 925,
+        "enhance": false
+      },
+      {
+        "file": "Ditto 11 years old.png",
+        "caption": "Ditto — eleven-year-old character design",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ditto/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/21/Ditto_11_years_old.png/revision/latest?cb=20200912003208",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ditto_11_years_old.png",
+        "width": 1200,
+        "height": 1200,
+        "enhance": false
+      },
+      {
+        "file": "Divided (162).png",
+        "caption": "Ditto in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Ditto/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/79/Divided_%28162%29.png/revision/latest?cb=20201128132653",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Divided_(162).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "UPdC (267).png",
+        "caption": "Ditto in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Ditto/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a8/UPdC_%28267%29.png/revision/latest?cb=20231210142131",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UPdC_(267).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
