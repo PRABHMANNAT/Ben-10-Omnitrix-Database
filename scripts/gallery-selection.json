@@ -7212,6 +7212,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "BiS (685).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Kickin' Hawk",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/3c/BiS_%28685%29.png/revision/latest?cb=20160209174123",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BiS_(685).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "OB (707).png",
+        "caption": "Kickin Hawk in Outbreak",
+        "kind": "scene",
+        "section": "Outbreak",
+        "source": "Kickin' Hawk/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/ca/OB_%28707%29.png/revision/latest?cb=20160116163034",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OB_(707).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "OB (712).png",
+        "caption": "Kickin Hawk in Outbreak",
+        "kind": "scene",
+        "section": "Outbreak",
+        "source": "Kickin' Hawk/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/fe/OB_%28712%29.png/revision/latest?cb=20160116163101",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OB_(712).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "WXI1 (438).png",
+        "caption": "Enhanced Reflexes",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Kickin' Hawk",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/59/WXI1_%28438%29.png/revision/latest?cb=20141018170336",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:WXI1_(438).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
