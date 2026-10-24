@@ -714,6 +714,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Stinkfly 10K.png",
+        "caption": "Ben 10,000 as Stinkfly",
+        "kind": "design",
+        "section": "Profile",
+        "source": "Stinkfly (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5a/Stinkfly_10K.png/revision/latest?cb=20260225064527",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Stinkfly_10K.png",
+        "width": 1096,
+        "height": 989,
+        "enhance": false
+      },
+      {
+        "file": "Stinkfly UA Intro.PNG",
+        "caption": "16-year-old Stinkfly in the Ultimate Alien intro",
+        "kind": "design",
+        "section": "Profile",
+        "source": "Stinkfly (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c1/Stinkfly_UA_Intro.PNG/revision/latest?cb=20200727130907",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Stinkfly_UA_Intro.PNG",
+        "width": 841,
+        "height": 1077,
+        "enhance": false
+      },
+      {
+        "file": "BC (1646).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Stinkfly (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/2a/BC_%281646%29.png/revision/latest?cb=20200606213027",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BC_(1646).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "MER (243).png",
+        "caption": "Stinkfly in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Stinkfly (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/7f/MER_%28243%29.png/revision/latest?cb=20160128013306",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MER_(243).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
