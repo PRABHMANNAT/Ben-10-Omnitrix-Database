@@ -4292,6 +4292,60 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "TUE1 (475).png",
+        "caption": "Jury Rigg in Ultimate Alien",
+        "kind": "scene",
+        "section": "Ultimate Alien",
+        "source": "Juryrigg/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5b/TUE1_%28475%29.png/revision/latest?cb=20150801133553",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TUE1_(475).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "HIGaDfY (349).png",
+        "caption": "Jury Rigg in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Juryrigg/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/2f/HIGaDfY_%28349%29.png/revision/latest?cb=20151121182128",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:HIGaDfY_(349).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Jury Rigg — TheHawkDown interpretation.png",
+        "caption": "Jury Rigg — TheHawkDown fan interpretation",
+        "kind": "fanart",
+        "section": "Fan interpretations",
+        "source": "https://www.thehawkdown.com/jury-rigg",
+        "sourcePage": "https://www.thehawkdown.com/jury-rigg",
+        "sourceFile": "https://www.thehawkdown.com/jury-rigg",
+        "originalUrl": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/ee69b0fd-4cee-476e-96ab-665ee1baae2d/IMG_1758.PNG",
+        "credit": "TheHawkDown — non-canon fan interpretation. Ben 10 belongs to its respective owners.",
+        "width": 2500,
+        "height": 3536,
+        "era": "",
+        "enhance": false
+      },
+      {
+        "file": "Jury rigg ov official.png",
+        "caption": "Jury Rigg — Omniverse character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Juryrigg/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/1d/Jury_rigg_ov_official.png/revision/latest?cb=20260430134040",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Jury_rigg_ov_official.png",
+        "width": 535,
+        "height": 717,
+        "enhance": false
       }
     ]
   },
