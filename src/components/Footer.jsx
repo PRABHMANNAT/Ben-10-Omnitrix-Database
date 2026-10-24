@@ -1,12 +1,5 @@
+import { FiArrowUp, FiArrowUpRight } from 'react-icons/fi';
+
 export default function Footer() {
-  return (
-    <footer className="border-t mt-12 py-6 text-center" style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}>
-      <p className="text-xs" style={{ fontFamily: 'var(--font-mono)', color: 'var(--text-dim)' }}>
-        OMNITRIX DATABASE v1.0 · 72 CLASSIFIED ALIEN ENTRIES · ACCESS LEVEL: PLUMBER
-      </p>
-      <p className="text-xs mt-1" style={{ fontFamily: 'var(--font-mono)', color: 'var(--text-dim)', opacity: 0.5 }}>
-        Ben 10 is a trademark of Cartoon Network / Man of Action. This is a fan project.
-      </p>
-    </footer>
-  );
+  return <footer className="site-footer"><div><span className="footer-brand">omnipedia.</span><p>An independent archive for the Ben 10 universe.<br />Characters belong to Cartoon Network / Man of Action.</p></div><div className="footer-links"><a href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database" target="_blank" rel="noreferrer">The project <FiArrowUpRight /></a><button onClick={() => window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' })}>Back to top <FiArrowUp /></button><span>BLACK EDITION · VOL. 01</span></div></footer>;
 }

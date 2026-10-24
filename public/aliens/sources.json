@@ -1,0 +1,362 @@
+{
+  "1": {
+    "name": "Heatblast",
+    "page": "https://ben10.fandom.com/wiki/Heatblast_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/20/Heatblast_omniverse_official.png/revision/latest?cb=20230814111634"
+  },
+  "2": {
+    "name": "Wildmutt",
+    "page": "https://ben10.fandom.com/wiki/Wildmutt",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/4f/Wildmutt_OV.png/revision/latest/scale-to-width-down/600?cb=20200509204106"
+  },
+  "3": {
+    "name": "Diamondhead",
+    "page": "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/e7/Diamondhead_OV.png/revision/latest?cb=20230814094606"
+  },
+  "4": {
+    "name": "XLR8",
+    "page": "https://ben10.fandom.com/wiki/XLR8_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/5/57/XLR8_OV2.png/revision/latest?cb=20240223125033"
+  },
+  "5": {
+    "name": "Grey Matter",
+    "page": "https://ben10.fandom.com/wiki/Grey_Matter_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/0/02/OmniverseGreyMatter.png/revision/latest?cb=20140722160610"
+  },
+  "6": {
+    "name": "Four Arms",
+    "page": "https://ben10.fandom.com/wiki/Four_Arms_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/b/bc/Four_Arms_OV_Model.png/revision/latest?cb=20210515171133"
+  },
+  "7": {
+    "name": "Stinkfly",
+    "page": "https://ben10.fandom.com/wiki/Stinkfly_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/77/Stinkfly_OV.png/revision/latest?cb=20200409100222"
+  },
+  "8": {
+    "name": "Ripjaws",
+    "page": "https://ben10.fandom.com/wiki/Ripjaws_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/ad/Ripjaws_OV.png/revision/latest?cb=20150925140842"
+  },
+  "9": {
+    "name": "Upgrade",
+    "page": "https://ben10.fandom.com/wiki/Upgrade_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/75/OV_Upgrade.png/revision/latest?cb=20210105173649"
+  },
+  "10": {
+    "name": "Ghostfreak",
+    "page": "https://ben10.fandom.com/wiki/Ghostfreak",
+    "image": "https://static.wikia.nocookie.net/ben10/images/6/6d/Ghostfreak_ov_official.png/revision/latest?cb=20210515171015"
+  },
+  "11": {
+    "name": "Cannonbolt",
+    "page": "https://ben10.fandom.com/wiki/Cannonbolt_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/f0/Cannonbolt_true_colors.png/revision/latest?cb=20240930175154"
+  },
+  "12": {
+    "name": "Wildvine",
+    "page": "https://ben10.fandom.com/wiki/Wildvine_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/23/OmniverseWildvine.png/revision/latest?cb=20231208212714"
+  },
+  "13": {
+    "name": "Blitzwolfer",
+    "page": "https://ben10.fandom.com/wiki/Blitzwolfer",
+    "image": "https://static.wikia.nocookie.net/ben10/images/d/d7/Wolfy.png/revision/latest?cb=20200522084648"
+  },
+  "14": {
+    "name": "Snare-oh",
+    "page": "https://ben10.fandom.com/wiki/Snare-Oh",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/ea/Ben-10-omniverse-ben-snare-oh.png/revision/latest?cb=20141129032220"
+  },
+  "15": {
+    "name": "Frankenstrike",
+    "page": "https://ben10.fandom.com/wiki/Frankenstrike",
+    "image": "https://static.wikia.nocookie.net/ben10/images/d/d7/OmniverseFrankenstrike.png/revision/latest?cb=20140404172804"
+  },
+  "16": {
+    "name": "Upchuck",
+    "page": "https://ben10.fandom.com/wiki/Upchuck",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/71/Upchuck_tabber.png/revision/latest?cb=20141129033205"
+  },
+  "17": {
+    "name": "Ditto",
+    "page": "https://ben10.fandom.com/wiki/Ditto",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/a3/Ditto_16_year_old.png/revision/latest?cb=20230918131411"
+  },
+  "18": {
+    "name": "Eye Guy",
+    "page": "https://ben10.fandom.com/wiki/Eye_Guy",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/ad/OmniverseEyeGuy.png/revision/latest?cb=20230814031513"
+  },
+  "19": {
+    "name": "Way Big",
+    "page": "https://ben10.fandom.com/wiki/Way_Big",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/22/Way_Big_RB_Stand.png/revision/latest?cb=20221010212122"
+  },
+  "20": {
+    "name": "Swampfire",
+    "page": "https://ben10.fandom.com/wiki/Swampfire",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/fb/Swampfire_ov2.png/revision/latest?cb=20230627075405"
+  },
+  "21": {
+    "name": "Echo Echo",
+    "page": "https://ben10.fandom.com/wiki/Echo_Echo",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/77/FullEchoEchoArt1.png/revision/latest?cb=20210515172155"
+  },
+  "22": {
+    "name": "Humungousaur",
+    "page": "https://ben10.fandom.com/wiki/Humungousaur_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/41/Humungousaur_omniverse_official.png/revision/latest?cb=20220727052611"
+  },
+  "23": {
+    "name": "Jetray",
+    "page": "https://ben10.fandom.com/wiki/Jetray",
+    "image": "https://static.wikia.nocookie.net/ben10/images/6/60/RB_Jetray_art.png/revision/latest?cb=20220908034208"
+  },
+  "24": {
+    "name": "Big Chill",
+    "page": "https://ben10.fandom.com/wiki/Big_Chill",
+    "image": "https://static.wikia.nocookie.net/ben10/images/d/db/Big_Chill_Reboot.png/revision/latest?cb=20220908034522"
+  },
+  "25": {
+    "name": "Chromastone",
+    "page": "https://ben10.fandom.com/wiki/Chromastone_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/3/3b/Chromastone_OV.png/revision/latest?cb=20200912071313"
+  },
+  "26": {
+    "name": "Brainstorm",
+    "page": "https://ben10.fandom.com/wiki/Brainstorm",
+    "image": "https://static.wikia.nocookie.net/ben10/images/6/6c/Brainstorm_ov.png/revision/latest?cb=20200531230656"
+  },
+  "27": {
+    "name": "Spidermonkey",
+    "page": "https://ben10.fandom.com/wiki/Spidermonkey_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/8/8a/Spidermonkey_omniverse_profile.png/revision/latest?cb=20250228082305"
+  },
+  "28": {
+    "name": "Goop",
+    "page": "https://ben10.fandom.com/wiki/Goop",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/f8/Goop_Reboot_Stand.png/revision/latest?cb=20210218215435"
+  },
+  "29": {
+    "name": "Alien X",
+    "page": "https://ben10.fandom.com/wiki/Alien_X",
+    "image": "https://static.wikia.nocookie.net/ben10/images/d/d2/Alien_X_One_Omnitrix.png/revision/latest?cb=20250402070923"
+  },
+  "30": {
+    "name": "Lodestar",
+    "page": "https://ben10.fandom.com/wiki/Lodestar",
+    "image": "https://static.wikia.nocookie.net/ben10/images/0/09/Lodestar_OV_Stand.png/revision/latest?cb=20230813232252"
+  },
+  "31": {
+    "name": "Nanomech",
+    "page": "https://ben10.fandom.com/wiki/Nanomech",
+    "image": "https://static.wikia.nocookie.net/ben10/images/5/5e/OmniverseNanomech.png/revision/latest?cb=20131216030601"
+  },
+  "32": {
+    "name": "Rath",
+    "page": "https://ben10.fandom.com/wiki/Rath_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/1/1d/Rath_luchador_official.png/revision/latest?cb=20141129035447"
+  },
+  "33": {
+    "name": "AmpFibian",
+    "page": "https://ben10.fandom.com/wiki/Ampfibian_(Classic)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/2b/OV_AmpFibian.png/revision/latest?cb=20210515173746"
+  },
+  "34": {
+    "name": "Armodrillo",
+    "page": "https://ben10.fandom.com/wiki/Armodrillo",
+    "image": "https://static.wikia.nocookie.net/ben10/images/1/10/OV_Armodrillo_Stand.png/revision/latest?cb=20250228082219"
+  },
+  "35": {
+    "name": "Terraspin",
+    "page": "https://ben10.fandom.com/wiki/Terraspin",
+    "image": "https://static.wikia.nocookie.net/ben10/images/8/88/OV_Terraspin_Stand.PNG/revision/latest?cb=20210515162353"
+  },
+  "36": {
+    "name": "NRG",
+    "page": "https://ben10.fandom.com/wiki/NRG",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/a3/NRG_OV_Stand.png/revision/latest?cb=20200515103605"
+  },
+  "37": {
+    "name": "Fasttrack",
+    "page": "https://ben10.fandom.com/wiki/Fasttrack",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/f4/FasttrackUAOfficial.png/revision/latest?cb=20240512052124"
+  },
+  "38": {
+    "name": "ChamAlien",
+    "page": "https://ben10.fandom.com/wiki/Chamalien",
+    "image": "https://static.wikia.nocookie.net/ben10/images/d/d3/UltimateAlienChamAlien.png/revision/latest?cb=20261011125557"
+  },
+  "39": {
+    "name": "Eatle",
+    "page": "https://ben10.fandom.com/wiki/Eatle",
+    "image": "https://static.wikia.nocookie.net/ben10/images/9/95/Eatle_omniverse_official.png/revision/latest?cb=20220727052438"
+  },
+  "40": {
+    "name": "Jury Rigg",
+    "page": "https://ben10.fandom.com/wiki/Juryrigg",
+    "image": "https://static.wikia.nocookie.net/ben10/images/1/1d/Jury_rigg_ov_official.png/revision/latest?cb=20260430134040"
+  },
+  "41": {
+    "name": "Water Hazard",
+    "page": "https://ben10.fandom.com/wiki/Waterhazard",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/e7/Water_hazard_ov_crop.png/revision/latest?cb=20200526123253"
+  },
+  "42": {
+    "name": "Clockwork",
+    "page": "https://ben10.fandom.com/wiki/Clockwork",
+    "image": "https://static.wikia.nocookie.net/ben10/images/6/6e/Clocky.png/revision/latest?cb=20210515172447"
+  },
+  "43": {
+    "name": "Shocksquatch",
+    "page": "https://ben10.fandom.com/wiki/Shocksquatch",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/a6/Shocksquatch_omniverse_official.png/revision/latest?cb=20210515162700"
+  },
+  "44": {
+    "name": "Ultimate Swampfire",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Swampfire",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/4e/Alien-gallery_ultimate_swampfire.png/revision/latest?cb=20210314025221"
+  },
+  "45": {
+    "name": "Ultimate Echo Echo",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Echo_Echo",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/f3/Ultimate_Echo_Echo_omniverse_official.png/revision/latest?cb=20141129023003"
+  },
+  "46": {
+    "name": "Ultimate Humungousaur",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Humungousaur",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/e8/Negative_Ultimate_Humungousaur.png/revision/latest?cb=20230814035042"
+  },
+  "47": {
+    "name": "Ultimate Big Chill",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Big_Chill",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/4b/Ultimate_Big_Chill_Uncloaked_Shaded.png/revision/latest?cb=20210319231126"
+  },
+  "48": {
+    "name": "Ultimate Spidermonkey",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Spidermonkey",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/e1/Negative_ultimate_spidermonkey_official.png/revision/latest?cb=20210515161553"
+  },
+  "49": {
+    "name": "Ultimate Cannonbolt",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Cannonbolt",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/20/Ultimate_Cannonbolt_Model.png/revision/latest?cb=20210314024839"
+  },
+  "50": {
+    "name": "Ultimate Way Big",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Way_Big",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/74/Ultimate_way_big.png/revision/latest?cb=20241118154403"
+  },
+  "51": {
+    "name": "Ultimate Wildmutt",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Wildmutt",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/2a/UltimateWildmuttOfficial.png/revision/latest?cb=20180824092906"
+  },
+  "52": {
+    "name": "Ultimate Rath",
+    "page": "https://ben10.fandom.com/wiki/Ultimate_Rath",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/40/Ultimate_Rath_OV.png/revision/latest?cb=20210802005349"
+  },
+  "53": {
+    "name": "Feedback",
+    "page": "https://ben10.fandom.com/wiki/Feedback",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/f3/Teen_Feedback_Stand.png/revision/latest?cb=20200522083458"
+  },
+  "54": {
+    "name": "Gravattack",
+    "page": "https://ben10.fandom.com/wiki/Gravattack",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/ed/Gravattack_Pose.png/revision/latest?cb=20220802065601"
+  },
+  "55": {
+    "name": "Bloxx",
+    "page": "https://ben10.fandom.com/wiki/Bloxx",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/a5/Bloxx_Reboot_Stand.png/revision/latest?cb=20220911053927"
+  },
+  "56": {
+    "name": "Crashhopper",
+    "page": "https://ben10.fandom.com/wiki/Crashhopper",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/43/OV_Crashhopper.png/revision/latest?cb=20200613085908"
+  },
+  "57": {
+    "name": "Ball Weevil",
+    "page": "https://ben10.fandom.com/wiki/Ball_Weevil",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/2c/Ball_weevil_omniverse_official.png/revision/latest?cb=20220727052729"
+  },
+  "58": {
+    "name": "Walkatrout",
+    "page": "https://ben10.fandom.com/wiki/Walkatrout",
+    "image": "https://static.wikia.nocookie.net/ben10/images/0/0c/Walky.png/revision/latest?cb=20200522085205"
+  },
+  "59": {
+    "name": "Pesky Dust",
+    "page": "https://ben10.fandom.com/wiki/Pesky_Dust",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/4b/Pesky_Dust_2.png/revision/latest?cb=20210730163745"
+  },
+  "60": {
+    "name": "Mole-Stache",
+    "page": "https://ben10.fandom.com/wiki/Mole-Stache",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/70/Mole-Stache_official.png/revision/latest?cb=20200603082802"
+  },
+  "61": {
+    "name": "The Worst",
+    "page": "https://ben10.fandom.com/wiki/The_Worst",
+    "image": "https://static.wikia.nocookie.net/ben10/images/8/8a/OmniverseTheWorst.png/revision/latest?cb=20230611221648"
+  },
+  "62": {
+    "name": "Gutrot",
+    "page": "https://ben10.fandom.com/wiki/Gutrot",
+    "image": "https://static.wikia.nocookie.net/ben10/images/e/eb/Gutrot_official.png/revision/latest?cb=20141129043754"
+  },
+  "63": {
+    "name": "Whampire",
+    "page": "https://ben10.fandom.com/wiki/Whampire",
+    "image": "https://static.wikia.nocookie.net/ben10/images/7/7a/Whampire_facebook_profileT.png/revision/latest?cb=20171022040815"
+  },
+  "64": {
+    "name": "Atomix",
+    "page": "https://ben10.fandom.com/wiki/Atomix",
+    "image": "https://static.wikia.nocookie.net/ben10/images/c/c5/OmniverseAtomix.png/revision/latest?cb=20200601012256"
+  },
+  "65": {
+    "name": "Astrodactyl",
+    "page": "https://ben10.fandom.com/wiki/Astrodactyl",
+    "image": "https://static.wikia.nocookie.net/ben10/images/a/a2/Astrodactyl_Wings.png/revision/latest?cb=20200522084519"
+  },
+  "66": {
+    "name": "Bullfrag",
+    "page": "https://ben10.fandom.com/wiki/Bullfrag",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/26/Bullfrag_OV_4.png/revision/latest?cb=20141129043410"
+  },
+  "67": {
+    "name": "Kickin Hawk",
+    "page": "https://ben10.fandom.com/wiki/Kickin'_Hawk",
+    "image": "https://static.wikia.nocookie.net/ben10/images/4/4b/Kicken_Hawk_Omniverse_official.png/revision/latest?cb=20230814035847"
+  },
+  "68": {
+    "name": "Toepick",
+    "page": "https://ben10.fandom.com/wiki/Toepick",
+    "image": "https://static.wikia.nocookie.net/ben10/images/0/0d/Toepick_art.png/revision/latest?cb=20231208212716"
+  },
+  "69": {
+    "name": "Portaler",
+    "page": "https://ben10.fandom.com/wiki/Portaler",
+    "image": "https://static.wikia.nocookie.net/ben10/images/0/06/Portaler1.png/revision/latest?cb=20140722164620"
+  },
+  "70": {
+    "name": "Sandbox",
+    "page": "https://ben10.fandom.com/wiki/Sandbox",
+    "image": "https://static.wikia.nocookie.net/ben10/images/3/3c/NoImageAvailable.png/revision/latest?cb=20260724025143"
+  },
+  "71": {
+    "name": "Snakepit",
+    "page": "https://ben10.fandom.com/wiki/Snakepit",
+    "image": "https://static.wikia.nocookie.net/ben10/images/3/3c/NoImageAvailable.png/revision/latest?cb=20260724025143"
+  },
+  "72": {
+    "name": "Spitter",
+    "page": "https://ben10.fandom.com/wiki/Spitter",
+    "image": "https://static.wikia.nocookie.net/ben10/images/f/fe/Spitter_Model.png/revision/latest?cb=20250601101739"
+  }
+}

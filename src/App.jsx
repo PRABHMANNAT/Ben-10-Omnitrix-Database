@@ -1,318 +1,110 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { FiFilter } from 'react-icons/fi';
+import { useState, useEffect, useCallback, useMemo, useRef, lazy, Suspense } from 'react';
+import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
+import { FiArrowUpRight, FiArrowRight, FiGrid, FiList, FiLayers, FiSliders, FiX, FiBookmark, FiSearch, FiCheck, FiColumns } from 'react-icons/fi';
 import aliens from './data/aliens';
 import useFilters from './hooks/useFilters';
+import useDialog from './hooks/useDialog';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import SidebarFilters from './components/FilterBar';
 import AlienCard from './components/AlienCard';
+import AlienArtwork from './components/AlienArtwork';
 import AlienModal from './components/AlienModal';
 import TierSection from './components/TierSection';
 import StatsOverview from './components/StatsOverview';
 import Footer from './components/Footer';
+const TeamBuilder = lazy(() => import('./components/TeamBuilder'));
+
+const featured = aliens.find(alien => alien.name === 'Alien X');
+const slug = alien => alien.name.toLowerCase().replace(/\s+/g, '-');
+const ease = [0.2, 0.7, 0.2, 1];
+const sortOptions = [['rank', 'Featured order'], ['name-az', 'Name: A–Z'], ['name-za', 'Name: Z–A'], ['overall', 'Highest overall'], ['power', 'Highest power'], ['speed', 'Highest speed'], ['strength', 'Highest strength'], ['intelligence', 'Highest intelligence'], ['durability', 'Highest durability'], ['series', 'Series order']];
 
 export default function App() {
   const filters = useFilters(aliens);
-  const [selectedAlien, setSelectedAlien] = useState(null);
+  const [selectedAlien, setSelectedAlien] = useState(() => aliens.find(alien => slug(alien) === window.location.hash.slice(1)) || null);
+  const [section, setSection] = useState('archive');
   const [compareMode, setCompareMode] = useState(false);
   const [compareAliens, setCompareAliens] = useState([]);
-  const [debouncedQuery, setDebouncedQuery] = useState('');
+  const [compareOpen, setCompareOpen] = useState(false);
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
-
-  // Debounce search
-  useEffect(() => {
-    const t = setTimeout(() => filters.setSearchQuery(debouncedQuery), 300);
-    return () => clearTimeout(t);
-  }, [debouncedQuery]);
-
-  // URL hash sync
-  useEffect(() => {
-    const hash = window.location.hash.slice(1);
-    if (hash) {
-      const alien = aliens.find(a => a.name.toLowerCase().replace(/\s+/g, '-') === hash);
-      if (alien) setSelectedAlien(alien);
-    }
-  }, []);
+  const [savedIds, setSavedIds] = useState(() => {
+    try { const value = JSON.parse(localStorage.getItem('omnipedia-collection') || '[]'); return Array.isArray(value) ? value.filter(id => aliens.some(alien => alien.id === id)) : []; } catch { return []; }
+  });
+  const [storageError, setStorageError] = useState('');
+  const archiveRef = useRef(null);
 
   useEffect(() => {
-    if (selectedAlien) {
-      window.location.hash = selectedAlien.name.toLowerCase().replace(/\s+/g, '-');
-    } else {
-      history.replaceState(null, '', window.location.pathname);
-    }
-  }, [selectedAlien]);
-
-  // Omnitrix Easter Egg
+    const onHashChange = () => setSelectedAlien(aliens.find(alien => slug(alien) === window.location.hash.slice(1)) || null);
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
   useEffect(() => {
-    const handler = () => {
-      const randomAlien = aliens[Math.floor(Math.random() * aliens.length)];
-      setSelectedAlien(randomAlien);
-    };
-    window.addEventListener('omnitrix-click', handler);
-    return () => window.removeEventListener('omnitrix-click', handler);
+    try { localStorage.setItem('omnipedia-collection', JSON.stringify(savedIds)); } catch { /* Saving still works for this session. */ }
+  }, [savedIds]);
+
+  const openProfile = useCallback(alien => { setSelectedAlien(alien); history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${slug(alien)}`); }, []);
+  const closeProfile = useCallback(() => { setSelectedAlien(null); history.replaceState(null, '', `${window.location.pathname}${window.location.search}`); }, []);
+  const closeFilters = useCallback(() => setIsMobileFiltersOpen(false), []);
+  const closeComparison = useCallback(() => setCompareOpen(false), []);
+  const resetFilters = () => filters.clearAllFilters();
+  const scrollToArchive = () => requestAnimationFrame(() => {
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+    if (archiveRef.current) archiveRef.current.scrollIntoView({ behavior, block: 'start' });
+    else window.scrollTo({ top: 0, behavior });
+  });
+  const changeSection = value => { setSection(value); setCompareMode(false); setIsMobileFiltersOpen(false); filters.clearAllFilters(); scrollToArchive(); };
+  const changeCollection = key => { setSection('archive'); filters.clearAllFilters(); if (key === 'original') filters.updateToggle('onlyOriginal10'); if (key === 'ultimate') filters.updateToggle('onlyUltimates'); scrollToArchive(); };
+  const toggleSaved = useCallback(id => {
+    setSavedIds(previous => previous.includes(id) ? previous.filter(value => value !== id) : [...previous, id]);
+    try { localStorage.setItem('omnipedia-storage-test', '1'); localStorage.removeItem('omnipedia-storage-test'); } catch { setStorageError('Your collection is saved for this visit. Browser storage is unavailable.'); }
   }, []);
+  const handleCompare = useCallback(alien => setCompareAliens(previous => previous.some(entry => entry.id === alien.id) ? previous.filter(entry => entry.id !== alien.id) : previous.length < 3 ? [...previous, alien] : previous), []);
+  const toggleCompareMode = () => { if (section === 'team') setSection('archive'); setCompareMode(value => !value); setCompareAliens([]); setCompareOpen(false); if (!compareMode) scrollToArchive(); };
 
-  // Tier counts
-  const tierCounts = useMemo(() => {
-    const counts = {};
-    aliens.forEach(a => { counts[a.tier] = (counts[a.tier] || 0) + 1; });
-    return counts;
-  }, []);
+  const displayedAliens = useMemo(() => section === 'saved' ? filters.filteredAliens.filter(alien => savedIds.includes(alien.id)) : filters.filteredAliens, [section, filters.filteredAliens, savedIds]);
+  const navigateAlien = useCallback(direction => {
+    const list = displayedAliens.some(alien => alien.id === selectedAlien?.id) ? displayedAliens : aliens;
+    const index = list.findIndex(alien => alien.id === selectedAlien?.id);
+    if (list.length) openProfile(list[(index + direction + list.length) % list.length]);
+  }, [displayedAliens, selectedAlien, openProfile]);
+  const previousAlien = useCallback(() => navigateAlien(-1), [navigateAlien]);
+  const nextAlien = useCallback(() => navigateAlien(1), [navigateAlien]);
+  const cardProps = { onClick: openProfile, isCompareMode: compareMode, onCompare: handleCompare, onSave: toggleSaved, selectionFull: compareAliens.length >= 3 };
+  const collectionTitle = section === 'saved' ? 'Your collection' : filters.toggles.onlyOriginal10 ? 'The original ten' : filters.toggles.onlyUltimates ? 'Ultimate forms' : 'The archive';
 
-  // Modal navigation
-  const navigateAlien = useCallback((direction) => {
-    if (!selectedAlien) return;
-    const list = filters.filteredAliens;
-    const idx = list.findIndex(a => a.id === selectedAlien.id);
-    if (idx === -1) return;
-    const newIdx = direction === 'prev'
-      ? (idx - 1 + list.length) % list.length
-      : (idx + 1) % list.length;
-    setSelectedAlien(list[newIdx]);
-  }, [selectedAlien, filters.filteredAliens]);
-
-  // Compare
-  const handleCompare = useCallback((alien) => {
-    setCompareAliens(prev => {
-      if (prev.some(a => a.id === alien.id)) return prev.filter(a => a.id !== alien.id);
-      if (prev.length >= 3) return prev;
-      return [...prev, alien];
-    });
-  }, []);
-
-  return (
-    <div className="relative min-h-screen text-zinc-100 font-sans selection:bg-emerald-500/30">
-      {/* Background Effects */}
-      <div className="gradient-bg"></div>
-      <div className="noise-overlay"></div>
-
-      {/* Content Layout */}
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Header
-          totalAliens={aliens.length}
-          filteredCount={filters.filteredAliens.length}
-          tierCounts={tierCounts}
-          godTierCount={tierCounts.GOD || 0}
-        />
-
-        <div className="flex-1 max-w-[1600px] w-full mx-auto flex">
-          
-          {/* Sidebar Filters */}
-          <SidebarFilters
-            {...filters}
-            isMobileOpen={isMobileFiltersOpen}
-            setIsMobileOpen={setIsMobileFiltersOpen}
-          />
-
-          {/* Mobile Overlay */}
-          {isMobileFiltersOpen && (
-            <div 
-              className="fixed inset-0 bg-black/50 z-40 lg:hidden backdrop-blur-sm"
-              onClick={() => setIsMobileFiltersOpen(false)}
-            ></div>
-          )}
-
-          {/* Main Feed */}
-          <main className="flex-1 w-full min-w-0 px-4 md:px-8 py-8 space-y-8 flex flex-col">
-            
-            {/* Top Bar (Search + Mobile Filter Toggle) */}
-            <div className="flex gap-4 items-center">
-              <button 
-                className="lg:hidden p-3 rounded-lg glass-panel hover:bg-zinc-800 transition-colors"
-                onClick={() => setIsMobileFiltersOpen(true)}
-              >
-                <FiFilter size={20} className="text-emerald-400" />
-              </button>
-              <div className="flex-1">
-                <SearchBar
-                  value={debouncedQuery}
-                  onChange={setDebouncedQuery}
-                  resultCount={filters.filteredAliens.length}
-                  total={aliens.length}
-                />
-              </div>
-            </div>
-
-            <StatsOverview aliens={aliens} filteredCount={filters.filteredAliens.length} />
-
-            {/* Compare Dashboard */}
-            <div className="flex items-center justify-between">
-              <button
-                onClick={() => { setCompareMode(!compareMode); setCompareAliens([]); }}
-                className={`text-xs px-5 py-2.5 rounded-full border transition-all font-bold tracking-wider ${
-                  compareMode 
-                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.2)]' 
-                    : 'border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-white'
-                }`}
-              >
-                {compareMode ? `COMPARING ${compareAliens.length}/3 — EXIT` : 'ENTER COMPARE MODE'}
-              </button>
-            </div>
-
-            {/* Content Grid */}
-            <div className="flex-1">
-              {filters.viewMode === 'tier' ? (
-                <TierSection
-                  aliens={filters.filteredAliens}
-                  onAlienClick={setSelectedAlien}
-                  isCompareMode={compareMode}
-                  selectedCompare={compareAliens}
-                  onCompare={handleCompare}
-                />
-              ) : filters.viewMode === 'list' ? (
-                <div className="space-y-2">
-                  {filters.filteredAliens.map((alien, i) => (
-                    <ListRow key={alien.id} alien={alien} index={i} onClick={() => setSelectedAlien(alien)} />
-                  ))}
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-items-center">
-                  {filters.filteredAliens.map((alien, i) => (
-                    <AlienCard
-                      key={alien.id}
-                      alien={alien}
-                      index={i}
-                      onClick={setSelectedAlien}
-                      isCompareMode={compareMode}
-                      isSelected={compareAliens.some(c => c.id === alien.id)}
-                      onCompare={handleCompare}
-                    />
-                  ))}
-                </div>
-              )}
-
-              {/* Empty State */}
-              {filters.filteredAliens.length === 0 && (
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="flex flex-col items-center justify-center py-32 text-center"
-                >
-                  <div className="w-24 h-24 mb-6 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center shadow-inner">
-                    <span className="text-4xl">🛸</span>
-                  </div>
-                  <h3 className="text-3xl font-bold heading-display text-white mb-2 tracking-widest">NO LIFEFORMS DETECTED</h3>
-                  <p className="text-zinc-400 mb-8 max-w-md">The Omnitrix cannot find any aliens matching your current database filters.</p>
-                  <button
-                    onClick={filters.clearAllFilters}
-                    className="btn-primary text-sm tracking-wider"
-                  >
-                    RESET ALL FILTERS
-                  </button>
-                </motion.div>
-              )}
-            </div>
-            
-            <Footer />
-          </main>
-        </div>
-
-        {/* Compare Panel Overlay */}
-        <AnimatePresence>
-          {compareMode && compareAliens.length >= 2 && (
-            <ComparePanel aliens={compareAliens} onClose={() => { setCompareMode(false); setCompareAliens([]); }} />
-          )}
-        </AnimatePresence>
-
-        {/* Modal Selection */}
-        <AnimatePresence>
-          {selectedAlien && (
-            <AlienModal
-              alien={selectedAlien}
-              onClose={() => setSelectedAlien(null)}
-              onPrev={() => navigateAlien('prev')}
-              onNext={() => navigateAlien('next')}
-              allAliens={filters.filteredAliens}
-            />
-          )}
-        </AnimatePresence>
-      </div>
+  return <MotionConfig reducedMotion="user"><a className="skip-link" href={section === 'team' ? '#team-title' : '#archive'}>{section === 'team' ? 'Skip to team builder' : 'Skip to archive'}</a><div className="app-shell">
+    <Header section={section} onSectionChange={changeSection} compareMode={compareMode} onCompare={toggleCompareMode} onRandom={() => openProfile(aliens[Math.floor(Math.random() * aliens.length)])} savedCount={savedIds.length} />
+    <div className="page-layout">
+      <SidebarFilters {...filters} aliens={aliens} section={section} onSectionChange={changeSection} onCollectionChange={changeCollection} onReset={resetFilters} isMobileOpen={isMobileFiltersOpen} onClose={closeFilters} savedCount={savedIds.length} />
+      <main className={`main-content ${compareMode ? 'with-compare-tray' : ''}`}>
+        {section === 'team' ? <Suspense fallback={<div className="team-loading" role="status">Loading your team…</div>}><TeamBuilder aliens={aliens} /></Suspense> : <>
+        <section className="hero" aria-labelledby="hero-title"><motion.div className="hero-copy" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease }}><div className="hero-eyebrow"><span className="small-square" /><span>THE BEN 10 ENCYCLOPEDIA</span><span className="hero-volume">VOL. 01</span></div><h1 id="hero-title">Every form.<br /><span>One universe.</span></h1><p>Explore 72 transformations across four animated series.<br />From the original ten to the Omniverse.</p><button className="text-link" onClick={scrollToArchive}>Explore the archive <FiArrowDownRight /></button><StatsOverview total={aliens.length} /></motion.div>
+          <motion.div className="featured-specimen" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, ease }}><span className="specimen-label">FEATURED TRANSFORMATION</span><span className="specimen-number">FILE / {String(featured.id).padStart(3, '0')}</span><div className="orbit orbit-one" aria-hidden="true" /><div className="orbit orbit-two" aria-hidden="true" /><span className="feature-letter" aria-hidden="true">X</span><div className="specimen-art"><AlienArtwork alien={featured} eager /></div><span className="specimen-coordinate">CELESTIALSAPIEN<br />FORGE OF CREATION</span><div className="featured-bottom"><div><span className="eyebrow">THE REALITY SHAPER</span><h2>Alien X<span>God tier</span></h2></div><button className="feature-open" onClick={() => openProfile(featured)} aria-label="Explore Alien X"><FiArrowUpRight /></button></div></motion.div>
+        </section>
+        <section className="archive-section" id="archive" ref={archiveRef} aria-labelledby="archive-title"><div className="archive-heading"><div><div className="eyebrow section-index">01 / {section === 'saved' ? 'PERSONAL ARCHIVE' : 'THE TRANSFORMATIONS'}</div><h2 id="archive-title">{collectionTitle}<span>{String(displayedAliens.length).padStart(2, '0')}</span></h2><p>{section === 'saved' ? 'The forms you keep coming back to. Saved on this browser.' : 'Species, abilities, and the stories behind each form.'}</p></div><button className={`button compare-toggle ${compareMode ? 'active' : ''}`} onClick={toggleCompareMode}><FiColumns />{compareMode ? 'Exit comparison' : 'Compare aliens'}<FiArrowUpRight /></button></div>
+          <div className="archive-toolbar"><button className="icon-button mobile-filter-button" aria-label="Open filters" onClick={() => setIsMobileFiltersOpen(true)}><FiSliders />{filters.activeFiltersCount > 0 && <span>{filters.activeFiltersCount}</span>}</button><SearchBar value={filters.searchQuery} onChange={filters.setSearchQuery} /><label className="sort-control"><span>Sort by</span><select aria-label="Sort transformations" value={filters.sortBy} onChange={event => filters.setSortBy(event.target.value)}>{sortOptions.map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label><div className="view-switcher" role="group" aria-label="Archive view">{[['grid', FiGrid, 'Grid view'], ['list', FiList, 'List view'], ['tier', FiLayers, 'Tier view']].map(([value, Icon, label]) => <button key={value} className={filters.viewMode === value ? 'active' : ''} aria-label={label} aria-pressed={filters.viewMode === value} onClick={() => filters.setViewMode(value)}><Icon /></button>)}</div></div>
+          <div className="results-line"><span role="status" aria-live="polite">{displayedAliens.length} {displayedAliens.length === 1 ? 'transformation' : 'transformations'}{filters.activeFiltersCount > 0 ? ' matching your filters' : ' to discover'}</span>{compareMode ? <span className="selection-hint">Select up to three forms to compare</span> : <span className="results-hint">PROFILES / ABILITIES / STATISTICS</span>}{filters.activeFiltersCount > 0 && <button onClick={resetFilters}>Clear filters <FiX /></button>}</div>
+          {storageError && <p className="storage-message" role="status">{storageError}</p>}
+          {displayedAliens.length > 0 ? filters.viewMode === 'tier' ? <TierSection aliens={displayedAliens} {...cardProps} selectedCompare={compareAliens} savedIds={savedIds} /> : filters.viewMode === 'list' ? <div className="list-view"><div className="list-header"><span>Transformation</span><span>Species</span><span>Tier</span><span>Overall</span><span /></div>{displayedAliens.map(alien => <ListRow key={alien.id} alien={alien} {...cardProps} isSaved={savedIds.includes(alien.id)} isSelected={compareAliens.some(entry => entry.id === alien.id)} />)}</div> : <div className="alien-grid" key={section}>{displayedAliens.map((alien, index) => <AlienCard key={alien.id} alien={alien} index={index} {...cardProps} isSaved={savedIds.includes(alien.id)} isSelected={compareAliens.some(entry => entry.id === alien.id)} />)}</div> : <div className="empty-state">{section === 'saved' && !savedIds.length ? <FiBookmark /> : <FiSearch />}<h3>{section === 'saved' && !savedIds.length ? 'Make it your universe.' : 'No forms found.'}</h3><p>{section === 'saved' && !savedIds.length ? 'Save a transformation with the bookmark icon. Your collection starts with one.' : 'Try another name, ability, or a broader set of filters.'}</p><button className="button button-primary" onClick={() => section === 'saved' && !savedIds.length ? changeSection('archive') : resetFilters()}>{section === 'saved' && !savedIds.length ? 'Explore transformations' : 'Reset filters'}<FiArrowRight /></button></div>}
+          {displayedAliens.length > 0 && <div className="archive-end"><span />YOU’VE REACHED THE END OF THIS COLLECTION<span /></div>}
+        </section></>}
+        <Footer />
+      </main>
     </div>
-  );
+    <AnimatePresence>{compareMode && <motion.div className="compare-tray" initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }} transition={{ duration: 0.25, ease }}><div className="tray-label"><FiColumns /><span>Compare forms<small>{compareAliens.length} of 3 selected</small></span></div><div className="tray-slots">{[0, 1, 2].map(index => compareAliens[index] ? <button className="tray-slot filled" key={index} onClick={() => handleCompare(compareAliens[index])} aria-label={`Remove ${compareAliens[index].name} from comparison`}><AlienArtwork alien={compareAliens[index]} /><span>{compareAliens[index].name}</span><FiX /></button> : <span className="tray-slot" key={index}><span>0{index + 1}</span><small>Select a form</small></span>)}</div><button className="button button-primary" disabled={compareAliens.length < 2} onClick={() => setCompareOpen(true)}>Compare <FiArrowRight /></button><button className="icon-button" aria-label="Exit comparison" onClick={toggleCompareMode}><FiX /></button></motion.div>}</AnimatePresence>
+    <AnimatePresence>{selectedAlien && <AlienModal alien={selectedAlien} onClose={closeProfile} onPrev={previousAlien} onNext={nextAlien} isSaved={savedIds.includes(selectedAlien.id)} onSave={toggleSaved} />}{compareOpen && <ComparePanel aliens={compareAliens} onClose={closeComparison} />}</AnimatePresence>
+  </div></MotionConfig>;
 }
 
-// List Row View (Premium update)
-function ListRow({ alien, index, onClick }) {
-  const tc = { GOD: '#f59e0b', S: '#ef4444', A: '#3b82f6', B: '#10b981', C: '#8b5cf6', D: '#71717a', F: '#3f3f46' }[alien.tier] || '#71717a';
-  return (
-    <div
-      onClick={onClick}
-      className="glass-panel group flex items-center gap-4 px-5 py-3 rounded-xl cursor-pointer transition-all hover:-translate-y-1 hover:shadow-xl relative overflow-hidden"
-    >
-      <div className="absolute left-0 top-0 bottom-0 w-1" style={{ background: tc }}></div>
-      <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm bg-zinc-900/80 border border-zinc-700 group-hover:border-emerald-500/50 transition-colors" style={{ color: tc, fontFamily: 'var(--font-display)' }}>#{alien.rank}</div>
-      <span className="text-lg font-bold w-48 truncate text-zinc-100 group-hover:text-emerald-400 transition-colors" style={{ fontFamily: 'var(--font-display)' }}>{alien.name}</span>
-      <span className="text-xs w-40 truncate hidden md:inline text-zinc-400 uppercase tracking-wider">{alien.species}</span>
-      <span className="text-[10px] px-3 py-1 rounded-full font-bold tracking-widest" style={{ background: `${tc}15`, color: tc, border: `1px solid ${tc}30` }}>{alien.tier} TIER</span>
-      <div className="flex-1 hidden lg:flex items-center justify-end gap-2">
-        <span className="text-xs text-zinc-500 font-mono font-bold mr-4">OVR: <span className="text-emerald-400">{alien.stats.overall}</span></span>
-        {alien.tags.slice(0, 3).map(t => (
-          <span key={t} className="text-[10px] px-2 py-0.5 rounded border border-zinc-700 text-zinc-400 bg-zinc-800/50">{t}</span>
-        ))}
-      </div>
-    </div>
-  );
+function FiArrowDownRight() { return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M5 5l14 14M7 19h12V7" /></svg>; }
+
+function ListRow({ alien, onClick, isCompareMode, onCompare, isSelected, isSaved, onSave, selectionFull }) {
+  return <div className={`list-row ${isSelected ? 'is-selected' : ''}`}><button className="list-name" disabled={isCompareMode && selectionFull && !isSelected} onClick={() => isCompareMode ? onCompare(alien) : onClick(alien)}>{isCompareMode && <span className="list-check">{isSelected ? <FiCheck /> : '+'}</span>}<AlienArtwork alien={alien} /><span>{alien.name}<small>N° {String(alien.id).padStart(3, '0')}</small></span></button><span className="list-species">{alien.species}</span><span className="list-tier">{alien.tier}</span><span className="list-overall">{alien.stats.overall}<small>/ 100</small></span><button className={`icon-button ${isSaved ? 'saved' : ''}`} aria-label={`${isSaved ? 'Remove' : 'Save'} ${alien.name} ${isSaved ? 'from' : 'to'} collection`} onClick={() => onSave(alien.id)}><FiBookmark /></button></div>;
 }
 
-// Compare Panel (Premium update)
 function ComparePanel({ aliens, onClose }) {
-  const stats = ['power', 'speed', 'strength', 'intelligence', 'durability', 'agility', 'utility', 'stealth', 'range', 'overall'];
-  const tc = { GOD: '#f59e0b', S: '#ef4444', A: '#3b82f6', B: '#10b981', C: '#8b5cf6', D: '#71717a', F: '#3f3f46' };
-
-  return (
-    <motion.div
-      className="fixed bottom-0 left-0 right-0 z-[100] glass-panel border-t border-emerald-500/30 rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.5)]"
-      initial={{ y: '100%' }}
-      animate={{ y: 0 }}
-      exit={{ y: '100%' }}
-      transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-    >
-      <div className="max-w-[1200px] mx-auto p-6 md:p-8">
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="text-xl font-bold heading-display text-emerald-400 shiny-text">
-            COMBAT COMPARISON
-          </h3>
-          <button onClick={onClose} className="btn-secondary text-xs tracking-wider">EXIT COMPARE</button>
-        </div>
-        <div className="overflow-x-auto custom-scroll pb-4">
-          <table className="w-full text-sm">
-            <thead>
-              <tr>
-                <th className="text-left pr-6 py-2 text-zinc-500 text-xs font-bold tracking-widest uppercase">Statistic Base</th>
-                {aliens.map(a => (
-                  <th key={a.id} className="text-center px-6 py-2 min-w-[150px]">
-                    <div className="w-16 h-16 mx-auto mb-2 rounded-full overflow-hidden bg-zinc-900 border" style={{ borderColor: tc[a.tier] }}>
-                      <img src={a.image} alt={a.name} className="w-full h-full object-cover scale-150 object-top" />
-                    </div>
-                    <div className="font-bold heading-display text-lg" style={{ color: tc[a.tier] }}>{a.name}</div>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {stats.map((stat, i) => {
-                const maxVal = Math.max(...aliens.map(a => a.stats[stat]));
-                return (
-                  <tr key={stat} className={i % 2 === 0 ? 'bg-white/5' : ''}>
-                    <td className="capitalize pr-6 py-3 font-medium text-zinc-400 border-l-2 border-transparent hover:border-emerald-500 transition-colors pl-4">{stat}</td>
-                    {aliens.map(a => {
-                      const isMax = a.stats[stat] === maxVal;
-                      return (
-                        <td key={a.id} className="text-center px-6 py-3">
-                          <span className={`inline-block px-3 py-1 rounded-full font-bold ${isMax ? 'bg-emerald-500/20 text-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.2)]' : 'text-zinc-300'}`}>
-                            {a.stats[stat]}
-                          </span>
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </motion.div>
-  );
+  const ref = useRef(null);
+  useDialog(ref, onClose);
+  return <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}><motion.section ref={ref} role="dialog" aria-modal="true" aria-labelledby="compare-title" tabIndex={-1} className="compare-dialog" onClick={event => event.stopPropagation()} initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 24, opacity: 0 }} transition={{ duration: 0.25, ease }}><div className="dialog-topline"><span className="eyebrow">SIDE BY SIDE / FIELD NOTES</span><button className="icon-button" onClick={onClose} aria-label="Close comparison"><FiX /></button></div><div className="comparison-heading"><h2 id="compare-title">Strengths, side by side.</h2><p>Compare each form’s strengths. The highest values are underlined.</p></div><div className="comparison-table-wrap"><table className="comparison-table"><thead><tr><th scope="col">Transformation</th>{aliens.map(alien => <th scope="col" key={alien.id}><AlienArtwork alien={alien} eager /><span>{alien.name}</span><small>{alien.species}</small></th>)}</tr></thead><tbody>{Object.keys(aliens[0].stats).map(stat => { const max = Math.max(...aliens.map(alien => alien.stats[stat])); return <tr key={stat}><th scope="row">{stat}</th>{aliens.map(alien => <td key={alien.id}><span className={alien.stats[stat] === max ? 'best-stat' : ''}>{alien.stats[stat]}</span></td>)}</tr>; })}<tr><th scope="row">Power tier</th>{aliens.map(alien => <td key={alien.id}>{alien.tier}</td>)}</tr><tr><th scope="row">Homeworld</th>{aliens.map(alien => <td key={alien.id} className="comparison-text">{alien.homeworld}</td>)}</tr></tbody></table></div><div className="dialog-footer"><span className="eyebrow">EVERY FORM HAS ITS PURPOSE.</span><button className="button" onClick={onClose}>Keep exploring<FiArrowRight /></button></div></motion.section></motion.div>;
 }
