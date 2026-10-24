@@ -5491,6 +5491,58 @@
         "width": 1024,
         "height": 576,
         "enhance": true
+      },
+      {
+        "file": "PN775IM (450).png",
+        "caption": "Spiked Tail/Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Wildmutt",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/6d/PN775IM_%28450%29.png/revision/latest?cb=20150817184249",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(450).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "PN775IM (433).png",
+        "caption": "Ultimate Wildmutt in Prisoner Number 775 is Missing",
+        "kind": "scene",
+        "section": "Prisoner Number 775 is Missing",
+        "source": "Ultimate Wildmutt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/6f/PN775IM_%28433%29.png/revision/latest?cb=20150817184212",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(433).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "PN775IM (435).png",
+        "caption": "Ultimate Wildmutt in Prisoner Number 775 is Missing",
+        "kind": "scene",
+        "section": "Prisoner Number 775 is Missing",
+        "source": "Ultimate Wildmutt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/80/PN775IM_%28435%29.png/revision/latest?cb=20150817184213",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(435).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "PN775IM (434).png",
+        "caption": "Bipedalism",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Wildmutt",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/59/PN775IM_%28434%29.png/revision/latest?cb=20150817184213",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PN775IM_(434).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
