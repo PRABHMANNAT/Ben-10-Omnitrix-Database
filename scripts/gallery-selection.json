@@ -2914,6 +2914,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Spidermonkey (2).png",
+        "caption": "Spidermonkey — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Spidermonkey (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/0/08/Pedro_Astudillo_Spidermonkey_%282%29.png/revision/latest?cb=20220223192041",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Spidermonkey_(2).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Spidermonkey (3).png",
+        "caption": "Spidermonkey — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Spidermonkey (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/93/Pedro_Astudillo_Spidermonkey_%283%29.png/revision/latest?cb=20220223192043",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Spidermonkey_(3).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "TT (285).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Spidermonkey (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a9/TT_%28285%29.png/revision/latest?cb=20151205132025",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TT_(285).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "FG (177).png",
+        "caption": "Spidermonkey in Alien Force",
+        "kind": "scene",
+        "section": "Alien Force",
+        "source": "Spidermonkey (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/cc/FG_%28177%29.png/revision/latest?cb=20151101165316",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FG_(177).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
