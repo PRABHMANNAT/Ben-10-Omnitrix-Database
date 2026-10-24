@@ -1,0 +1,16 @@
+/* Soft corners and consistent hit areas across archive and team controls. */
+.button { border-radius: 999px; }
+.icon-button { border-radius: 11px; }
+.collection-links button { border-radius: 11px; }
+.filter-select select { min-height: 44px; border-radius: 12px; padding: 11px 32px 11px 13px; background-color: #1b1e1b; border-color: #3d433d; background-position: right 10px center; transition: border-color 160ms, background-color 160ms; }
+.filter-select select:hover { background-color: #222722; border-color: #707b67; }
+.filter-select select:focus-visible { border-color: var(--accent); outline-offset: 3px; }
+.filter-select > span { padding-left: 3px; margin-bottom: 8px; }
+.advanced-filters summary { border: 1px solid #343a33; border-radius: 12px; padding: 10px 12px; min-height: 44px; background: #171a16; color: #c0c7b9; }
+.advanced-filters summary:hover { border-color: #69755e; background: #20251c; }
+.advanced-filters[open] summary { border-color: #69755e; }
+.reset-filters { border: 1px solid #48523f; border-radius: 999px; min-height: 40px; padding: 9px 12px; }
+.reset-filters:hover { background: #22281d; }
+.archive-toolbar, .team-picker-toolbar { border-radius: 16px; }
+.team-select-label select, .team-name-body > input { border-radius: 12px; }
+.view-switcher button { border-radius: 9px; }
