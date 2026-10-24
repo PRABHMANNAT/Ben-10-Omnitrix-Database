@@ -824,6 +824,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Ripjaws forward.png",
+        "caption": "Ripjaws — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ripjaws (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5d/Ripjaws_forward.png/revision/latest?cb=20210314132237",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ripjaws_forward.png",
+        "width": 810,
+        "height": 1477,
+        "enhance": false
+      },
+      {
+        "file": "Open Mouth Ripjaws 1.png",
+        "caption": "Ripjaws — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ripjaws (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/84/Open_Mouth_Ripjaws_1.png/revision/latest?cb=20210505065951",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Open_Mouth_Ripjaws_1.png",
+        "width": 596,
+        "height": 1082,
+        "enhance": false
+      },
+      {
+        "file": "Ben 10 ripjaws HD.png",
+        "caption": "Ripjaws — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ripjaws (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/63/Ben_10_ripjaws_HD.png/revision/latest?cb=20181127042614",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ben_10_ripjaws_HD.png",
+        "width": 852,
+        "height": 1054,
+        "enhance": false
+      },
+      {
+        "file": "PH (276).png",
+        "caption": "Ripjaws in Ultimate Alien",
+        "kind": "scene",
+        "section": "Ultimate Alien",
+        "source": "Ripjaws (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/90/PH_%28276%29.png/revision/latest?cb=20150917200854",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PH_(276).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
