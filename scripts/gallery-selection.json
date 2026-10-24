@@ -4182,6 +4182,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Eatleactionpose.png",
+        "caption": "Eatle — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Eatle/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/85/Eatleactionpose.png/revision/latest?cb=20210130172605",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Eatleactionpose.png",
+        "width": 1583,
+        "height": 1656,
+        "enhance": false
+      },
+      {
+        "file": "NotLN (256).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Eatle",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/dc/NotLN_%28256%29.png/revision/latest?cb=20150802191525",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:NotLN_(256).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "OM (436).png",
+        "caption": "Eatle in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Eatle/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/1d/OM_%28436%29.png/revision/latest?cb=20160131163049",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OM_(436).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "EoMF (195).png",
+        "caption": "Eatle in Ultimate Alien",
+        "kind": "scene",
+        "section": "Ultimate Alien",
+        "source": "Eatle/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/45/EoMF_%28195%29.png/revision/latest?cb=20150731164242",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:EoMF_(195).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
