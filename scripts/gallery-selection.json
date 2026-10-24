@@ -4514,6 +4514,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "TEC (125).png",
+        "caption": "Clockwork in Ultimate Alien",
+        "kind": "scene",
+        "section": "Ultimate Alien",
+        "source": "Clockwork/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/7e/TEC_%28125%29.png/revision/latest?cb=20150729204530",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TEC_(125).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "BIM (341).png",
+        "caption": "Clockwork in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Clockwork/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c8/BIM_%28341%29.png/revision/latest?cb=20151219122431",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BIM_(341).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "IaMBW1 (504).png",
+        "caption": "Time Rays",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Clockwork",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/ac/IaMBW1_%28504%29.png/revision/latest?cb=20160209185349",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:IaMBW1_(504).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "TWB (385).png",
+        "caption": "360° Rotating Head Key",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Clockwork",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f3/TWB_%28385%29.png/revision/latest?cb=20160207141732",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TWB_(385).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
