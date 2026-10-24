@@ -1,13 +1,17 @@
 {
-  "name": "ben-10-aliens",
+  "name": "omnipedia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "check": "npm run lint && npm test && npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
@@ -28,5 +32,9 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "vite": "^7.3.1"
+  },
+  "description": "A React JavaScript Ben 10 encyclopedia with alien galleries, comparisons, and named team lineups.",
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

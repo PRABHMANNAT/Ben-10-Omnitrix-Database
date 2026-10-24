@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  A fan-made <strong>Ben 10 alien encyclopedia</strong> with a matte black interface,<br />
+  A fan-made <strong>React JavaScript Ben 10 encyclopedia</strong> with a matte black interface,<br />
   281 curated images, detailed transformation files, comparisons, and your own named Omnitrix lineups.
 </p>
 
@@ -146,6 +146,7 @@ Real screenshots from the Black Edition. Select an image to see it at full size.
 ## Run it locally
 
 Use **Node.js 22.12+** and npm. Node.js 24 is also supported.
+The Node requirement is declared in `package.json`; `.nvmrc` selects the Node 22 release line.
 
 ```bash
 git clone https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database.git
@@ -159,10 +160,21 @@ Open the local URL printed by Vite, usually **http://localhost:5173**. No API ke
 | Command | Purpose |
 | :--- | :--- |
 | `npm run dev` | Start the development server with hot reload |
+| `npm start` | Alias for the Vite development server |
 | `npm run build` | Build the production site into `dist/` |
 | `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint |
-| `node --test src/lib/abilities.test.js src/lib/team.test.js src/lib/gallery.test.js` | Check ability matching, search phrases, team rules, library migration, saved-state recovery, the creator preset, and gallery asset integrity |
+| `npm run lint` | Check React source, JavaScript utilities, tests, and maintenance scripts with ESLint |
+| `npm test` | Run all 26 tests for abilities, team storage, presets, and gallery integrity |
+| `npm run test:watch` | Rerun tests while developing |
+| `npm run check` | Run lint, tests, and the production build in sequence |
+
+## React JavaScript project
+
+The application uses **React 19 with JavaScript and JSX**, built by **Vite**. React components live in `.jsx` files; hooks, data, and shared logic use `.js` modules. `index.html` loads `src/main.jsx`, which mounts `App` with React DOM and imports the shared styles. `App.jsx` composes the archive, filters, dialogs, and team builder. Team creation and image galleries load on demand.
+
+`jsconfig.json` configures JavaScript/JSX editor support and JSON imports. The React type-definition packages support editor completion; the application does not require a TypeScript build. ESLint applies React Hooks and Fast Refresh checks to browser components and Node globals to tests and maintenance scripts. The unused Vite starter styles and logos have been removed.
+
+For interface changes, start in `src/components/` and `src/styles/`. Keep reusable filtering, gallery, and team rules in `src/lib/`, with matching `.test.js` files. New tests are discovered by `npm test`. Optional asset download and encoding tools stay in `scripts/`; running the app only needs npm.
 
 ## Built with
 
@@ -172,15 +184,20 @@ The interface uses custom CSS, DM Sans, and IBM Plex Mono. Alien illustrations a
 
 ```text
 src/
+├── main.jsx          React DOM entry point and shared style imports
+├── App.jsx           Application state, archive views, and composition
 ├── components/       Archive cards, dossiers, filters, and team builder
 ├── data/             Alien records and local artwork mappings
 ├── hooks/            Filtering and dialog behavior
-├── lib/              Team rules and their tests
+├── lib/              Ability matching, team/gallery rules, and tests
 └── styles/           Black Edition design and responsive layouts
 public/aliens/        Cached character art and its source manifest
 public/gallery/       281 optimized full-resolution gallery images
 scripts/              Artwork and gallery cache / encoding utilities
 docs/assets/          README banner, custom icons, and app screenshots
+jsconfig.json         JavaScript and JSX editor configuration
+vite.config.js        React and Tailwind build plugins
+eslint.config.js      Browser React and Node tooling checks
 ```
 
 <details>

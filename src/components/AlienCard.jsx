@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { FiArrowUpRight, FiBookmark, FiCheck, FiPlus } from 'react-icons/fi';
 import AlienArtwork from './AlienArtwork';
 
 export default function AlienCard({ alien, index = 0, onClick, isCompareMode, isSelected, onCompare, isSaved, onSave, selectionFull }) {
   const disabled = isCompareMode && selectionFull && !isSelected;
   return (
-    <motion.article className={`alien-card ${isSelected ? 'is-selected' : ''}`} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: Math.min(index * 0.025, 0.15), ease: [0.2, 0.7, 0.2, 1] }}>
+    <Motion.article className={`alien-card ${isSelected ? 'is-selected' : ''}`} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: Math.min(index * 0.025, 0.15), ease: [0.2, 0.7, 0.2, 1] }}>
       <div className="card-image-stage">
         <span className="entry-number">N° {String(alien.id).padStart(3, '0')}</span>
         <button className={`save-button ${isSaved ? 'is-saved' : ''}`} onClick={() => onSave(alien.id)} aria-label={`${isSaved ? 'Remove' : 'Save'} ${alien.name}${isSaved ? ' from' : ' to'} collection`} aria-pressed={isSaved}><FiBookmark /></button>
@@ -19,6 +19,6 @@ export default function AlienCard({ alien, index = 0, onClick, isCompareMode, is
         <div className="card-stats">{[['power', 'PWR'], ['speed', 'SPD'], ['strength', 'STR']].map(([stat, label]) => <div key={stat}><span>{label}</span><strong>{alien.stats[stat]}</strong><div className="mini-track"><i style={{ width: `${alien.stats[stat]}%` }} /></div></div>)}</div>
         <div className="card-bottom"><span>{alien.classification}</span><span>{alien.firstSeries}</span></div>
       </div>
-    </motion.article>
+    </Motion.article>
   );
 }

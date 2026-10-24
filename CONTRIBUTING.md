@@ -12,11 +12,14 @@ npm run dev
 ```
 
 Create a branch for your change. Keep dependency changes separate unless the fix requires them.
+This is a React JavaScript project: use `.jsx` for components and `.js` for hooks and shared logic. `jsconfig.json` supplies editor configuration, and the checked-in lockfile keeps dependency versions consistent.
 
 ## Where changes belong
 
 | Change | Start here |
 | :--- | :--- |
+| React entry point and app composition | `src/main.jsx`, `src/App.jsx` |
+| Project scripts and JavaScript tooling | `package.json`, `jsconfig.json`, `eslint.config.js`, `vite.config.js` |
 | Alien details, abilities, or statistics | `src/data/aliens.js` |
 | Gallery selection, credits, and processing | `scripts/gallery-selection.json`, `docs/GALLERY_SOURCES.md` |
 | Gallery viewer and manifest | `src/components/AlienGallery.jsx`, `src/data/galleries.json` |
@@ -35,12 +38,12 @@ For lore corrections, include the episode, scene, or source that supports the ch
 ## Check your change
 
 ```bash
-npm run build
-node --test src/lib/abilities.test.js src/lib/team.test.js src/lib/gallery.test.js
-npm run lint
+npm run check
 ```
 
-Report any pre-existing check failures separately from failures introduced by your change. For interface work, verify the affected flow in the browser, including a narrow viewport and keyboard navigation. Include before/after screenshots in the pull request.
+This runs project-wide lint, the Node test suite, and a production build. Use `npm test` or `npm run test:watch` for focused development; `.test.js` files are discovered automatically. Browser source uses React rules, while tests and scripts use the Node environment. Generated `dist/` output and working files in `tmp/` are excluded from lint and Git.
+
+For interface work, verify the affected flow in the browser, including a narrow viewport and keyboard navigation. Include before/after screenshots in the pull request.
 
 Team changes should preserve the ten main slots, two optional bonus slots, duplicate prevention within each team, reordering, and recovery from invalid saved data. Named teams must keep independent picks, and migration must preserve the original saved lineup. Copies of the creator preset must be editable without changing the preset itself. Add a focused regression test when changing these rules.
 
