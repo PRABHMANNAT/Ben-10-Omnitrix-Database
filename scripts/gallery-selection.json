@@ -5931,6 +5931,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Bloxx action pose 3.png",
+        "caption": "Bloxx — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Bloxx (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/49/Bloxx_action_pose_3.png/revision/latest?cb=20190817074221",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Bloxx_action_pose_3.png",
+        "width": 1134,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "bloxx.png",
+        "caption": "Bloxx — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Bloxx (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5b/Bloxx.png/revision/latest?cb=20230814040045",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Bloxx.png",
+        "width": 1705,
+        "height": 1657,
+        "enhance": false
+      },
+      {
+        "file": "BiS (227).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Bloxx (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/92/BiS_%28227%29.png/revision/latest?cb=20160209171655",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BiS_(227).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "UVT (42.1).png",
+        "caption": "Block Constructs",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Bloxx (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/0/05/UVT_%2842.1%29.png/revision/latest?cb=20160220114638",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UVT_(42.1).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
