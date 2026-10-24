@@ -6992,6 +6992,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Astrodactyl Wings.png",
+        "caption": "Astrodactyl — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Astrodactyl/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a2/Astrodactyl_Wings.png/revision/latest?cb=20200522084519",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Astrodactyl_Wings.png",
+        "width": 1152,
+        "height": 953,
+        "enhance": false
+      },
+      {
+        "file": "AstrodactyalCombat.png",
+        "caption": "Astrodactyl — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Astrodactyl/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b0/AstrodactyalCombat.png/revision/latest?cb=20251014223731",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:AstrodactyalCombat.png",
+        "width": 1024,
+        "height": 1024,
+        "enhance": false
+      },
+      {
+        "file": "TFoW1 (136).png",
+        "caption": "Jetpack",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Astrodactyl",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/bb/TFoW1_%28136%29.png/revision/latest?cb=20160102204304",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TFoW1_(136).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "WYWA (353).png",
+        "caption": "Foldable Wings",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Astrodactyl",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/45/WYWA_%28353%29.png/revision/latest?cb=20160102201809",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:WYWA_(353).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
