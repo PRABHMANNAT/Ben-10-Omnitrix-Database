@@ -1374,6 +1374,58 @@
         "width": 1280,
         "height": 718,
         "enhance": false
+      },
+      {
+        "file": "Blitzwolfer official.png",
+        "caption": "Blitzwolfer — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Blitzwolfer/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/2d/Blitzwolfer_official.png/revision/latest?cb=20260313213422",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Blitzwolfer_official.png",
+        "width": 2732,
+        "height": 2048,
+        "enhance": false
+      },
+      {
+        "file": "Blitzwolfer Pose2.png",
+        "caption": "Blitzwolfer — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Blitzwolfer/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a1/Blitzwolfer_Pose2.png/revision/latest?cb=20260313232705",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Blitzwolfer_Pose2.png",
+        "width": 2213,
+        "height": 2048,
+        "enhance": false
+      },
+      {
+        "file": "Benwoof (405).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Blitzwolfer",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9d/Benwoof_%28405%29.png/revision/latest?cb=20260930231047",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Benwoof_(405).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "AABiL (255).png",
+        "caption": "Sonic Redirection",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Blitzwolfer",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9d/AABiL_%28255%29.png/revision/latest?cb=20151221135201",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:AABiL_(255).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
