@@ -4404,6 +4404,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Water Hazard official artwork.png",
+        "caption": "Water Hazard — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Waterhazard/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d6/Water_Hazard_official_artwork.png/revision/latest?cb=20250414140035",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Water_Hazard_official_artwork.png",
+        "width": 1533,
+        "height": 2000,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Water Hazard (4).png",
+        "caption": "Water Hazard — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Waterhazard/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/11/Pedro_Astudillo_Water_Hazard_%284%29.png/revision/latest?cb=20220223180750",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Water_Hazard_(4).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "Water Hazard AP1.png",
+        "caption": "Water Hazard — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Waterhazard/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9e/Water_Hazard_AP1.png/revision/latest?cb=20210316133026",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Water_Hazard_AP1.png",
+        "width": 787,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "RotS (223).png",
+        "caption": "Water Hazard in Ultimate Alien",
+        "kind": "scene",
+        "section": "Ultimate Alien",
+        "source": "Waterhazard/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/0/03/RotS_%28223%29.png/revision/latest?cb=20150815191348",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:RotS_(223).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
