@@ -3755,6 +3755,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Terraspin (1).png",
+        "caption": "Terraspin — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Terraspin/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b1/Pedro_Astudillo_Terraspin_%281%29.png/revision/latest?cb=20220223181359",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Terraspin_(1).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Terraspin (2).png",
+        "caption": "Terraspin — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Terraspin/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a3/Pedro_Astudillo_Terraspin_%282%29.png/revision/latest?cb=20220223181401",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Terraspin_(2).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "MHR (337).png",
+        "caption": "Flight/Enhanced Speed",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Terraspin",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f5/MHR_%28337%29.png/revision/latest?cb=20160103143258",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MHR_(337).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "RotS (81).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Terraspin",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d0/RotS_%2881%29.png/revision/latest?cb=20150815190758",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:RotS_(81).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
