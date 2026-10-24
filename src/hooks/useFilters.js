@@ -1,11 +1,14 @@
 import { useState, useMemo, useCallback } from 'react';
+import { matchesAbilities, matchesAlienSearch } from '../lib/abilities';
 
 const DEFAULT_STAT_RANGE = [0, 100];
+const ORIGINAL_10 = ['Heatblast', 'Wildmutt', 'Diamondhead', 'XLR8', 'Grey Matter', 'Four Arms', 'Stinkfly', 'Ripjaws', 'Upgrade', 'Ghostfreak'];
 
 export default function useFilters(aliens) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTier, setSelectedTier] = useState('ALL');
   const [selectedSeries, setSelectedSeries] = useState([]);
+  const [selectedAbilities, setSelectedAbilities] = useState([]);
   const [selectedClassification, setSelectedClassification] = useState('ALL');
   const [selectedRarity, setSelectedRarity] = useState('ALL');
   const [selectedDifficulty, setSelectedDifficulty] = useState('ALL');
@@ -22,8 +25,6 @@ export default function useFilters(aliens) {
   const [toggles, setToggles] = useState({
     onlyUltimates: false,
     onlyOriginal10: false,
-    hasFlight: false,
-    hasStealth: false,
   });
   const [viewMode, setViewMode] = useState('grid');
 
@@ -31,6 +32,7 @@ export default function useFilters(aliens) {
     setSearchQuery('');
     setSelectedTier('ALL');
     setSelectedSeries([]);
+    setSelectedAbilities([]);
     setSelectedClassification('ALL');
     setSelectedRarity('ALL');
     setSelectedDifficulty('ALL');
@@ -44,7 +46,7 @@ export default function useFilters(aliens) {
       overall: [...DEFAULT_STAT_RANGE],
     });
     setSortBy('rank');
-    setToggles({ onlyUltimates: false, onlyOriginal10: false, hasFlight: false, hasStealth: false });
+    setToggles({ onlyUltimates: false, onlyOriginal10: false });
   }, []);
 
   const updateStatRange = useCallback((stat, value) => {
@@ -61,22 +63,19 @@ export default function useFilters(aliens) {
     setToggles(prev => ({ ...prev, [key]: !prev[key] }));
   }, []);
 
-  const ORIGINAL_10 = ['Heatblast', 'Wildmutt', 'Diamondhead', 'XLR8', 'Grey Matter', 'Four Arms', 'Stinkfly', 'Ripjaws', 'Upgrade', 'Ghostfreak'];
+  const toggleAbility = useCallback(id => {
+    setSelectedAbilities(previous => previous.includes(id) ? previous.filter(value => value !== id) : [...previous, id]);
+  }, []);
+  const clearAbilities = useCallback(() => setSelectedAbilities([]), []);
 
   const filteredAliens = useMemo(() => {
     let result = [...aliens];
 
     // Search
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      result = result.filter(a =>
-        a.name.toLowerCase().includes(q) ||
-        a.species.toLowerCase().includes(q) ||
-        a.homeworld.toLowerCase().includes(q) ||
-        a.abilities.some(ab => ab.toLowerCase().includes(q)) ||
-        a.tags.some(t => t.toLowerCase().includes(q))
-      );
+      result = result.filter(alien => matchesAlienSearch(alien, searchQuery));
     }
+    if (selectedAbilities.length) result = result.filter(alien => matchesAbilities(alien, selectedAbilities));
 
     // Tier
     if (selectedTier !== 'ALL') {
@@ -117,15 +116,6 @@ export default function useFilters(aliens) {
     if (toggles.onlyOriginal10) {
       result = result.filter(a => ORIGINAL_10.includes(a.name));
     }
-    if (toggles.hasFlight) {
-      result = result.filter(a => a.abilities.some(ab => ab.toLowerCase().includes('flight') || ab.toLowerCase().includes('fly')));
-    }
-    if (toggles.hasStealth) {
-      result = result.filter(a => a.abilities.some(ab =>
-        ab.toLowerCase().includes('stealth') || ab.toLowerCase().includes('invisibility') ||
-        ab.toLowerCase().includes('intangibility') || ab.toLowerCase().includes('camouflage')
-      ));
-    }
 
     // Sort
     switch (sortBy) {
@@ -138,21 +128,23 @@ export default function useFilters(aliens) {
       case 'intelligence': result.sort((a, b) => b.stats.intelligence - a.stats.intelligence); break;
       case 'durability': result.sort((a, b) => b.stats.durability - a.stats.durability); break;
       case 'overall': result.sort((a, b) => b.stats.overall - a.stats.overall); break;
-      case 'series':
+      case 'series': {
         const seriesOrder = { 'Original Series': 0, 'Alien Force': 1, 'Ultimate Alien': 2, 'Omniverse': 3 };
         result.sort((a, b) => (seriesOrder[a.firstSeries] || 0) - (seriesOrder[b.firstSeries] || 0));
         break;
+      }
       default: break;
     }
 
     return result;
-  }, [aliens, searchQuery, selectedTier, selectedSeries, selectedClassification, selectedRarity, selectedDifficulty, statRanges, sortBy, toggles]);
+  }, [aliens, searchQuery, selectedTier, selectedSeries, selectedAbilities, selectedClassification, selectedRarity, selectedDifficulty, statRanges, sortBy, toggles]);
 
   const activeFiltersCount = useMemo(() => {
     let count = 0;
-    if (searchQuery) count++;
+    if (searchQuery.trim()) count++;
     if (selectedTier !== 'ALL') count++;
     if (selectedSeries.length > 0) count++;
+    count += selectedAbilities.length;
     if (selectedClassification !== 'ALL') count++;
     if (selectedRarity !== 'ALL') count++;
     if (selectedDifficulty !== 'ALL') count++;
@@ -160,13 +152,14 @@ export default function useFilters(aliens) {
     Object.values(toggles).forEach(v => { if (v) count++; });
     if (sortBy !== 'rank') count++;
     return count;
-  }, [searchQuery, selectedTier, selectedSeries, selectedClassification, selectedRarity, selectedDifficulty, statRanges, toggles, sortBy]);
+  }, [searchQuery, selectedTier, selectedSeries, selectedAbilities, selectedClassification, selectedRarity, selectedDifficulty, statRanges, toggles, sortBy]);
 
   return {
     filteredAliens, activeFiltersCount, clearAllFilters,
     searchQuery, setSearchQuery,
     selectedTier, setSelectedTier,
     selectedSeries, toggleSeries,
+    selectedAbilities, toggleAbility, clearAbilities,
     selectedClassification, setSelectedClassification,
     selectedRarity, setSelectedRarity,
     selectedDifficulty, setSelectedDifficulty,

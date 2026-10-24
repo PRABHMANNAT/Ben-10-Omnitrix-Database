@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion as Motion } from 'framer-motion';
 import { FiPlus, FiX, FiArrowLeft, FiArrowRight, FiCheck, FiSearch, FiUsers } from 'react-icons/fi';
 import AlienArtwork from './AlienArtwork';
+import AbilityFilters from './AbilityFilters';
+import { matchesAbilities, matchesAlienSearch } from '../lib/abilities';
 import { CreatorTeamNotes, TeamLibrary, TeamLibraryDialog } from './TeamLibrary';
 import useDialog from '../hooks/useDialog';
 import { addNamedTeam, assignPick, availableTeamName, CREATOR_TEAM_ID, deleteTeam, getCreatorTeam, movePick, removePick, renameTeam, restoreTeamLibrary, teamNameError, TEAM_LIBRARY_STORAGE_KEY, TEAM_STORAGE_KEY, updateTeam } from '../lib/team';
@@ -122,15 +124,17 @@ function TeamPicker({ aliens, team, activeSlot, onSelect, onClose }) {
   const dialogRef = useRef(null);
   const [query, setQuery] = useState('');
   const [series, setSeries] = useState('ALL');
+  const [selectedAbilities, setSelectedAbilities] = useState([]);
+  const toggleAbility = id => setSelectedAbilities(previous => previous.includes(id) ? previous.filter(value => value !== id) : [...previous, id]);
+  const resetFilters = () => { setQuery(''); setSeries('ALL'); setSelectedAbilities([]); };
   useDialog(dialogRef, onClose);
   const currentId = team[activeSlot.group][activeSlot.index];
   const positions = new Map();
   team.main.forEach((id, index) => { if (id) positions.set(id, `Pick ${String(index + 1).padStart(2, '0')}`); });
   if (team.bonusEnabled) team.bonus.forEach((id, index) => { if (id) positions.set(id, `Bonus ${index + 1}`); });
   const choices = useMemo(() => {
-    const normalized = query.trim().toLowerCase();
-    return aliens.filter(alien => (series === 'ALL' || alien.series.includes(series)) && [alien.name, alien.species, ...alien.abilities].some(text => text.toLowerCase().includes(normalized))).sort((first, second) => first.name.localeCompare(second.name));
-  }, [aliens, query, series]);
+    return aliens.filter(alien => (series === 'ALL' || alien.series.includes(series)) && matchesAlienSearch(alien, query) && matchesAbilities(alien, selectedAbilities)).sort((first, second) => first.name.localeCompare(second.name));
+  }, [aliens, query, series, selectedAbilities]);
   const targetLabel = `${activeSlot.group === 'bonus' ? 'bonus pick' : 'pick'} ${String(activeSlot.index + 1).padStart(2, '0')}`;
 
   return <Motion.div className="modal-overlay team-picker-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
@@ -138,12 +142,12 @@ function TeamPicker({ aliens, team, activeSlot, onSelect, onClose }) {
       <div className="dialog-topline"><span className="eyebrow">YOUR TEAM / {targetLabel.toUpperCase()}</span><button className="icon-button" onClick={onClose} aria-label="Close alien picker"><FiX /></button></div>
       <div className="team-picker-heading"><h2 id="team-picker-title">Choose your transformation.</h2><p>Adding to {targetLabel}. Already selected forms are marked below.</p></div>
       <div className="team-picker-toolbar"><label className="team-picker-search"><FiSearch /><input aria-label="Search team candidates" placeholder="Search name, species, or ability…" value={query} onChange={event => setQuery(event.target.value)} />{query && <button aria-label="Clear candidate search" onClick={() => setQuery('')}><FiX /></button>}</label><select aria-label="Filter team candidates by series" value={series} onChange={event => setSeries(event.target.value)}><option value="ALL">All series</option>{['Original Series', 'Alien Force', 'Ultimate Alien', 'Omniverse'].map(name => <option key={name}>{name}</option>)}</select></div>
-      <div className="team-picker-results"><span role="status" aria-live="polite">{choices.length} {choices.length === 1 ? 'transformation' : 'transformations'}</span><span>No duplicate picks</span></div>
-      <div className="team-picker-scroll">{choices.length ? <div className="team-candidate-grid">{choices.map(alien => {
+      <div className="team-picker-results"><span role="status" aria-live="polite">{choices.length} {choices.length === 1 ? 'transformation' : 'transformations'}</span>{query.trim() || series !== 'ALL' || selectedAbilities.length ? <button onClick={resetFilters} aria-label="Reset team candidate filters">Reset filters</button> : <span>No duplicate picks</span>}</div>
+      <div className="team-picker-scroll"><AbilityFilters label="Filter team candidates by ability" selected={selectedAbilities} onToggle={toggleAbility} onClear={() => setSelectedAbilities([])} primaryCount={4} />{choices.length ? <div className="team-candidate-grid">{choices.map(alien => {
         const current = alien.id === currentId;
         const occupied = positions.has(alien.id) && !current;
         return <button key={alien.id} className={`team-candidate ${current ? 'current' : ''}`} disabled={occupied} onClick={() => onSelect(alien)} aria-label={`${occupied ? `${alien.name}, already selected as ${positions.get(alien.id)}` : `Choose ${alien.name} for ${targetLabel}`}`}><span className="team-candidate-stage"><AlienArtwork alien={alien} eager /><span className="candidate-tier">{alien.tier}</span>{(occupied || current) && <span className="candidate-picked"><FiCheck />{current ? 'Current pick' : positions.get(alien.id)}</span>}</span><strong>{alien.name}</strong><small>{alien.species}</small></button>;
-      })}</div> : <div className="team-picker-empty"><FiSearch /><h3>No matching transformations.</h3><p>Try a different name or series.</p><button className="button" onClick={() => { setQuery(''); setSeries('ALL'); }}>Reset search</button></div>}</div>
+      })}</div> : <div className="team-picker-empty"><FiSearch /><h3>No matching transformations.</h3><p>Try a different name, series, or ability.</p><button className="button" onClick={resetFilters}>Reset filters</button></div>}</div>
       <div className="team-picker-footer"><span>{activeSlot.group === 'bonus' ? 'BONUS FORM' : 'TOP TEN'} · {String(activeSlot.index + 1).padStart(2, '0')}</span><button className="button" onClick={onClose}>Cancel</button></div>
     </Motion.section>
   </Motion.div>;

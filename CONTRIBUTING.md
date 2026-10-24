@@ -23,6 +23,8 @@ Create a branch for your change. Keep dependency changes separate unless the fix
 | Team rules and storage recovery | `src/lib/team.js` |
 | Team interface and library controls | `src/components/TeamBuilder.jsx`, `src/components/TeamLibrary.jsx`, `src/styles/team.css` |
 | Creator's favorites preset and pick explanations | `src/data/creatorTeam.js` |
+| Shared ability matching and plain-language search | `src/lib/abilities.js` |
+| Ability filter controls and styling | `src/components/AbilityFilters.jsx`, `src/styles/abilities.css` |
 | Shared layout and appearance | `src/styles/globals.css` |
 | Dialog focus and keyboard behavior | `src/hooks/useDialog.js` |
 
@@ -32,13 +34,15 @@ For lore corrections, include the episode, scene, or source that supports the ch
 
 ```bash
 npm run build
-node --test src/lib/team.test.js
+node --test src/lib/abilities.test.js src/lib/team.test.js
 npm run lint
 ```
 
 Report any pre-existing check failures separately from failures introduced by your change. For interface work, verify the affected flow in the browser, including a narrow viewport and keyboard navigation. Include before/after screenshots in the pull request.
 
 Team changes should preserve the ten main slots, two optional bonus slots, duplicate prevention within each team, reordering, and recovery from invalid saved data. Named teams must keep independent picks, and migration must preserve the original saved lineup. Copies of the creator preset must be editable without changing the preset itself. Add a focused regression test when changing these rules.
+
+Ability matching is shared between the archive and team picker. Match active powers from ability records, rather than weaknesses or immunity alone. Multiple selected abilities must all match. Test representative matches and false positives when changing a category or search alias.
 
 ## Visual direction
 

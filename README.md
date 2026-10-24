@@ -33,7 +33,7 @@ From Heatblast to Alien X. Browse **72 transformations** across **Original Serie
     <td width="50%" valign="top">
       <img src="docs/assets/icons/archive.svg" width="40" height="40" alt="" /><br />
       <strong>Find your next form</strong><br />
-      Search names, species, and abilities. Filter by series, tier, classification, or stats. Switch between grid, list, and tier views.
+      Search names, species, and abilities. Combine 21 ability filters with series, tier, classification, or stats. Switch between grid, list, and tier views.
     </td>
     <td width="50%" valign="top">
       <img src="docs/assets/icons/team.svg" width="40" height="40" alt="" /><br />
@@ -56,6 +56,20 @@ From Heatblast to Alien X. Browse **72 transformations** across **Original Serie
 </table>
 
 The Black Edition pairs charcoal surfaces, quiet sage accents, crisp typography, and restrained motion. Responsive layouts, keyboard navigation, focus-managed dialogs, and reduced-motion preferences are built into the experience. Press **`/`** to search the archive or **`Esc`** to close a dialog.
+
+### Find a form for the job
+
+Use **By ability** on the home screen or in the team picker. Start with **Can fly**, **Can swim**, **Uses fire**, or **Uses ice**. More options cover electricity, strength, speed, regeneration, water, plants, energy absorption, invisibility, phasing, shape-shifting, duplication, technology, mind powers, time, gravity, teleportation, and sonic attacks.
+
+Selections combine: **Can fly + Uses fire** shows forms with both powers. Ability filters also work alongside search and series filters, with clear controls to reset them. Both search boxes understand phrases such as **can fly**, **can swim**, and **use fire**.
+
+Matches come from the archive's listed abilities. Weaknesses and elemental immunities do not grant an active power; “Can swim” also includes listed underwater breathing or movement.
+
+<details>
+  <summary><strong>See combined ability filters in action</strong></summary>
+  <br />
+  <a href="docs/assets/archive-abilities.jpg"><img src="docs/assets/archive-abilities.jpg" alt="The archive with Can fly and Uses fire selected, returning Heatblast and Ultimate Big Chill." width="100%" /></a>
+</details>
 
 ## Ten picks. Two wildcards.
 
@@ -95,7 +109,7 @@ Real screenshots from the Black Edition. Select an image to see it at full size.
   <br />
   <table>
     <tr>
-      <td width="72%" valign="top"><a href="docs/assets/team-picker.jpg"><img src="docs/assets/team-picker.jpg" alt="Team picker with alien artwork, search, and an Original Series filter in the dark interface." width="100%" /></a><br /><strong>03 / Choose your transformation</strong></td>
+      <td width="72%" valign="top"><a href="docs/assets/team-picker.jpg"><img src="docs/assets/team-picker.jpg" alt="Team picker with Can fly and Can swim selected, showing AmpFibian, Big Chill, and Jetray alongside search and series filters." width="100%" /></a><br /><strong>03 / Choose your transformation</strong></td>
       <td width="28%" valign="top"><a href="docs/assets/mobile.jpg"><img src="docs/assets/mobile.jpg" alt="Mobile layout showing the navigation, archive introduction, and Alien X feature card." width="100%" /></a><br /><strong>04 / On the go</strong></td>
     </tr>
   </table>
@@ -120,7 +134,7 @@ Open the local URL printed by Vite, usually **http://localhost:5173**. No API ke
 | `npm run build` | Build the production site into `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Run ESLint |
-| `node --test src/lib/team.test.js` | Check team limits, library migration, naming, copies, deletion, saved-state recovery, and the creator preset |
+| `node --test src/lib/abilities.test.js src/lib/team.test.js` | Check ability matching, search phrases, team rules, library migration, saved-state recovery, and the creator preset |
 
 ## Built with
 
