@@ -4954,6 +4954,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Ultimate Humungousaur (2).png",
+        "caption": "Ultimate Humungousaur — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Humungousaur/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d0/Pedro_Astudillo_Ultimate_Humungousaur_%282%29.png/revision/latest?cb=20230814035321",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Ultimate_Humungousaur_(2).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Ultimate Humungousaur (3).png",
+        "caption": "Ultimate Humungousaur — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Humungousaur/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/3e/Pedro_Astudillo_Ultimate_Humungousaur_%283%29.png/revision/latest?cb=20230814035348",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Ultimate_Humungousaur_(3).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "SA (359).png",
+        "caption": "Shock Wave Generation (via Enhanced Strength)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Humungousaur",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/8c/SA_%28359%29.png/revision/latest?cb=20150729030236",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:SA_(359).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "TFB2 (27).png",
+        "caption": "Ultimate Humungousaur in Alien Force",
+        "kind": "scene",
+        "section": "Alien Force",
+        "source": "Ultimate Humungousaur/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/48/TFB2_%2827%29.png/revision/latest?cb=20230814040230",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TFB2_(27).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
