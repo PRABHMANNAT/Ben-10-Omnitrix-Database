@@ -5821,6 +5821,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Gravattack Model - Alternate.png",
+        "caption": "Gravattack — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Gravattack/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5f/Gravattack_Model_-_Alternate.png/revision/latest?cb=20260425050906",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Gravattack_Model_-_Alternate.png",
+        "width": 2356,
+        "height": 2048,
+        "enhance": false
+      },
+      {
+        "file": "SacudidaPasado (443).png",
+        "caption": "Gravattack in A Jolt From the Past",
+        "kind": "scene",
+        "section": "A Jolt From the Past",
+        "source": "Gravattack/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/50/SacudidaPasado_%28443%29.png/revision/latest?cb=20151108005650",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:SacudidaPasado_(443).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Hot Stretch (218).png",
+        "caption": "Force Field Generation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Gravattack",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/e7/Hot_Stretch_%28218%29.png/revision/latest?cb=20130110184432",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Hot_Stretch_(218).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "SacudidaPasado (451).png",
+        "caption": "Gravattack in A Jolt From the Past",
+        "kind": "scene",
+        "section": "A Jolt From the Past",
+        "source": "Gravattack/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/aa/SacudidaPasado_%28451%29.png/revision/latest?cb=20151108014713",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:SacudidaPasado_(451).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
