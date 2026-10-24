@@ -3205,6 +3205,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Lodestar UAF Action Pose.png",
+        "caption": "Lodestar — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Lodestar/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/de/Lodestar_UAF_Action_Pose.png/revision/latest?cb=20210319224910",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Lodestar_UAF_Action_Pose.png",
+        "width": 956,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "Lodestar OV background.png",
+        "caption": "Lodestar — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Lodestar/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/e2/Lodestar_OV_background.png/revision/latest?cb=20240710045248",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Lodestar_OV_background.png",
+        "width": 1200,
+        "height": 1200,
+        "enhance": false
+      },
+      {
+        "file": "VG (327).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Lodestar",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/4c/VG_%28327%29.png/revision/latest?cb=20150916213608",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:VG_(327).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Lodestar Rex.png",
+        "caption": "Lodestar in Heroes United",
+        "kind": "design",
+        "section": "Profile",
+        "source": "Lodestar/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/94/Lodestar_Rex.png/revision/latest?cb=20150811201527",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Lodestar_Rex.png",
+        "width": 1052,
+        "height": 768,
+        "enhance": false
       }
     ]
   },
