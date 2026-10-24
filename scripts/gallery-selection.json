@@ -1594,6 +1594,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Frankenstrike OS Pose.png",
+        "caption": "Frankenstrike — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Frankenstrike/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/ae/Frankenstrike_OS_Pose.png/revision/latest?cb=20260221231703",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Frankenstrike_OS_Pose.png",
+        "width": 1446,
+        "height": 2183,
+        "enhance": false
+      },
+      {
+        "file": "FrankenstrikeAttack1.png",
+        "caption": "Frankenstrike — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Frankenstrike/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/bd/FrankenstrikeAttack1.png/revision/latest?cb=20210505090944",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FrankenstrikeAttack1.png",
+        "width": 1270,
+        "height": 1270,
+        "enhance": false
+      },
+      {
+        "file": "Afraid (1174).png",
+        "caption": "Electromagnetic Body",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Frankenstrike",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/87/Afraid_%281174%29.png/revision/latest?cb=20201229213342",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Afraid_(1174).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "Afraid (1080).png",
+        "caption": "Frankenstrike in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Frankenstrike/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b9/Afraid_%281080%29.png/revision/latest?cb=20201229212805",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Afraid_(1080).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
