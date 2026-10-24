@@ -6468,6 +6468,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Omniverse S2E01 Molestache.png",
+        "caption": "Mole-Stache in Outbreak",
+        "kind": "scene",
+        "section": "Outbreak",
+        "source": "Mole-Stache/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/fd/Omniverse_S2E01_Molestache.png/revision/latest?cb=20121128201943",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Omniverse_S2E01_Molestache.png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "IaMBW1 (314).png",
+        "caption": "Mole-Stache in It's a Mad, Mad, Mad Ben World: Part 1",
+        "kind": "scene",
+        "section": "It's a Mad, Mad, Mad Ben World: Part 1",
+        "source": "Mole-Stache/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/af/IaMBW1_%28314%29.png/revision/latest?cb=20160209183947",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:IaMBW1_(314).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "BP (431).png",
+        "caption": "Mustache Flotation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Mole-Stache",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/79/BP_%28431%29.png/revision/latest?cb=20150815142440",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BP_(431).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "OB (484).png",
+        "caption": "Mole-Stache in Outbreak",
+        "kind": "scene",
+        "section": "Outbreak",
+        "source": "Mole-Stache/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/fa/OB_%28484%29.png/revision/latest?cb=20160116162157",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OB_(484).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
