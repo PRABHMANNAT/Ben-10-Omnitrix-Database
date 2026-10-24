@@ -6151,6 +6151,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Ball WeevilComabt.png",
+        "caption": "Ball Weevil — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ball Weevil/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/13/Ball_WeevilComabt.png/revision/latest?cb=20251014223826",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ball_WeevilComabt.png",
+        "width": 1024,
+        "height": 1024,
+        "enhance": false
+      },
+      {
+        "file": "RoAE (128).png",
+        "caption": "Energy Absoprtion (via Plasma Balls)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ball Weevil",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/56/RoAE_%28128%29.png/revision/latest?cb=20151221161309",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:RoAE_(128).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "DepreyPresa1P398.png",
+        "caption": "Enhanced Jumping/Agility",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ball Weevil",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/18/DepreyPresa1P398.png/revision/latest?cb=20160106085614",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:DepreyPresa1P398.png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "RoE (390).png",
+        "caption": "Plasma Whip",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ball Weevil",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d8/RoE_%28390%29.png/revision/latest?cb=20151213122209",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:RoE_(390).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
