@@ -89,6 +89,14 @@
 .team-library-actions > .icon-button { width: 38px; height: 42px; }
 .team-library-actions > .icon-button svg { width: 15px; height: 15px; }
 .team-library-actions > .button { margin-left: 9px; }
+.team-library-actions > .new-team-button { min-height: 46px; gap: 10px; padding: 5px 11px 5px 5px; background: #d0ddbd; color: #1b2813; border: 1px solid #e1ebd2; border-radius: 999px; box-shadow: inset 0 1px 0 #eef4e5; font-size: 12px; font-weight: 650; transition: background 180ms, border-color 180ms, transform 180ms; }
+.new-team-button .new-team-icon { display: flex; align-items: center; justify-content: center; width: 33px; height: 33px; border-radius: 50%; background: #25351c; color: #e3efd4; }
+.new-team-button .new-team-icon > svg { width: 17px; height: 17px; stroke-width: 1.8; }
+.new-team-button .new-team-arrow { width: 15px; height: 15px; margin-left: 2px; transition: transform 180ms; }
+.team-library-actions > .new-team-button:hover { background: #e3edd5; color: #13200c; border-color: #f0f5e8; }
+.new-team-button:hover .new-team-arrow { transform: translate(2px, -2px); }
+.team-library-actions > .new-team-button:active { transform: translateY(1px); }
+.team-library-actions > .new-team-button:focus-visible { outline: 2px solid #deebcc; outline-offset: 4px; }
 .team-library-actions > button:disabled:hover { background: transparent; }
 .active-team-heading { display: flex; justify-content: space-between; align-items: center; gap: 25px; margin-bottom: 24px; }
 .active-team-heading > div { min-width: 0; }

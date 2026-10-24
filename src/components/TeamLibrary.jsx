@@ -29,7 +29,7 @@ export function TeamLibrary({ library, creatorTeam, activeTeam, roster, selectRe
         <button className="icon-button" aria-label="Rename team" title={isCreator ? 'Make a copy to rename the creator lineup' : 'Rename team'} disabled={isCreator} onClick={onRename}><FiEdit2 /></button>
         <button className="icon-button" aria-label="Duplicate team" title="Duplicate team" onClick={() => onCopy(activeTeam)}><FiCopy /></button>
         <button className="icon-button" aria-label="Delete team" title={isCreator ? 'The creator lineup stays available' : library.teams.length === 1 ? 'Keep at least one personal team' : 'Delete team'} disabled={isCreator || library.teams.length === 1} onClick={onDelete}><FiTrash2 /></button>
-        <button className="button button-primary" onClick={onNew}><FiPlus />New team</button>
+        <button className="button button-primary new-team-button" onClick={onNew}><span className="new-team-icon" aria-hidden="true"><FiPlus /></span><span>New team</span><FiArrowUpRight className="new-team-arrow" aria-hidden="true" /></button>
       </div>
     </div>
   </div>;
