@@ -934,6 +934,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Upgrade OS Pose.png",
+        "caption": "Upgrade — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Upgrade (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/da/Upgrade_OS_Pose.png/revision/latest?cb=20260216140711",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Upgrade_OS_Pose.png",
+        "width": 5459,
+        "height": 4678,
+        "enhance": false
+      },
+      {
+        "file": "Upgrade OS AP1.png",
+        "caption": "Upgrade — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Upgrade (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/ba/Upgrade_OS_AP1.png/revision/latest?cb=20210318143908",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Upgrade_OS_AP1.png",
+        "width": 1280,
+        "height": 996,
+        "enhance": false
+      },
+      {
+        "file": "Afraid (818).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Upgrade (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9f/Afraid_%28818%29.png/revision/latest?cb=20201229235859",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Afraid_(818).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "Side (160).png",
+        "caption": "Energy Constructs (While Possessing Technology)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Upgrade (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/24/Side_%28160%29.png/revision/latest?cb=20200619125135",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Side_(160).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
