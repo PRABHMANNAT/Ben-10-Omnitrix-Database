@@ -85,11 +85,11 @@ Matches come from the archive's listed abilities. Weaknesses and elemental immun
 
 ## See every form in action
 
-Open an alien’s dossier and choose **Gallery**. Explore **566 locally hosted images across all 72 aliens**, with **seven or eight images per transformation, with a special five-image Alien X gallery**: alternate series designs, power demonstrations, episode stills, and game appearances where available. Galleries open on an action shot when one is available.
+Open an alien’s dossier and scroll below **Statistics** to see its gallery, or choose **Gallery** for quick access. Explore **566 locally hosted images across all 72 aliens**, with **seven or eight images per transformation, with a special five-image Alien X gallery**: alternate series designs, power demonstrations, episode stills, and game appearances where available. Galleries open on an action shot when one is available.
 
-Swipe or scroll the thumbnail strip, select a picture, or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
+Select a picture from the four-column thumbnail grid or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
 
-<a href="docs/assets/gallery-expanded.jpg"><img src="docs/assets/gallery-expanded.jpg" alt="Heatblast visual archive with uncropped character artwork, eight images in a scrollable thumbnail strip, captions, and source credits." width="100%" /></a>
+<a href="docs/assets/gallery-expanded.jpg"><img src="docs/assets/gallery-expanded.jpg" alt="Ultimate Way Big visual archive below the statistics, eight images in two rows of four thumbnails." width="100%" /></a>
 
 <details>
   <summary><strong>Alien X — the five-image replacement set</strong></summary>

@@ -21,7 +21,7 @@ The isolated, AI-enhanced images (`70/3.webp` and `71/3.webp`) also serve as the
 
 Alien X retains its first two images and replaces the previous final two scenes with three full-body flight poses (five images total). Every other alien retains its previous images and appends four. Seven smaller original galleries now have seven images; the others have eight. The expansion adds 287 source files and replaces two old files, producing 566 images overall.
 
-New selections were visually reviewed in contact sheets. Frames dominated by empty scenery, effects, feet, distant groups, or unrelated characters were replaced. The viewer uses `object-fit: contain` so wide scenes and tall illustrations remain uncropped. A horizontally scrollable thumbnail strip follows the selected image and supports keyboard navigation.
+New selections were visually reviewed in contact sheets. Frames dominated by empty scenery, effects, feet, distant groups, or unrelated characters were replaced. The viewer uses `object-fit: contain` so wide scenes and tall illustrations remain uncropped. The image gallery appears directly below the profile statistics. Its four-column thumbnail grid shows eight images in two rows, including on mobile, and supports keyboard navigation.
 
 The following additions are **non-canon fan interpretations**, not official alternate series forms. Artist marks remain in the images:
 
@@ -73,4 +73,4 @@ node --test src/lib/gallery.test.js
 
 The download command retrieves public originals into ignored `tmp/gallery/originals/`. The encoder preserves the committed enhanced WebPs when the corresponding private working PNG is absent. It never silently labels an unenhanced original as enhanced. To replace an enhancement, supply a reviewed PNG at `tmp/gallery/enhanced/<alien-id>-<image-index>.png` before encoding, and update the provenance table if its dimensions change.
 
-The manifest is bundled with the lazy-loaded Gallery component. Only the selected alien's images are requested when its gallery opens; the 82.5 MiB collection is not downloaded on the home screen. All gallery images are served locally and require no runtime image API.
+The manifest is bundled with the lazy-loaded Gallery component. Only the selected alien's gallery images are requested when its profile opens; the 82.5 MiB collection is not downloaded on the home screen. All gallery images are served locally and require no runtime image API.

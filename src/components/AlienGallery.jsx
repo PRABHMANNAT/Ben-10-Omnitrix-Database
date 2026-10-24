@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { FiArrowUpRight, FiChevronLeft, FiChevronRight, FiImage } from 'react-icons/fi';
 import galleries from '../data/galleries.json';
 import { firstActionIndex, wrapImageIndex } from '../lib/gallery';
@@ -16,16 +16,6 @@ export default function AlienGallery({ alien }) {
   const gallery = galleries[alien.id];
   const images = gallery?.images || [];
   const [selected, setSelected] = useState(() => firstActionIndex(images));
-  const thumbnails = useRef(null);
-  useEffect(() => {
-    const strip = thumbnails.current;
-    const button = strip?.children[selected];
-    if (!button) return;
-    const left = button.offsetLeft;
-    const right = left + button.offsetWidth;
-    const target = left < strip.scrollLeft ? left : right > strip.scrollLeft + strip.clientWidth ? right - strip.clientWidth : null;
-    if (target !== null) strip.scrollTo({ left: target, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-  }, [selected]);
   if (!images.length) return <p>Images are being catalogued for this transformation.</p>;
   const image = images[selected];
   const select = index => setSelected(wrapImageIndex(index, images.length));
@@ -48,7 +38,7 @@ export default function AlienGallery({ alien }) {
     </figure>
     <div className="gallery-navigation">
       <button className="icon-button" onClick={() => select(selected - 1)} aria-label="Previous image"><FiChevronLeft /></button>
-      <div ref={thumbnails} className="gallery-thumbnails" role="group" aria-label="Choose an image">{images.map((item, index) => <button key={item.id} onClick={() => select(index)} aria-pressed={selected === index} aria-label={`Image ${index + 1}: ${item.caption}`}><img src={item.src} alt="" loading="lazy" decoding="async" /><span>{String(index + 1).padStart(2, '0')}</span></button>)}</div>
+      <div className="gallery-thumbnails" role="group" aria-label="Choose an image">{images.map((item, index) => <button key={item.id} onClick={() => select(index)} aria-pressed={selected === index} aria-label={`Image ${index + 1}: ${item.caption}`}><img src={item.src} alt="" loading="lazy" decoding="async" /><span>{String(index + 1).padStart(2, '0')}</span></button>)}</div>
       <button className="icon-button" onClick={() => select(selected + 1)} aria-label="Next image"><FiChevronRight /></button>
     </div>
     <div className="gallery-source"><div className="gallery-links"><a href={image.src} target="_blank" rel="noreferrer">Full resolution <FiArrowUpRight /></a><a href={image.sourceFile} target="_blank" rel="noreferrer">Source & credits <FiArrowUpRight /></a></div><p>{image.credit}</p>{image.enhanced && <p>AI-assisted upscale from {image.sourceWidth} × {image.sourceHeight} px. Details may differ. <a href={image.originalUrl} target="_blank" rel="noreferrer">Compare the original.</a></p>}</div>
