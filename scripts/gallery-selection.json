@@ -6772,6 +6772,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Sunburnt Whampire.png",
+        "caption": "Whampire — sunburnt appearance",
+        "kind": "design",
+        "section": "Profile",
+        "source": "Whampire/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a8/Sunburnt_Whampire.png/revision/latest?cb=20201116233536",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Sunburnt_Whampire.png",
+        "width": 620,
+        "height": 1230,
+        "enhance": false
+      },
+      {
+        "file": "MA (520).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Whampire",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c3/MA_%28520%29.png/revision/latest?cb=20150802101129",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MA_(520).png",
+        "width": 1280,
+        "height": 718,
+        "enhance": false
+      },
+      {
+        "file": "BaDGtA51 (448).png",
+        "caption": "Bat Transformation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Whampire",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/4a/BaDGtA51_%28448%29.png/revision/latest?cb=20160209202106",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BaDGtA51_(448).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "TVSB182.PNG",
+        "caption": "Corruptura Projectiles",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Whampire",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/13/TVSB182.PNG/revision/latest?cb=20151007022804",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TVSB182.PNG",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
