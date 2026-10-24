@@ -1,3 +1,4 @@
+import { LayoutGroup, motion as Motion, useReducedMotion } from 'framer-motion';
 import { FiArrowUpRight, FiShuffle, FiStar } from 'react-icons/fi';
 
 export function OmnitrixMark({ className = '' }) {
@@ -5,18 +6,23 @@ export function OmnitrixMark({ className = '' }) {
 }
 
 export default function Header({ section, onSectionChange, compareMode, onCompare, onRandom, savedCount }) {
-  return (
-    <header className="site-header">
-      <div className="header-inner">
-        <a className="wordmark" href="#archive" onClick={(event) => { event.preventDefault(); onSectionChange('archive'); }} aria-label="Omnipedia home"><OmnitrixMark /><span>omni<span className="wordmark-light">pedia</span><span className="wordmark-dot">.</span></span></a>
-        <nav className="main-nav" aria-label="Main navigation">
-          <button className={section === 'archive' && !compareMode ? 'active' : ''} onClick={() => onSectionChange('archive')}>Encyclopedia</button>
-          <button className={section === 'saved' && !compareMode ? 'active' : ''} onClick={() => onSectionChange('saved')}>Collections{savedCount > 0 && <span className="nav-count">{savedCount}</span>}</button>
-          <button className={section === 'team' && !compareMode ? 'active' : ''} onClick={() => onSectionChange('team')}>My top 10</button>
-          <button className={compareMode ? 'active' : ''} onClick={onCompare}>Compare</button>
-        </nav>
-        <div className="header-actions"><a className="button button-small github-star" href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database" target="_blank" rel="noreferrer" aria-label="Star Ben 10 Omnitrix Database on GitHub"><FiStar /><span>Star on GitHub</span><FiArrowUpRight /></a><button className="button button-small random-button" onClick={onRandom}><FiShuffle /><span>Surprise me</span><FiArrowUpRight /></button></div>
-      </div>
-    </header>
-  );
+  const reduceMotion = useReducedMotion();
+  const items = [
+    { key: 'archive', label: 'Encyclopedia', active: section === 'archive' && !compareMode },
+    { key: 'saved', label: 'Collections', active: section === 'saved' && !compareMode },
+    { key: 'team', label: 'My top 10', active: section === 'team' && !compareMode },
+    { key: 'compare', label: 'Compare', active: compareMode },
+  ];
+  return <header className="site-header">
+    <div className="header-inner">
+      <a className="wordmark" href="#archive" onClick={event => { event.preventDefault(); onSectionChange('archive'); }} aria-label="Omnipedia home"><OmnitrixMark /><span>omni<span className="wordmark-light">pedia</span><span className="wordmark-dot">.</span></span></a>
+      <LayoutGroup id="main-navigation"><nav className="main-nav" aria-label="Main navigation">
+        {items.map(item => <button key={item.key} className={item.active ? 'active' : ''} aria-current={item.active && item.key !== 'compare' ? 'page' : undefined} aria-pressed={item.key === 'compare' ? compareMode : undefined} onClick={() => item.key === 'compare' ? onCompare() : onSectionChange(item.key)}>
+          {item.active && <Motion.span className="nav-active-pill" layoutId="active-navigation" initial={false} transition={reduceMotion ? { duration: 0 } : { type: 'spring', stiffness: 420, damping: 36 }} aria-hidden="true" />}
+          <span className="nav-label">{item.label}{item.key === 'saved' && savedCount > 0 && <span className="nav-count">{savedCount}</span>}</span>
+        </button>)}
+      </nav></LayoutGroup>
+      <div className="header-actions"><a className="button button-small github-star" href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database" target="_blank" rel="noreferrer" aria-label="Star Ben 10 Omnitrix Database on GitHub"><FiStar /><span>Star on GitHub</span><FiArrowUpRight /></a><button className="button button-small random-button" onClick={onRandom}><FiShuffle /><span>Surprise me</span><FiArrowUpRight /></button></div>
+    </div>
+  </header>;
 }
