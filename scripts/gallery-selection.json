@@ -274,6 +274,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Diamondhead OS Pose.png",
+        "caption": "Diamondhead — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Diamondhead (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/16/Diamondhead_OS_Pose.png/revision/latest?cb=20260216142238",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Diamondhead_OS_Pose.png",
+        "width": 5532,
+        "height": 6240,
+        "enhance": false
+      },
+      {
+        "file": "diamondhead pose.png",
+        "caption": "Diamondhead — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Diamondhead (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/29/Diamondhead_pose.png/revision/latest?cb=20121104085444",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Diamondhead_pose.png",
+        "width": 1553,
+        "height": 1425,
+        "enhance": false
+      },
+      {
+        "file": "AD (217).png",
+        "caption": "Energy Refraction",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Diamondhead (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a3/AD_%28217%29.png/revision/latest?cb=20160207123913",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:AD_(217).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Diamondhead OS action pose 1.png",
+        "caption": "Diamondhead — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Diamondhead (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/22/Diamondhead_OS_action_pose_1.png/revision/latest?cb=20200510164039",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Diamondhead_OS_action_pose_1.png",
+        "width": 1018,
+        "height": 1280,
+        "enhance": false
       }
     ]
   },
