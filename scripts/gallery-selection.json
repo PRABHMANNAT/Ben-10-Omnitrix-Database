@@ -4734,6 +4734,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Ultimate Swampfire.png",
+        "caption": "Ultimate Swampfire — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Swampfire/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/bc/Ultimate_Swampfire.png/revision/latest?cb=20250414142342",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ultimate_Swampfire.png",
+        "width": 1279,
+        "height": 2000,
+        "enhance": false
+      },
+      {
+        "file": "Alien-gallery ultimate swampfire.png",
+        "caption": "Ultimate Swampfire — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Swampfire/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/4e/Alien-gallery_ultimate_swampfire.png/revision/latest?cb=20210314025221",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Alien-gallery_ultimate_swampfire.png",
+        "width": 808,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "TFB2 (499).png",
+        "caption": "Underwater Fire/Heat Generation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Swampfire",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a9/TFB2_%28499%29.png/revision/latest?cb=20150919161701",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TFB2_(499).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "TBS (433).png",
+        "caption": "Fire Bomb Generation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Swampfire",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/99/TBS_%28433%29.png/revision/latest?cb=20150828134532",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TBS_(433).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
