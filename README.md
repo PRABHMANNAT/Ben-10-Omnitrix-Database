@@ -4,7 +4,7 @@
 
 <p align="center">
   A fan-made <strong>Ben 10 alien encyclopedia</strong> with a matte black interface,<br />
-  detailed transformation files, side-by-side comparisons, and your own named Omnitrix lineups.
+  281 curated images, detailed transformation files, comparisons, and your own named Omnitrix lineups.
 </p>
 
 <p align="center">
@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="#the-field-guide">Features</a> ·
+  <a href="#see-every-form-in-action">Image galleries</a> ·
   <a href="#ten-picks-two-wildcards">Team builder</a> ·
   <a href="#inside-the-archive">Screenshots</a> ·
   <a href="#run-it-locally">Quick start</a> ·
@@ -69,6 +70,22 @@ Matches come from the archive's listed abilities. Weaknesses and elemental immun
   <summary><strong>See combined ability filters in action</strong></summary>
   <br />
   <a href="docs/assets/archive-abilities.jpg"><img src="docs/assets/archive-abilities.jpg" alt="The archive with Can fly and Uses fire selected, returning Heatblast and Ultimate Big Chill." width="100%" /></a>
+</details>
+
+## See every form in action
+
+Open an alien’s dossier and choose **Gallery**. Explore **281 locally hosted images across all 72 aliens**, with **three or four images per transformation**: alternate series designs, power demonstrations, episode stills, and game appearances where available. Galleries open on an action shot when one is available.
+
+Select a thumbnail or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
+
+<a href="docs/assets/gallery-desktop.jpg"><img src="docs/assets/gallery-desktop.jpg" alt="Heatblast visual archive with a high-resolution action frame, alternate artwork thumbnails, captions, and source credits." width="100%" /></a>
+
+Most sources retain their native resolution, including HD episode frames. **Eight smaller images are AI-enhanced** and visibly labeled, with original dimensions and a comparison link. The viewer always shows actual pixel dimensions. **Sandbox and Snakepit use explicitly labeled non-canon Thomas N. Perkins IV concepts**, including scale charts and isolated versions; Portaler’s gameplay and concepts are labeled separately. See the [image sources, credits, and enhancement notes](docs/GALLERY_SOURCES.md).
+
+<details>
+  <summary><strong>Gallery on mobile</strong></summary>
+  <br />
+  <img src="docs/assets/gallery-mobile.jpg" alt="The responsive image gallery on a narrow mobile screen." width="360" />
 </details>
 
 ## Ten picks. Two wildcards.
@@ -134,7 +151,7 @@ Open the local URL printed by Vite, usually **http://localhost:5173**. No API ke
 | `npm run build` | Build the production site into `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Run ESLint |
-| `node --test src/lib/abilities.test.js src/lib/team.test.js` | Check ability matching, search phrases, team rules, library migration, saved-state recovery, and the creator preset |
+| `node --test src/lib/abilities.test.js src/lib/team.test.js src/lib/gallery.test.js` | Check ability matching, search phrases, team rules, library migration, saved-state recovery, the creator preset, and gallery asset integrity |
 
 ## Built with
 
@@ -150,14 +167,15 @@ src/
 ├── lib/              Team rules and their tests
 └── styles/           Black Edition design and responsive layouts
 public/aliens/        Cached character art and its source manifest
-scripts/              Artwork caching utility
+public/gallery/       281 optimized full-resolution gallery images
+scripts/              Artwork and gallery cache / encoding utilities
 docs/assets/          README banner, custom icons, and app screenshots
 ```
 
 <details>
   <summary><strong>Artwork and data notes</strong></summary>
 
-  The archive currently includes 70 cached illustrations for 72 records. Sandbox and Snakepit use an explicit artwork-unavailable state. Source references are recorded in [`public/aliens/sources.json`](public/aliens/sources.json); local paths are mapped in [`src/data/artwork.json`](src/data/artwork.json).
+  The archive includes 70 canonical cover illustrations plus 281 gallery images for all 72 records. Sandbox and Snakepit point to labeled concept galleries instead of inventing canonical cover art. Source references are recorded in [`public/aliens/sources.json`](public/aliens/sources.json); local paths are mapped in [`src/data/artwork.json`](src/data/artwork.json).
 
   [`scripts/cache-artwork.mjs`](scripts/cache-artwork.mjs) can refresh the cache from its sources and requires internet access. Normal app use does not need to run this script. Treat the numerical ratings as a fan comparison tool. If you spot a lore error, include an episode or reliable source when reporting it.
 

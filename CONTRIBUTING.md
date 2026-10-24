@@ -18,6 +18,8 @@ Create a branch for your change. Keep dependency changes separate unless the fix
 | Change | Start here |
 | :--- | :--- |
 | Alien details, abilities, or statistics | `src/data/aliens.js` |
+| Gallery selection, credits, and processing | `scripts/gallery-selection.json`, `docs/GALLERY_SOURCES.md` |
+| Gallery viewer and manifest | `src/components/AlienGallery.jsx`, `src/data/galleries.json` |
 | Artwork mapping | `src/data/artwork.json` |
 | Artwork source references | `public/aliens/sources.json` |
 | Team rules and storage recovery | `src/lib/team.js` |
@@ -34,7 +36,7 @@ For lore corrections, include the episode, scene, or source that supports the ch
 
 ```bash
 npm run build
-node --test src/lib/abilities.test.js src/lib/team.test.js
+node --test src/lib/abilities.test.js src/lib/team.test.js src/lib/gallery.test.js
 npm run lint
 ```
 
@@ -43,6 +45,8 @@ Report any pre-existing check failures separately from failures introduced by yo
 Team changes should preserve the ten main slots, two optional bonus slots, duplicate prevention within each team, reordering, and recovery from invalid saved data. Named teams must keep independent picks, and migration must preserve the original saved lineup. Copies of the creator preset must be editable without changing the preset itself. Add a focused regression test when changing these rules.
 
 Ability matching is shared between the archive and team picker. Match active powers from ability records, rather than weaknesses or immunity alone. Multiple selected abilities must all match. Test representative matches and false positives when changing a category or search alias.
+
+Gallery changes must retain source links, accurate dimensions, enhancement labels, and non-canon concept notices. Keep three or four images per alien and run the gallery integrity checks after rebuilding assets. See [gallery provenance](docs/GALLERY_SOURCES.md) for the optional refresh workflow.
 
 ## Visual direction
 
