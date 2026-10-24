@@ -23,7 +23,7 @@
   <a href="#make-the-archive-better">Contribute</a>
 </p>
 
-<a href="docs/assets/archive.jpg"><img src="docs/assets/archive.jpg" alt="Desktop archive: Alien X featured beside the encyclopedia, series filters, search, and transformation cards." width="100%" /></a>
+<a href="docs/assets/screenshots/archive.jpg"><img src="docs/assets/screenshots/archive.jpg" alt="Current desktop home: Alien X, ability filters, archive search, and the Black Edition navigation." width="100%" /></a>
 
 ## The field guide
 
@@ -61,11 +61,11 @@ The Black Edition pairs charcoal surfaces, rounded character cards and controls,
 <details>
   <summary><strong>See the latest interface refinements</strong></summary>
   <br />
-  <a href="docs/assets/rounded-interface.jpg"><img src="docs/assets/rounded-interface.jpg" alt="Rounded alien cards, dark rounded dropdowns, an Omnitrix sidebar mark, and highlighted GitHub button." width="100%" /></a>
+  <a href="docs/assets/screenshots/rounded-interface.jpg"><img src="docs/assets/screenshots/rounded-interface.jpg" alt="Current archive with rounded alien cards, dark controls, blue ability filters, and the highlighted GitHub button." width="100%" /></a>
   <br />
   <table><tr>
-    <td width="72%" valign="top"><img src="docs/assets/team-library-compact.jpg" alt="Compact creator team preview with Alien X, Feedback, and XLR8 visible beside the creator credit and lineup button." width="100%" /></td>
-    <td width="28%" valign="top"><img src="docs/assets/navigation-mobile.jpg" alt="Mobile navigation with the active My top 10 pill and a compact illustrated creator card." width="100%" /></td>
+    <td width="72%" valign="top"><img src="docs/assets/screenshots/team-library-compact.jpg" alt="Compact creator team preview with Alien X, Feedback, and XLR8 visible beside the creator credit and lineup button." width="100%" /></td>
+    <td width="28%" valign="top"><img src="docs/assets/screenshots/navigation-mobile.jpg" alt="Mobile navigation with the active My top 10 pill and a compact illustrated creator card." width="100%" /></td>
   </tr></table>
 </details>
 
@@ -80,7 +80,7 @@ Matches come from the archive's listed abilities. Weaknesses and elemental immun
 <details>
   <summary><strong>See combined ability filters in action</strong></summary>
   <br />
-  <a href="docs/assets/archive-abilities.jpg"><img src="docs/assets/archive-abilities.jpg" alt="The archive with Can fly and Uses fire selected, returning Heatblast and Ultimate Big Chill." width="100%" /></a>
+  <a href="docs/assets/screenshots/archive-abilities.jpg"><img src="docs/assets/screenshots/archive-abilities.jpg" alt="The archive with Can fly and Uses fire selected, returning Heatblast and Ultimate Big Chill." width="100%" /></a>
 </details>
 
 ## See every form in action
@@ -89,12 +89,12 @@ Open an alien’s dossier and scroll below **Statistics** to see its gallery, or
 
 Select a picture from the four-column thumbnail grid or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
 
-<a href="docs/assets/gallery-expanded.jpg"><img src="docs/assets/gallery-expanded.jpg" alt="Ultimate Way Big visual archive below the statistics, eight images in two rows of four thumbnails." width="100%" /></a>
+<a href="docs/assets/screenshots/gallery-expanded.jpg"><img src="docs/assets/screenshots/gallery-expanded.jpg" alt="Ultimate Way Big visual archive below the statistics, eight images in two rows of four thumbnails." width="100%" /></a>
 
 <details>
   <summary><strong>Alien X — the five-image replacement set</strong></summary>
   <br />
-  <img src="docs/assets/gallery-alien-x.jpg" alt="Alien X gallery on image five of five, showing the new forward flight pose with the full figure visible." width="100%" />
+  <img src="docs/assets/screenshots/gallery-alien-x.jpg" alt="Alien X gallery on image five of five, showing the new forward flight pose with the full figure visible." width="100%" />
 </details>
 
 Most galleries preserve their existing images and include four additional choices. Alien X’s last two images are replaced by three clear action poses. Sandbox and Snakepit each retain only their first four images. Images retain their native resolution, including HD episode frames; a few smaller illustrations display their actual dimensions. **Eight smaller images are AI-enhanced** and visibly labeled, with original dimensions and a comparison link. The viewer always shows actual pixel dimensions. **Sandbox and Snakepit include explicitly labeled non-canon Thomas N. Perkins IV concepts and credited fan interpretations**; Portaler’s gameplay and concepts are labeled separately. See the [image sources, credits, and enhancement notes](docs/GALLERY_SOURCES.md).
@@ -102,7 +102,7 @@ Most galleries preserve their existing images and include four additional choice
 <details>
   <summary><strong>Gallery on mobile</strong></summary>
   <br />
-  <img src="docs/assets/gallery-expanded-mobile.jpg" alt="The responsive image gallery on a narrow mobile screen." width="360" />
+  <img src="docs/assets/screenshots/gallery-expanded-mobile.jpg" alt="The responsive image gallery on a narrow mobile screen." width="360" />
 </details>
 
 ## Ten picks. Two wildcards.
@@ -111,7 +111,7 @@ Your Omnitrix, your rules. Open **My top 10** and use **New team** to name a lin
 
 Select a slot to choose a transformation and use the arrows to change its rank. Enable **Add 2 bonus picks** to give that team a little extra range. A deletion asks for confirmation and keeps at least one personal team available.
 
-<a href="docs/assets/team-builder.jpg"><img src="docs/assets/team-builder.jpg" alt="Example completed team: ten ranked aliens, including Heatblast, XLR8, and Alien X, with Way Big and Clockwork in the two separate bonus slots." width="100%" /></a>
+<a href="docs/assets/screenshots/team-builder.jpg"><img src="docs/assets/screenshots/team-builder.jpg" alt="Example completed team: ten ranked aliens, including Heatblast, XLR8, and Alien X, with Way Big and Clockwork in the two separate bonus slots." width="100%" /></a>
 
 <p align="center"><sub>A sample lineup captured in the running app. Team choices are saved locally on your own browser.</sub></p>
 
@@ -124,17 +124,17 @@ Each pick has a role, with an expandable **Why these twelve?** guide covering st
 <details>
   <summary><strong>See the complete creator lineup</strong></summary>
   <br />
-  <a href="docs/assets/creator-team.jpg"><img src="docs/assets/creator-team.jpg" alt="Creator's favorites by Prabhmannat Singh: ten aliens with distinct combat, rescue, technology, and strategy roles, plus Way Big and Ultimate Echo Echo as bonus picks." width="100%" /></a>
+  <a href="docs/assets/screenshots/creator-team.jpg"><img src="docs/assets/screenshots/creator-team.jpg" alt="Creator's favorites by Prabhmannat Singh: ten aliens with distinct combat, rescue, technology, and strategy roles, plus Way Big and Ultimate Echo Echo as bonus picks." width="100%" /></a>
 </details>
 
 ## Inside the archive
 
-Real screenshots from the Black Edition. Select an image to see it at full size.
+Fresh screenshots from the current Black Edition, including galleries below the statistics, four-column thumbnails, and named team lineups. Select an image to see it at full size.
 
 <table>
   <tr>
-    <td width="50%"><a href="docs/assets/profile.jpg"><img src="docs/assets/profile.jpg" alt="Alien X dossier with profile tabs, artwork, species details, and all ten statistics." width="100%" /></a><br /><strong>01 / Transformation files</strong></td>
-    <td width="50%"><a href="docs/assets/comparison.jpg"><img src="docs/assets/comparison.jpg" alt="Heatblast, Diamondhead, and XLR8 compared side by side, with the best statistic in each row underlined." width="100%" /></a><br /><strong>02 / Side-by-side comparisons</strong></td>
+    <td width="50%"><a href="docs/assets/screenshots/profile.jpg"><img src="docs/assets/screenshots/profile.jpg" alt="Current Alien X dossier with artwork, profile tabs, species details, and origin facts." width="100%" /></a><br /><strong>01 / Transformation files</strong></td>
+    <td width="50%"><a href="docs/assets/screenshots/comparison.jpg"><img src="docs/assets/screenshots/comparison.jpg" alt="Heatblast, Diamondhead, and XLR8 compared side by side, with the best statistic in each row underlined." width="100%" /></a><br /><strong>02 / Side-by-side comparisons</strong></td>
   </tr>
 </table>
 
@@ -143,8 +143,8 @@ Real screenshots from the Black Edition. Select an image to see it at full size.
   <br />
   <table>
     <tr>
-      <td width="72%" valign="top"><a href="docs/assets/team-picker.jpg"><img src="docs/assets/team-picker.jpg" alt="Team picker with Can fly and Can swim selected, showing AmpFibian, Big Chill, and Jetray alongside search and series filters." width="100%" /></a><br /><strong>03 / Choose your transformation</strong></td>
-      <td width="28%" valign="top"><a href="docs/assets/mobile.jpg"><img src="docs/assets/mobile.jpg" alt="Mobile layout showing the navigation, archive introduction, and Alien X feature card." width="100%" /></a><br /><strong>04 / On the go</strong></td>
+      <td width="72%" valign="top"><a href="docs/assets/screenshots/team-picker.jpg"><img src="docs/assets/screenshots/team-picker.jpg" alt="Team picker with Can fly and Can swim selected, showing AmpFibian, Big Chill, and Jetray alongside search and series filters." width="100%" /></a><br /><strong>03 / Choose your transformation</strong></td>
+      <td width="28%" valign="top"><a href="docs/assets/screenshots/mobile.jpg"><img src="docs/assets/screenshots/mobile.jpg" alt="Mobile layout showing the navigation, archive introduction, and Alien X feature card." width="100%" /></a><br /><strong>04 / On the go</strong></td>
     </tr>
   </table>
 </details>
@@ -170,7 +170,7 @@ Open the local URL printed by Vite, usually **http://localhost:5173**. No API ke
 | `npm run build` | Build the production site into `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Check React source, JavaScript utilities, tests, and maintenance scripts with ESLint |
-| `npm test` | Run all 26 tests for abilities, team storage, presets, and gallery integrity |
+| `npm test` | Run all 27 tests for abilities, team storage, presets, and gallery integrity |
 | `npm run test:watch` | Rerun tests while developing |
 | `npm run check` | Run lint, tests, and the production build in sequence |
 
