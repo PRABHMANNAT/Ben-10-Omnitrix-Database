@@ -10,13 +10,12 @@ export function TeamLibrary({ library, creatorTeam, activeTeam, roster, selectRe
   const isCreator = activeTeam.id === CREATOR_TEAM_ID;
   return <div className="team-library">
     <aside className={`creator-team-card ${isCreator ? 'is-current' : ''}`} aria-label="Creator's featured team">
-      <div className="creator-lineup-mark" aria-hidden="true">10<span>+2</span></div>
+      <div className="creator-lineup-preview" aria-hidden="true">{[29, 53, 4].map(id => <div key={id}><AlienArtwork alien={roster.get(id)} eager /></div>)}<span>10 + 2</span></div>
       <div className="creator-lineup-copy">
         <span className="eyebrow">FROM THE CREATOR / {creatorLineup.author.toUpperCase()}</span>
-        <h2>{creatorLineup.name}<span>All-situation lineup</span></h2>
-        <p>Power, strategy, rescue, and a way out. A versatile starting point for your own Omnitrix.</p>
+        <h2>{creatorLineup.name}</h2>
+        <p>Twelve forms. Ready for any situation.</p>
       </div>
-      <div className="creator-lineup-preview" aria-hidden="true">{[29, 53, 4].map(id => <AlienArtwork key={id} alien={roster.get(id)} eager />)}</div>
       <button className="button button-small" onClick={() => isCreator ? onCopy(creatorTeam) : onSelect(CREATOR_TEAM_ID)}>{isCreator ? <><FiCopy />Make it yours</> : <>View lineup<FiArrowUpRight /></>}</button>
     </aside>
     <div className="team-library-toolbar">

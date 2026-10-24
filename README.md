@@ -56,7 +56,18 @@ From Heatblast to Alien X. Browse **72 transformations** across **Original Serie
   </tr>
 </table>
 
-The Black Edition pairs charcoal surfaces, quiet sage accents, crisp typography, and restrained motion. Responsive layouts, keyboard navigation, focus-managed dialogs, and reduced-motion preferences are built into the experience. Press **`/`** to search the archive or **`Esc`** to close a dialog.
+The Black Edition pairs charcoal surfaces, rounded character cards and controls, sage highlights, and muted blue ability filters. A sliding navigation pill follows your current section and respects reduced-motion preferences. The Omnitrix identity includes SVG, multi-size ICO, and Apple touch icons, with a **Built by Prabhmannat Singh** credit in the sidebar. Responsive layouts, keyboard navigation, and focus-managed dialogs are built into the experience. Press **`/`** to search the archive or **`Esc`** to close a dialog.
+
+<details>
+  <summary><strong>See the latest interface refinements</strong></summary>
+  <br />
+  <a href="docs/assets/rounded-interface.jpg"><img src="docs/assets/rounded-interface.jpg" alt="Rounded alien cards, dark rounded dropdowns, an Omnitrix sidebar mark, and highlighted GitHub button." width="100%" /></a>
+  <br />
+  <table><tr>
+    <td width="72%" valign="top"><img src="docs/assets/team-library-compact.jpg" alt="Compact creator team preview with Alien X, Feedback, and XLR8 visible beside the creator credit and lineup button." width="100%" /></td>
+    <td width="28%" valign="top"><img src="docs/assets/navigation-mobile.jpg" alt="Mobile navigation with the active My top 10 pill and a compact illustrated creator card." width="100%" /></td>
+  </tr></table>
+</details>
 
 ### Find a form for the job
 
