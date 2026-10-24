@@ -1,0 +1,8 @@
+.header-actions .github-star { background: #c4d2b0; border: 1px solid #d5e0c5; color: #172010; font-weight: 650; padding-inline: 15px; box-shadow: inset 0 1px 0 #e3ebd6; }
+.header-actions .github-star:hover { background: #dce8cd; border-color: #e5efd9; color: #10180b; }
+.header-actions .github-star > svg:first-child { fill: currentColor; }
+.header-actions .github-star > svg:last-child { transition: transform 180ms; }
+.header-actions .github-star:hover > svg:last-child { transform: translate(2px, -2px); }
+@media (max-width: 720px) {
+  .header-actions .github-star { width: 36px; height: 36px; padding: 9px; }
+}
