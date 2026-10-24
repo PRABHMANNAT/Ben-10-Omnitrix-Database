@@ -3535,6 +3535,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Ben10ua amphib 174x252.png",
+        "caption": "AmpFibian — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ampfibian (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/48/Ben10ua_amphib_174x252.png/revision/latest?cb=20190806083709",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Ben10ua_amphib_174x252.png",
+        "width": 5735,
+        "height": 6200,
+        "enhance": false
+      },
+      {
+        "file": "AmpFibian.png",
+        "caption": "AmpFibian — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ampfibian (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/4d/AmpFibian.png/revision/latest?cb=20190806083634",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:AmpFibian.png",
+        "width": 5785,
+        "height": 5305,
+        "enhance": false
+      },
+      {
+        "file": "MaxMonster181.2.png",
+        "caption": "Elasticity/Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ampfibian (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f0/MaxMonster181.2.png/revision/latest?cb=20160117135610",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MaxMonster181.2.png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Deep (311).png",
+        "caption": "Energy Absorption",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ampfibian (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f3/Deep_%28311%29.png/revision/latest?cb=20150829130506",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Deep_(311).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
