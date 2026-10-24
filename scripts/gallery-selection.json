@@ -6358,6 +6358,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Game Show Pesky Dust.png",
+        "caption": "Pesky Dust in The Most Dangerous Game Show",
+        "kind": "scene",
+        "section": "The Most Dangerous Game Show",
+        "source": "Pesky Dust/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f7/Game_Show_Pesky_Dust.png/revision/latest?cb=20180129145303",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Game_Show_Pesky_Dust.png",
+        "width": 1366,
+        "height": 768,
+        "enhance": false
+      },
+      {
+        "file": "OB (470).png",
+        "caption": "Pesky Dust in Outbreak",
+        "kind": "scene",
+        "section": "Outbreak",
+        "source": "Pesky Dust/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/dd/OB_%28470%29.png/revision/latest?cb=20160116162053",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OB_(470).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "FaFBM (443).png",
+        "caption": "Pesky Dust in For a Few Brains More",
+        "kind": "scene",
+        "section": "For a Few Brains More",
+        "source": "Pesky Dust/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f6/FaFBM_%28443%29.png/revision/latest?cb=20160113191454",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FaFBM_(443).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "OB (472).png",
+        "caption": "Pesky Dust in Outbreak",
+        "kind": "scene",
+        "section": "Outbreak",
+        "source": "Pesky Dust/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b9/OB_%28472%29.png/revision/latest?cb=20160116162112",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:OB_(472).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
