@@ -2034,6 +2034,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "K10 (474).png",
+        "caption": "Ben 10,000 as Way Big",
+        "kind": "design",
+        "section": "Profile",
+        "source": "Way Big (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/41/K10_%28474%29.png/revision/latest?cb=20200503065204",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:K10_(474).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "UAF WayBig.png",
+        "caption": "Way Big in Alien Force and Ultimate Alien",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Way Big (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/ee/UAF_WayBig.png/revision/latest?cb=20200521143317",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UAF_WayBig.png",
+        "width": 473,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "Primus (567).png",
+        "caption": "Way Big in Alien Force",
+        "kind": "scene",
+        "section": "Alien Force",
+        "source": "Way Big (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/e3/Primus_%28567%29.png/revision/latest?cb=20151001152335",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Primus_(567).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "Way Big OS.png",
+        "caption": "Way Big in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Way Big (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/ab/Way_Big_OS.png/revision/latest?cb=20210502140004",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Way_Big_OS.png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
