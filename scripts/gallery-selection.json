@@ -164,6 +164,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Wildmutt OS Pose.png",
+        "caption": "Wildmutt — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Wildmutt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c0/Wildmutt_OS_Pose.png/revision/latest?cb=20260216140446",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Wildmutt_OS_Pose.png",
+        "width": 5645,
+        "height": 3473,
+        "enhance": false
+      },
+      {
+        "file": "Wildmutt action pose.png",
+        "caption": "Wildmutt — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Wildmutt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f0/Wildmutt_action_pose.png/revision/latest?cb=20200509231038",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Wildmutt_action_pose.png",
+        "width": 1280,
+        "height": 1025,
+        "enhance": false
+      },
+      {
+        "file": "DepreyPresa1P81.png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Wildmutt",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f6/DepreyPresa1P81.png/revision/latest?cb=20160103012146",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:DepreyPresa1P81.png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "PM (1169).png",
+        "caption": "Wildmutt in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Wildmutt/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/ef/PM_%281169%29.png/revision/latest?cb=20200618171656",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:PM_(1169).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
