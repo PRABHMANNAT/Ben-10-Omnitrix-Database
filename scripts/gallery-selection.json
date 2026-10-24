@@ -2254,6 +2254,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Echo Echo action pose 2.png",
+        "caption": "Echo Echo — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Echo Echo/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/61/Echo_Echo_action_pose_2.png/revision/latest?cb=20190826095648",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Echo_Echo_action_pose_2.png",
+        "width": 2800,
+        "height": 3664,
+        "enhance": false
+      },
+      {
+        "file": "Echo Echo action pose 4.png",
+        "caption": "Echo Echo — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Echo Echo/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5d/Echo_Echo_action_pose_4.png/revision/latest?cb=20210316130309",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Echo_Echo_action_pose_4.png",
+        "width": 743,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "UE (338).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Echo Echo",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/1b/UE_%28338%29.png/revision/latest?cb=20151020174006",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UE_(338).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "EEAF.png",
+        "caption": "Echo Echo — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Echo Echo/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/89/EEAF.png/revision/latest?cb=20171020185935",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:EEAF.png",
+        "width": 1693,
+        "height": 3066,
+        "enhance": false
       }
     ]
   },
