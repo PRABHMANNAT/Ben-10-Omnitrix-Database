@@ -29,11 +29,12 @@ def encode(job):
         credit = 'Derrick J. Wyatt — concept art. Source: Ben 10 Wiki.'
     elif 'Pedro Astudillo' in item['file']:
         credit = 'Pedro Astudillo — character artwork. Ben 10 / Cartoon Network. Source: Ben 10 Wiki.'
+    credit = item.get('credit', credit)
     return alien_id, {
         'id': f'{alien_id}-{index}', 'src': f'/gallery/{alien_id}/{index}.webp',
         'caption': item['caption'], 'kind': item['kind'], 'series': item.get('era', ''),
         'width': width, 'height': height, 'sourceWidth': item['width'], 'sourceHeight': item['height'],
-        'enhanced': enhanced, 'sourcePage': 'https://ben10.fandom.com/wiki/' + item['source'].replace(' ', '_'),
+        'enhanced': enhanced, 'sourcePage': item.get('sourcePage') or 'https://ben10.fandom.com/wiki/' + item['source'].replace(' ', '_'),
         'sourceFile': item['sourceFile'], 'originalUrl': item['originalUrl'], 'credit': credit,
         'bytes': target.stat().st_size, 'sha256': sha256(target.read_bytes()).hexdigest(),
     }

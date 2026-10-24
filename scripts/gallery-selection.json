@@ -54,6 +54,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "heatblast OS.png",
+        "caption": "Heatblast in the Original Series",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Heatblast (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/e8/Heatblast_OS.png/revision/latest?cb=20230814093452",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Heatblast_OS.png",
+        "width": 476,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "Heatblast OS AP1.png",
+        "caption": "Heatblast — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Heatblast (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/40/Heatblast_OS_AP1.png/revision/latest?cb=20210316205701",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Heatblast_OS_AP1.png",
+        "width": 1280,
+        "height": 1123,
+        "enhance": false
+      },
+      {
+        "file": "Tour (1050).png",
+        "caption": "Fire Bomb Generation",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Heatblast (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/8e/Tour_%281050%29.png/revision/latest?cb=20200604150955",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Tour_(1050).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "Heatblast OS AP2.png",
+        "caption": "Heatblast — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Heatblast (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/ff/Heatblast_OS_AP2.png/revision/latest?cb=20210316205708",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Heatblast_OS_AP2.png",
+        "width": 1280,
+        "height": 1060,
+        "enhance": false
       }
     ]
   },

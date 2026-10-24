@@ -8,11 +8,12 @@ const directory = path.join(root, 'tmp/gallery/originals');
 await mkdir(directory, { recursive: true });
 const queue = Object.entries(selection).flatMap(([id, entry]) => entry.images.map((image, i) => ({ id: `${id}-${i + 1}`, url: image.originalUrl })));
 let completed = 0;
+const mediaHosts = new Set(['static.wikia.nocookie.net', 'images.squarespace-cdn.com', 'images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com', 'askair.weebly.com', 'www.clipartkey.com', 'www.clipartmax.com']);
 async function download() {
   while (queue.length) {
     const item = queue.shift();
     const url = new URL(item.url);
-    if (url.protocol !== 'https:' || url.hostname !== 'static.wikia.nocookie.net') throw new Error(`Unexpected media host: ${url.hostname}`);
+    if (url.protocol !== 'https:' || !mediaHosts.has(url.hostname)) throw new Error(`Unexpected media host: ${url.hostname}`);
     let failure;
     for (let attempt = 0; attempt < 3; attempt++) {
       try {
