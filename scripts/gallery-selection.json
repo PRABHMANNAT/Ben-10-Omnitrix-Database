@@ -1264,6 +1264,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "WildvineCombat.png",
+        "caption": "Wildvine — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Wildvine (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/de/WildvineCombat.png/revision/latest?cb=20251014232229",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:WildvineCombat.png",
+        "width": 1024,
+        "height": 1024,
+        "enhance": false
+      },
+      {
+        "file": "Wildvine OS AP1.png",
+        "caption": "Wildvine — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Wildvine (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/4b/Wildvine_OS_AP1.png/revision/latest?cb=20210318141626",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Wildvine_OS_AP1.png",
+        "width": 1280,
+        "height": 671,
+        "enhance": false
+      },
+      {
+        "file": "Midmad (560).png",
+        "caption": "Wildvine in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Wildvine (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d0/Midmad_%28560%29.png/revision/latest?cb=20181020141219",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Midmad_(560).png",
+        "width": 1280,
+        "height": 738,
+        "enhance": false
+      },
+      {
+        "file": "Benwolf (184.1).png",
+        "caption": "Closeable Flytrap",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Wildvine (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f3/Benwolf_%28184.1%29.png/revision/latest?cb=20261001020804",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Benwolf_(184.1).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
