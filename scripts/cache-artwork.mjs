@@ -10,6 +10,7 @@ const canonicalNames = { Ripjaws: 'Ripjaws (Classic)', Chromastone: 'Chromastone
 const wikiImages = {};
 const sources = {};
 const unavailable = new Set();
+const galleries = JSON.parse(await fs.readFile(new URL('../src/data/galleries.json', import.meta.url), 'utf8'));
 for (let start = 0; start < aliens.length; start += 25) {
   const group = aliens.slice(start, start + 25);
   const titles = group.map(alien => canonicalNames[alien.name] || alien.name);
@@ -46,6 +47,19 @@ let cursor = 0;
 await Promise.all(Array.from({ length: 6 }, async () => {
   while (cursor < aliens.length) {
     const alien = aliens[cursor++];
+    if (galleries[alien.id]?.conceptOnly) {
+      const concept = galleries[alien.id].images.find(image => image.caption === 'Isolated concept design');
+      if (!concept) throw new Error(`Missing curated concept artwork for ${alien.name}`);
+      await fs.access(path.resolve(`public${concept.src}`));
+      manifest[alien.id] = concept.src;
+      sources[alien.id] = {
+        name: alien.name, page: concept.sourcePage, image: concept.originalUrl,
+        file: concept.sourceFile, local: concept.src, credit: concept.credit,
+        canonical: false, enhanced: concept.enhanced, width: concept.width, height: concept.height,
+        sourceWidth: concept.sourceWidth, sourceHeight: concept.sourceHeight,
+      };
+      continue;
+    }
     if (unavailable.has(alien.id)) continue;
     const filename = `${alien.id}.png`;
     try {
@@ -73,4 +87,4 @@ await Promise.all(Array.from({ length: 6 }, async () => {
 }));
 await fs.writeFile('src/data/artwork.json', `${JSON.stringify(manifest, null, 2)}\n`);
 await fs.writeFile('public/aliens/sources.json', `${JSON.stringify(sources, null, 2)}\n`);
-console.log(JSON.stringify({ cached: Object.keys(manifest).length, unavailable: [...unavailable], missing: failures }));
+console.log(JSON.stringify({ cached: Object.keys(manifest).length, unavailable: [...unavailable].filter(id => !manifest[id]), missing: failures }));

@@ -11,6 +11,7 @@ export default function AlienCard({ alien, index = 0, onClick, isCompareMode, is
         <button className={`save-button ${isSaved ? 'is-saved' : ''}`} onClick={() => onSave(alien.id)} aria-label={`${isSaved ? 'Remove' : 'Save'} ${alien.name}${isSaved ? ' from' : ' to'} collection`} aria-pressed={isSaved}><FiBookmark /></button>
         <button className="artwork-button" disabled={disabled} onClick={() => isCompareMode ? onCompare(alien) : onClick(alien)} aria-label={isCompareMode ? `${isSelected ? 'Deselect' : 'Select'} ${alien.name} for comparison` : `View ${alien.name} profile`}><AlienArtwork key={alien.id} alien={alien} eager={index < 6} /><span className="stage-watermark" aria-hidden="true">{alien.name.replace('Ultimate ', '').slice(0, 2).toUpperCase()}</span></button>
         <span className={`tier-label ${alien.tier === 'GOD' ? 'tier-exceptional' : ''}`}>{alien.tier === 'GOD' ? 'GOD' : alien.tier} <span>TIER</span></span>
+        {[70, 71].includes(alien.id) && <span className="concept-art-badge" title="Non-canon concept by Thomas N. Perkins IV, sourced from Ben 10 Wiki">Concept · AI-enhanced</span>}
         {isCompareMode && <span className={`compare-indicator ${isSelected ? 'selected' : ''}`} aria-hidden="true">{isSelected ? <FiCheck /> : <FiPlus />}</span>}
       </div>
       <div className="card-information">

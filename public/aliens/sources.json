@@ -346,13 +346,31 @@
   },
   "70": {
     "name": "Sandbox",
-    "page": "https://ben10.fandom.com/wiki/Sandbox",
-    "image": "https://static.wikia.nocookie.net/ben10/images/3/3c/NoImageAvailable.png/revision/latest?cb=20260724025143"
+    "page": "https://ben10.fandom.com/wiki/Sandbox_(Thomas_Perkins)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/c/ca/SandBox.png/revision/latest?cb=20201121124153",
+    "file": "https://ben10.fandom.com/wiki/File:SandBox.png",
+    "local": "/gallery/70/3.webp",
+    "credit": "Thomas N. Perkins IV — non-canon concept art. Source: Ben 10 Wiki.",
+    "canonical": false,
+    "enhanced": true,
+    "width": 1340,
+    "height": 1174,
+    "sourceWidth": 534,
+    "sourceHeight": 468
   },
   "71": {
     "name": "Snakepit",
-    "page": "https://ben10.fandom.com/wiki/Snakepit",
-    "image": "https://static.wikia.nocookie.net/ben10/images/3/3c/NoImageAvailable.png/revision/latest?cb=20260724025143"
+    "page": "https://ben10.fandom.com/wiki/Snakepit_(Thomas_Perkins)",
+    "image": "https://static.wikia.nocookie.net/ben10/images/2/2d/Snakepit_no_background.png/revision/latest?cb=20201120210257",
+    "file": "https://ben10.fandom.com/wiki/File:Snakepit_no_background.png",
+    "local": "/gallery/71/3.webp",
+    "credit": "Thomas N. Perkins IV — non-canon concept art. Source: Ben 10 Wiki.",
+    "canonical": false,
+    "enhanced": true,
+    "width": 1166,
+    "height": 1349,
+    "sourceWidth": 465,
+    "sourceHeight": 538
   },
   "72": {
     "name": "Spitter",

@@ -203,7 +203,7 @@ eslint.config.js      Browser React and Node tooling checks
 <details>
   <summary><strong>Artwork and data notes</strong></summary>
 
-  The archive includes 70 canonical cover illustrations plus 281 gallery images for all 72 records. Sandbox and Snakepit point to labeled concept galleries instead of inventing canonical cover art. Source references are recorded in [`public/aliens/sources.json`](public/aliens/sources.json); local paths are mapped in [`src/data/artwork.json`](src/data/artwork.json).
+  All 72 records have cover artwork, alongside 281 gallery images. Sandbox and Snakepit use the isolated Thomas N. Perkins IV concepts sourced from Ben 10 Wiki, with non-canon and AI-enhancement labels. Their illustrations appear in archive cards, profiles, comparisons, and team selection. Source references are recorded in [`public/aliens/sources.json`](public/aliens/sources.json); local paths are mapped in [`src/data/artwork.json`](src/data/artwork.json).
 
   [`scripts/cache-artwork.mjs`](scripts/cache-artwork.mjs) can refresh the cache from its sources and requires internet access. Normal app use does not need to run this script. Treat the numerical ratings as a fan comparison tool. If you spot a lore error, include an episode or reliable source when reporting it.
 

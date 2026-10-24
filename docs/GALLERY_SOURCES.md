@@ -13,6 +13,8 @@ Images were obtained from the public **Ben 10 Wiki** file archive. Ben 10 charac
 
 **Sandbox and Snakepit:** neither alien was shown on screen. Their galleries are explicitly marked **non-canon concepts by Thomas N. Perkins IV**, with a full illustration, a shared scale chart, and an isolated rendering. These are different presentations of a concept, not three separate canonical forms. See [Sandbox](https://ben10.fandom.com/wiki/Sandbox) and [Snakepit](https://ben10.fandom.com/wiki/Snakepit).
 
+The isolated, AI-enhanced images (`70/3.webp` and `71/3.webp`) also serve as the main cover artwork throughout the app. Cards display a concept/enhancement badge; profile captions and image descriptions identify these as non-canon concepts. Original source links and dimensions remain available in their galleries and the cover source manifest. The cover cache utility preserves these curated selections when refreshed.
+
 **Portaler:** game material and concept art are labeled separately. Derrick J. Wyatt is credited on his concept drawing and scale chart. The original game concept and Fuel Run gameplay are not presented as on-screen Omniverse appearances.
 
 ## Resolution and processing
