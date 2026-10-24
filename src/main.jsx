@@ -9,6 +9,7 @@ import './styles/github.css'
 import './styles/cards.css'
 import './styles/identity.css'
 import './styles/controls.css'
+import './styles/footer.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

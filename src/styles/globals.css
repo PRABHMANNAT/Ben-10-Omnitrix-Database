@@ -272,22 +272,6 @@ h1, h2, h3, p { margin: 0; }
 .list-check { width: 17px; height: 17px; border: 1px solid #8c8f89; display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
 .list-check svg { width: 12px; height: 12px; }
 
-.site-footer { display: flex; align-items: flex-end; justify-content: space-between; border-top: 1px solid #333432; margin-top: 45px; padding: 30px 0 28px; gap: 20px; }
-.footer-brand { font-size: 20px; letter-spacing: -1px; color: #c6c7c4; }
-.site-footer p { margin-top: 10px; font-size: 9px; line-height: 1.8; color: #878984; }
-.footer-links { display: flex; align-items: flex-end; flex-direction: column; gap: 9px; font-size: 9px; color: #acafaa; }
-.footer-links a, .footer-links button { display: inline-flex; align-items: center; gap: 7px; }
-.footer-links svg { width: 11px; height: 11px; }
-.footer-links > span { font: 6px var(--mono); letter-spacing: 1px; color: #747771; margin-top: 8px; }
-.footer-about { max-width: 270px; }
-.creator-credit { display: flex; flex-direction: column; align-items: flex-start; flex-shrink: 0; }
-.creator-credit > .eyebrow { font-size: 8px; letter-spacing: 1.2px; color: var(--quiet); }
-.creator-name { font-size: 15px; letter-spacing: -0.3px; color: var(--text); margin-top: 6px; }
-.site-footer .creator-credit > p { margin-top: 5px; font-size: 9px; color: var(--muted); }
-.creator-credit > a { display: inline-flex; align-items: center; gap: 7px; font: 8px var(--mono); color: var(--accent); margin-top: 10px; }
-.creator-credit > a:hover, .footer-star:hover { color: var(--text); }
-.creator-credit svg { width: 12px; height: 12px; }
-.footer-links .footer-star { min-height: 32px; padding: 7px 10px; border: 1px solid #454b3d; border-radius: 4px; color: var(--accent); }
 
 /* Dialogs: a readable dossier, with focus kept inside the open layer. */
 .modal-overlay { position: fixed; z-index: 100; inset: 0; background: #030503cc; backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; padding: 28px; }
@@ -508,13 +492,6 @@ h1, h2, h3, p { margin: 0; }
   .list-name .alien-artwork { width: 28px; height: 46px; }
   .list-overall { font-size: 12px; }
   .list-overall small { display: none; }
-  .site-footer { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: flex-start; padding-top: 25px; margin-top: 30px; gap: 24px 18px; }
-  .footer-about { grid-column: 1 / -1; }
-  .creator-name { font-size: 14px; }
-  .site-footer .creator-credit > p { font-size: 8px; max-width: 155px; }
-  .site-footer p { font-size: 8px; max-width: 195px; }
-  .footer-links { font-size: 8px; }
-  .footer-links > span { font-size: 5px; }
   .archive-end { font-size: 5px; gap: 10px; }
   .archive-end > span { width: 25px; }
   .modal-overlay { padding: 12px; }
@@ -592,8 +569,6 @@ h1, h2, h3, p { margin: 0; }
 .card-stats > div > span { font-size: 8px; }
 .card-stats strong { font-size: 11px; }
 .card-bottom { font-size: 8px; }
-.site-footer p { font-size: 10px; }
-.footer-links { font-size: 10px; }
 .profile-intro, .profile-tab-content { font-size: 13px; }
 .profile-facts dt { font-size: 10px; }
 .profile-facts dd, .signature-move p, .plain-list, .facts-list { font-size: 12px; }
@@ -627,7 +602,6 @@ h1, h2, h3, p { margin: 0; }
   .card-stats > div > span { font-size: 7px; }
   .card-stats strong { font-size: 10px; }
   .card-bottom { font-size: 7px; }
-  .site-footer p, .footer-links { font-size: 9px; }
   .specimen-coordinate { font-size: 7px; }
   .check-row { min-height: 40px; margin: 5px 0; }
   .check-row input { width: 16px; height: 16px; }
