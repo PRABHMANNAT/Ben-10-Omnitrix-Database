@@ -4,7 +4,7 @@
 
 <p align="center">
   A fan-made <strong>Ben 10 alien encyclopedia</strong> with a matte black interface,<br />
-  detailed transformation files, side-by-side comparisons, and your own Omnitrix lineup.
+  detailed transformation files, side-by-side comparisons, and your own named Omnitrix lineups.
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@ From Heatblast to Alien X. Browse **72 transformations** across **Original Serie
     <td width="50%" valign="top">
       <img src="docs/assets/icons/team.svg" width="40" height="40" alt="" /><br />
       <strong>Build your own Omnitrix</strong><br />
-      Rank ten transformations, add two optional bonus picks, replace a choice, and rearrange your lineup. Duplicate picks are prevented.
+      Create and name multiple teams. Rank ten transformations, add two optional bonus picks, and switch, copy, or rename your lineups. Duplicate picks within a team are prevented.
     </td>
   </tr>
   <tr>
@@ -59,11 +59,25 @@ The Black Edition pairs charcoal surfaces, quiet sage accents, crisp typography,
 
 ## Ten picks. Two wildcards.
 
-Your Omnitrix, your rules. Open **My top 10**, select a slot, and choose a transformation. Use the arrows to change its rank. Enable **Add 2 bonus picks** to give your team a little extra range.
+Your Omnitrix, your rules. Open **My top 10** and use **New team** to name a lineup. Each team keeps its own ranked ten, two optional bonus picks, and bonus toggle. Switch between teams from **Your team library**, or use the rename, duplicate, and delete controls beside it. Your original saved team is upgraded automatically.
+
+Select a slot to choose a transformation and use the arrows to change its rank. Enable **Add 2 bonus picks** to give that team a little extra range. A deletion asks for confirmation and keeps at least one personal team available.
 
 <a href="docs/assets/team-builder.jpg"><img src="docs/assets/team-builder.jpg" alt="Example completed team: ten ranked aliens, including Heatblast, XLR8, and Alien X, with Way Big and Clockwork in the two separate bonus slots." width="100%" /></a>
 
 <p align="center"><sub>A sample lineup captured in the running app. Team choices are saved locally on your own browser.</sub></p>
+
+### Creator's favorites
+
+Start with **Prabhmannat Singh's** built-in **Creator's favorites** preset: ten versatile picks for different situations, plus **Way Big** and **Ultimate Echo Echo** in reserve. The main ten are **Alien X, Clockwork, Atomix, Feedback, Gravattack, Big Chill, Upgrade, Grey Matter, Swampfire, and XLR8**.
+
+Each pick has a role, with an expandable **Why these twelve?** guide covering strengths and trade-offs. Select **View lineup** to explore it, then **Make it yours** to create an editable copy. The original preset stays available.
+
+<details>
+  <summary><strong>See the complete creator lineup</strong></summary>
+  <br />
+  <a href="docs/assets/creator-team.jpg"><img src="docs/assets/creator-team.jpg" alt="Creator's favorites by Prabhmannat Singh: ten aliens with distinct combat, rescue, technology, and strategy roles, plus Way Big and Ultimate Echo Echo as bonus picks." width="100%" /></a>
+</details>
 
 ## Inside the archive
 
@@ -106,7 +120,7 @@ Open the local URL printed by Vite, usually **http://localhost:5173**. No API ke
 | `npm run build` | Build the production site into `dist/` |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Run ESLint |
-| `node --test src/lib/team.test.js` | Check team limits, saved-state recovery, duplicates, and reordering |
+| `node --test src/lib/team.test.js` | Check team limits, library migration, naming, copies, deletion, saved-state recovery, and the creator preset |
 
 ## Built with
 

@@ -21,7 +21,8 @@ Create a branch for your change. Keep dependency changes separate unless the fix
 | Artwork mapping | `src/data/artwork.json` |
 | Artwork source references | `public/aliens/sources.json` |
 | Team rules and storage recovery | `src/lib/team.js` |
-| Team interface | `src/components/TeamBuilder.jsx`, `src/styles/team.css` |
+| Team interface and library controls | `src/components/TeamBuilder.jsx`, `src/components/TeamLibrary.jsx`, `src/styles/team.css` |
+| Creator's favorites preset and pick explanations | `src/data/creatorTeam.js` |
 | Shared layout and appearance | `src/styles/globals.css` |
 | Dialog focus and keyboard behavior | `src/hooks/useDialog.js` |
 
@@ -37,7 +38,7 @@ npm run lint
 
 Report any pre-existing check failures separately from failures introduced by your change. For interface work, verify the affected flow in the browser, including a narrow viewport and keyboard navigation. Include before/after screenshots in the pull request.
 
-Team changes should preserve the ten main slots, two optional bonus slots, duplicate prevention, reordering, and recovery from invalid saved data. Add a focused regression test when changing these rules.
+Team changes should preserve the ten main slots, two optional bonus slots, duplicate prevention within each team, reordering, and recovery from invalid saved data. Named teams must keep independent picks, and migration must preserve the original saved lineup. Copies of the creator preset must be editable without changing the preset itself. Add a focused regression test when changing these rules.
 
 ## Visual direction
 

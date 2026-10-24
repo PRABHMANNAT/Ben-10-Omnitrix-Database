@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { assignPick, emptyTeam, movePick, removePick, restoreTeam } from './team.js';
+import { addNamedTeam, assignPick, availableTeamName, CREATOR_TEAM_ID, deleteTeam, emptyTeam, getCreatorTeam, movePick, removePick, renameTeam, restoreTeam, restoreTeamLibrary, teamNameError, updateTeam } from './team.js';
+import aliens from '../data/aliens.js';
 
 const validIds = new Set(Array.from({ length: 72 }, (_, index) => index + 1));
 
@@ -58,4 +59,90 @@ test('hidden bonus choices persist, but a form moved into the main ten cannot be
   team = assignPick(team, 'main', 0, 11);
   assert.equal(team.main[0], 11);
   assert.equal(team.bonus[0], null);
+});
+
+test('the library migrates the original team with its ranking and hidden bonus picks intact', () => {
+  const previous = { main: [4, 1, 3], bonus: [19, 45], bonusEnabled: false };
+  const library = restoreTeamLibrary(null, JSON.stringify(previous), validIds);
+  assert.equal(library.teams.length, 1);
+  assert.equal(library.activeTeamId, library.teams[0].id);
+  assert.deepEqual(library.teams[0].main.slice(0, 3), [4, 1, 3]);
+  assert.deepEqual(library.teams[0].bonus, [19, 45]);
+  assert.equal(library.teams[0].bonusEnabled, false);
+});
+
+test('named teams and the selected team survive serialization independently', () => {
+  let library = restoreTeamLibrary(null, null, validIds);
+  const originalId = library.activeTeamId;
+  library = updateTeam(library, originalId, team => assignPick(team, 'main', 0, 4));
+  library = addNamedTeam(library, '  Rescue   squad  ', 'team-rescue');
+  library = updateTeam(library, 'team-rescue', team => assignPick(team, 'main', 0, 24));
+  assert.equal(library.teams[1].name, 'Rescue squad');
+  assert.equal(library.teams[0].main[0], 4);
+  assert.equal(library.teams[1].main[0], 24);
+  assert.deepEqual(restoreTeamLibrary(JSON.stringify(library), null, validIds), library);
+});
+
+test('copying a creator lineup creates independent slots and cannot edit the preset', () => {
+  const creator = getCreatorTeam(validIds);
+  let library = restoreTeamLibrary(null, null, validIds);
+  assert.strictEqual(updateTeam(library, CREATOR_TEAM_ID, () => emptyTeam()), library);
+  library = addNamedTeam(library, 'My all-rounders', 'team-copy', creator);
+  const copied = library.teams[1];
+  assert.deepEqual(copied.main, creator.main);
+  assert.notStrictEqual(copied.main, creator.main);
+  library = updateTeam(library, 'team-copy', team => removePick(team, 'main', 0));
+  assert.equal(library.teams[1].main[0], null);
+  assert.equal(creator.main[0], 29);
+  assert.strictEqual(deleteTeam(library, CREATOR_TEAM_ID), library);
+});
+
+test('renaming preserves picks and rejects empty, duplicate, reserved, and oversized names', () => {
+  let library = restoreTeamLibrary(null, null, validIds);
+  library = addNamedTeam(library, 'Rescue', 'team-rescue');
+  library = updateTeam(library, 'team-rescue', team => assignPick(team, 'main', 0, 4));
+  for (const name of ['', '  ', 'My first team', "Creator's favorites", 'x'.repeat(49)]) assert.strictEqual(renameTeam(library, 'team-rescue', name), library);
+  const renamed = renameTeam(library, 'team-rescue', '  My favorites  ');
+  assert.equal(renamed.teams[1].name, 'My favorites');
+  assert.equal(renamed.teams[1].main[0], 4);
+  assert.equal(teamNameError('my FAVORITES', renamed.teams).length > 0, true);
+  assert.equal(teamNameError('My favorites', renamed.teams, 'team-rescue'), '');
+  assert.equal(availableTeamName('My favorites', renamed.teams), 'My favorites (2)');
+});
+
+test('deleting the active team selects a remaining team and keeps at least one personal team', () => {
+  let library = restoreTeamLibrary(null, null, validIds);
+  const originalId = library.activeTeamId;
+  library = addNamedTeam(library, 'Second team', 'team-second');
+  assert.equal(library.activeTeamId, 'team-second');
+  library = deleteTeam(library, 'team-second');
+  assert.equal(library.activeTeamId, originalId);
+  assert.strictEqual(deleteTeam(library, originalId), library);
+  library = { ...library, activeTeamId: CREATOR_TEAM_ID };
+  library = addNamedTeam(library, 'Spare team', 'team-spare');
+  library = { ...library, activeTeamId: CREATOR_TEAM_ID };
+  assert.equal(deleteTeam(library, 'team-spare').activeTeamId, CREATOR_TEAM_ID);
+});
+
+test('damaged library entries recover with unique IDs, names, and valid picks', () => {
+  const saved = { version: 2, activeTeamId: 'missing', teams: [null, { id: 'duplicate', name: 'Rescue', main: [4, 4, 999] }, { id: 'duplicate', name: ' rescue ' }, { id: CREATOR_TEAM_ID, name: "Creator's favorites" }, { id: 'team-recovered-3', name: '' }] };
+  const library = restoreTeamLibrary(JSON.stringify(saved), null, validIds);
+  assert.equal(library.teams.length, 4);
+  assert.equal(new Set(library.teams.map(team => team.id)).size, 4);
+  assert.equal(new Set(library.teams.map(team => team.name.toLowerCase())).size, 4);
+  assert.equal(library.teams.some(team => team.id === CREATOR_TEAM_ID), false);
+  assert.equal(library.activeTeamId, library.teams[0].id);
+  assert.deepEqual(library.teams[0].main.slice(0, 3), [4, null, null]);
+  for (const raw of ['not json', 'null', '{"version":2,"teams":[]}', '{"version":2,"teams":{}}']) assert.equal(restoreTeamLibrary(raw, null, validIds).teams.length, 1);
+});
+
+test('the creator preset contains ten plus two unique aliens present in the real archive', () => {
+  const creator = getCreatorTeam(new Set(aliens.map(alien => alien.id)));
+  assert.equal(creator.main.length, 10);
+  assert.equal(creator.bonus.length, 2);
+  assert.equal(creator.bonusEnabled, true);
+  assert.equal(new Set([...creator.main, ...creator.bonus]).size, 12);
+  assert.equal([...creator.main, ...creator.bonus].every(Number.isInteger), true);
+  const library = { ...restoreTeamLibrary(null, null, validIds), activeTeamId: CREATOR_TEAM_ID };
+  assert.equal(restoreTeamLibrary(JSON.stringify(library), null, validIds).activeTeamId, CREATOR_TEAM_ID);
 });
