@@ -494,6 +494,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Grey Matter OS AP1.png",
+        "caption": "Grey Matter — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Grey Matter (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/17/Grey_Matter_OS_AP1.png/revision/latest?cb=20210318141439",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Grey_Matter_OS_AP1.png",
+        "width": 1280,
+        "height": 843,
+        "enhance": false
+      },
+      {
+        "file": "Grey Matter OS AP2.png",
+        "caption": "Grey Matter — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Grey Matter (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/eb/Grey_Matter_OS_AP2.png/revision/latest?cb=20210318141447",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Grey_Matter_OS_AP2.png",
+        "width": 1280,
+        "height": 1099,
+        "enhance": false
+      },
+      {
+        "file": "Grey MatterCombat.png",
+        "caption": "Grey Matter — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Grey Matter (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/1b/Grey_MatterCombat.png/revision/latest?cb=20251014225522",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Grey_MatterCombat.png",
+        "width": 1024,
+        "height": 1024,
+        "enhance": false
+      },
+      {
+        "file": "GM (1176).png",
+        "caption": "Grey Matter in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Grey Matter (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a1/GM_%281176%29.png/revision/latest?cb=20210112114446",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:GM_(1176).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
