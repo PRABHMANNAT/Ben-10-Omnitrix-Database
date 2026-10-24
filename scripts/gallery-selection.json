@@ -3975,6 +3975,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Fasttrack (1).png",
+        "caption": "Fasttrack — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Fasttrack/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/86/Pedro_Astudillo_Fasttrack_%281%29.png/revision/latest?cb=20220223193630",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Fasttrack_(1).png",
+        "width": 1388,
+        "height": 1778,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Fasttrack (2).png",
+        "caption": "Fasttrack — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Fasttrack/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/ea/Pedro_Astudillo_Fasttrack_%282%29.png/revision/latest?cb=20220223193631",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Fasttrack_(2).png",
+        "width": 1712,
+        "height": 1762,
+        "enhance": false
+      },
+      {
+        "file": "SA (75).png",
+        "caption": "Enhanced Agility/Enhanced Reflexes",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Fasttrack",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/7/72/SA_%2875%29.png/revision/latest?cb=20150729024822",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:SA_(75).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
+      },
+      {
+        "file": "TEC (53).png",
+        "caption": "Enhanced Speed",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Fasttrack",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/ff/TEC_%2853%29.png/revision/latest?cb=20150729204237",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TEC_(53).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
