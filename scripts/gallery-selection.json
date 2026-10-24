@@ -2144,6 +2144,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Swampfire uaf official higher res.png",
+        "caption": "Swampfire — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Swampfire/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a9/Swampfire_uaf_official_higher_res.png/revision/latest?cb=20250527160528",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Swampfire_uaf_official_higher_res.png",
+        "width": 1194,
+        "height": 2924,
+        "enhance": false
+      },
+      {
+        "file": "ActionSwampfire.PNG",
+        "caption": "Swampfire — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Swampfire/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/bd/ActionSwampfire.PNG/revision/latest?cb=20250414134617",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:ActionSwampfire.PNG",
+        "width": 1684,
+        "height": 2000,
+        "enhance": false
+      },
+      {
+        "file": "Swampfire Action-Pose.png",
+        "caption": "Swampfire — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Swampfire/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5a/Swampfire_Action-Pose.png/revision/latest?cb=20220802045010",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Swampfire_Action-Pose.png",
+        "width": 602,
+        "height": 1093,
+        "enhance": false
+      },
+      {
+        "file": "CHS (220).png",
+        "caption": "Fire Generation/Flamethrower (via Methane Generation)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Swampfire",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/ba/CHS_%28220%29.png/revision/latest?cb=20151114155413",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:CHS_(220).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
