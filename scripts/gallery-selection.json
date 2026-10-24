@@ -1704,6 +1704,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Nega (571).png",
+        "caption": "Upchuck in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Upchuck/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/aa/Nega_%28571%29.png/revision/latest?cb=20180701072309",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Nega_(571).png",
+        "width": 1280,
+        "height": 738,
+        "enhance": false
+      },
+      {
+        "file": "FaFBM (409).png",
+        "caption": "Long Prehensile Tongues/Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Upchuck",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/29/FaFBM_%28409%29.png/revision/latest?cb=20160113191333",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:FaFBM_(409).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "NHAB (209).png",
+        "caption": "Energy Ingestion",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Upchuck",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/42/NHAB_%28209%29.png/revision/latest?cb=20141018124025",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:NHAB_(209).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "ICW (512).png",
+        "caption": "Upchuck in Alien Force",
+        "kind": "scene",
+        "section": "Alien Force",
+        "source": "Upchuck/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/27/ICW_%28512%29.png/revision/latest?cb=20151007170523",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:ICW_(512).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
