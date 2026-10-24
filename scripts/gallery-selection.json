@@ -2804,6 +2804,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Brainstorm official artwork.png",
+        "caption": "Brainstorm — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Brainstorm/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d4/Brainstorm_official_artwork.png/revision/latest?cb=20201201125545",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Brainstorm_official_artwork.png",
+        "width": 2392,
+        "height": 1808,
+        "enhance": false
+      },
+      {
+        "file": "Pose of Brainstorm.png",
+        "caption": "Brainstorm — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Brainstorm/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/8c/Pose_of_Brainstorm.png/revision/latest?cb=20190818082604",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pose_of_Brainstorm.png",
+        "width": 948,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "TV (352).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Brainstorm",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/20/TV_%28352%29.png/revision/latest?cb=20151225164528",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TV_(352).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "EfA (69).png",
+        "caption": "Technokinesis (via Bio-Electrokinesis)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Brainstorm",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/5e/EfA_%2869%29.png/revision/latest?cb=20150905171712",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:EfA_(69).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
