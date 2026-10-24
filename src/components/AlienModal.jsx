@@ -9,6 +9,13 @@ const AlienGallery = lazy(() => import('./AlienGallery'));
 export default function AlienModal({ alien, onClose, onPrev, onNext, isSaved, onSave }) {
   const ref = useRef(null);
   const [tab, setTab] = useState('Profile');
+  const galleryRef = useRef(null);
+  useEffect(() => {
+    if (tab !== 'Gallery' || !galleryRef.current || !ref.current) return;
+    const dialog = ref.current;
+    const top = galleryRef.current.getBoundingClientRect().top - dialog.getBoundingClientRect().top + dialog.scrollTop;
+    dialog.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }, [tab]);
   useDialog(ref, onClose);
   useEffect(() => {
     const navigate = event => {
@@ -28,15 +35,17 @@ export default function AlienModal({ alien, onClose, onPrev, onNext, isSaved, on
         <div className="profile-content">
           <div className="profile-kicker"><span className="tier-label">{alien.tier} <span>TIER</span></span><span>{alien.classification}</span></div><p className="profile-species">{alien.species}</p><h2 id="profile-name">{alien.name}</h2><p className="profile-intro">{alien.shortDesc}</p>
           <div className="profile-tabs" role="tablist" aria-label="Profile sections">{tabs.map((name, index) => <button role="tab" id={`tab-${name}`} aria-controls={`panel-${name}`} aria-selected={tab === name} tabIndex={tab === name ? 0 : -1} className={tab === name ? 'active' : ''} key={name} onClick={() => setTab(name)} onKeyDown={event => { if (['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) { event.preventDefault(); const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length; setTab(tabs[next]); document.getElementById(`tab-${tabs[next]}`)?.focus(); } }}>{name}</button>)}</div>
-          <div className="profile-tab-content" role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
-            {tab === 'Gallery' && <Suspense fallback={<p className="gallery-loading" role="status">Opening visual archive…</p>}><AlienGallery key={alien.id} alien={alien} /></Suspense>}
+          {tab !== 'Gallery' && <div className="profile-tab-content" role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
             {tab === 'Profile' && <><p>{alien.fullDesc}</p><dl className="profile-facts">{[['Homeworld', alien.homeworld], ['Height', alien.height], ['Weight', alien.weight], ['First appearance', alien.firstAppearance], ['Unlocked in', alien.unlockedIn], ['Difficulty', alien.difficultyToUse]].map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl><div className="signature-move"><span className="eyebrow">SIGNATURE MOVE</span><p>{alien.sigMove}</p></div></>}
             {tab === 'Abilities' && <><h3>Capabilities</h3><div className="ability-list">{alien.abilities.map((ability, index) => <div key={ability}><span>{String(index + 1).padStart(2, '0')}</span>{ability}<FiArrowUpRight /></div>)}</div><h3>Known weaknesses</h3><ul className="plain-list">{alien.weaknesses.map(weakness => <li key={weakness}>{weakness}</li>)}</ul></>}
             {tab === 'Records' && <><h3>Battle records</h3><div className="battle-records"><div><span className="eyebrow">NOTABLE VICTORIES</span><ul className="plain-list">{alien.notableVictories.map(value => <li key={value}>{value}</li>)}</ul></div><div><span className="eyebrow">NOTABLE DEFEATS</span><ul className="plain-list">{alien.notableDefeats.map(value => <li key={value}>{value}</li>)}</ul></div></div><h3>From the archive</h3><ol className="facts-list">{alien.funFacts.map(value => <li key={value}>{value}</li>)}</ol></>}
-          </div>
+          </div>}
         </div>
       </div>
       <div className="profile-stats"><span className="eyebrow">STATISTICS</span>{Object.entries(alien.stats).map(([stat, value]) => <div className="profile-stat" key={stat}><div><span>{stat}</span><strong>{value}</strong></div><div className="stat-track"><Motion.i key={`${alien.id}-${stat}`} initial={{ width: 0 }} animate={{ width: `${value}%` }} transition={{ duration: 0.5, delay: 0.1 }} /></div></div>)}</div>
+      <div ref={galleryRef} className="profile-gallery" role={tab === 'Gallery' ? 'tabpanel' : 'region'} id="panel-Gallery" aria-labelledby="tab-Gallery">
+        <Suspense fallback={<p className="gallery-loading" role="status">Opening visual archive…</p>}><AlienGallery key={alien.id} alien={alien} /></Suspense>
+      </div>
       <div className="dialog-footer"><button className="button" onClick={onPrev}><FiChevronLeft /><span>Previous</span></button><button className={`button save-profile ${isSaved ? 'saved' : ''}`} onClick={() => onSave(alien.id)} aria-pressed={isSaved}><FiBookmark />{isSaved ? 'Saved to collection' : 'Save to collection'}</button><button className="button" onClick={onNext}><span>Next</span><FiChevronRight /></button></div>
     </Motion.section>
   </Motion.div>;
