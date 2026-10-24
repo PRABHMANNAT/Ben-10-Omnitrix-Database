@@ -6662,6 +6662,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "ATTWN (310).png",
+        "caption": "Acidic Gas (Hydrogen Chloride)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Gutrot",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/3c/ATTWN_%28310%29.png/revision/latest?cb=20160103134142",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:ATTWN_(310).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "VM (190).png",
+        "caption": "Gas Neutralization",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Gutrot",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/32/VM_%28190%29.png/revision/latest?cb=20150807213332",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:VM_(190).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "AC (408).png",
+        "caption": "Knockout Gas (Sevoflurane)",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Gutrot",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/68/AC_%28408%29.png/revision/latest?cb=20151225131426",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:AC_(408).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "WXI2 (318).png",
+        "caption": "To'kustar Pheromone",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Gutrot",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/ee/WXI2_%28318%29.png/revision/latest?cb=20141021165218",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:WXI2_(318).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
