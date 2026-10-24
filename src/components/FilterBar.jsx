@@ -4,6 +4,7 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import useDialog from '../hooks/useDialog';
 import AbilityFilters from './AbilityFilters';
+import { OmnitrixMark } from './Header';
 
 const series = [['Original Series', 'Original series', '2005'], ['Alien Force', 'Alien Force', '2008'], ['Ultimate Alien', 'Ultimate Alien', '2010'], ['Omniverse', 'Omniverse', '2012']];
 
@@ -36,7 +37,7 @@ export default function SidebarFilters({ aliens, section, onSectionChange, onCol
         {activeFiltersCount > 0 && <button className="reset-filters" onClick={onReset}><FiX />Reset filters<span>{activeFiltersCount}</span></button>}
       </div>
       </>}
-      <div className="sidebar-note"><span className="tiny-cross" aria-hidden="true">✳</span><p>A fan-made<br />field guide.</p><span>THE BEN 10 FIELD GUIDE</span><a href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database" target="_blank" rel="noreferrer" aria-label="View project on GitHub"><FiArrowUpRight /></a></div>
+      <div className="sidebar-note"><OmnitrixMark className="sidebar-omnitrix" /><p>Built by<br /><strong>Prabhmannat Singh.</strong></p><span>THE BEN 10 FIELD GUIDE</span><a href="https://github.com/PRABHMANNAT/Ben-10-Omnitrix-Database" target="_blank" rel="noreferrer" aria-label="View project on GitHub"><FiArrowUpRight /></a></div>
       </div>
       <button className="button button-primary mobile-apply" onClick={onClose}>Show results</button>
     </aside>

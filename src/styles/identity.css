@@ -1,0 +1,4 @@
+.sidebar-note > .sidebar-omnitrix { width: 35px; height: 35px; color: var(--accent); margin-bottom: 14px; }
+.sidebar-note p { font-size: 15px; color: #939d8d; letter-spacing: -.3px; }
+.sidebar-note p strong { display: inline-block; margin-top: 3px; font-size: 17px; font-weight: 500; color: #d5ddcc; }
+.sidebar-note > span:last-of-type { color: #939c8b; }
