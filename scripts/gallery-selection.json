@@ -5711,6 +5711,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Feedback 11yo Model - Alternate.png",
+        "caption": "Feedback — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Feedback/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9c/Feedback_11yo_Model_-_Alternate.png/revision/latest?cb=20260425051308",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Feedback_11yo_Model_-_Alternate.png",
+        "width": 1451,
+        "height": 2048,
+        "enhance": false
+      },
+      {
+        "file": "Teen Feedback Stand.png",
+        "caption": "16-year old Feedback in Omniverse",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Feedback/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f3/Teen_Feedback_Stand.png/revision/latest?cb=20200522083458",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Teen_Feedback_Stand.png",
+        "width": 823,
+        "height": 1160,
+        "enhance": false
+      },
+      {
+        "file": "S23 (37).png",
+        "caption": "Energy Absorption/Energy Conversion",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Feedback",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/cd/S23_%2837%29.png/revision/latest?cb=20160131164321",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:S23_(37).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Feedback.png",
+        "caption": "Feedback — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Feedback/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/69/Feedback.png/revision/latest?cb=20131226192102",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Feedback.png",
+        "width": 1000,
+        "height": 1000,
+        "enhance": false
       }
     ]
   },
