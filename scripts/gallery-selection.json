@@ -1924,6 +1924,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Eyeguy og.png",
+        "caption": "Eye Guy — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Eye Guy/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/12/Eyeguy_og.png/revision/latest?cb=20251122113851",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Eyeguy_og.png",
+        "width": 792,
+        "height": 1311,
+        "enhance": false
+      },
+      {
+        "file": "Nega (408).png",
+        "caption": "Eye Guy in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Eye Guy/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/cc/Nega_%28408%29.png/revision/latest?cb=20180630102335",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Nega_(408).png",
+        "width": 1280,
+        "height": 738,
+        "enhance": false
+      },
+      {
+        "file": "TBoMB (98).png",
+        "caption": "Eye Guy in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Eye Guy/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d7/TBoMB_%2898%29.png/revision/latest?cb=20150811171542",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TBoMB_(98).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "MI (303).png",
+        "caption": "Extendable Chest Eye",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Eye Guy",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/46/MI_%28303%29.png/revision/latest?cb=20151022101345",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MI_(303).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
