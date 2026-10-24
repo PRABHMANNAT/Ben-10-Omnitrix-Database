@@ -3315,6 +3315,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Nanomech (3).png",
+        "caption": "Nanomech — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Nanomech/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/47/Pedro_Astudillo_Nanomech_%283%29.png/revision/latest?cb=20220223183052",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Nanomech_(3).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo Nanomech (4).png",
+        "caption": "Nanomech — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Nanomech/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/9/9b/Pedro_Astudillo_Nanomech_%284%29.png/revision/latest?cb=20220223183052",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_Nanomech_(4).png",
+        "width": 2500,
+        "height": 1788,
+        "enhance": false
+      },
+      {
+        "file": "NanomechMovie.PNG",
+        "caption": "Nanomech in Alien Force",
+        "kind": "scene",
+        "section": "Alien Force",
+        "source": "Nanomech/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/8d/NanomechMovie.PNG/revision/latest?cb=20120805101357",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:NanomechMovie.PNG",
+        "width": 1366,
+        "height": 768,
+        "enhance": false
+      },
+      {
+        "file": "TFoW1 (289).png",
+        "caption": "Nanomech in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Nanomech/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/4a/TFoW1_%28289%29.png/revision/latest?cb=20160102205946",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TFoW1_(289).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
