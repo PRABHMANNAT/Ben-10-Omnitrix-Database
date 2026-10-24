@@ -3024,6 +3024,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Goop Pose.png",
+        "caption": "Goop — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Goop (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/28/Goop_Pose.png/revision/latest?cb=20250413123827",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Goop_Pose.png",
+        "width": 1491,
+        "height": 2000,
+        "enhance": false
+      },
+      {
+        "file": "Goop Action Pose.png",
+        "caption": "Goop — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Goop (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/63/Goop_Action_Pose.png/revision/latest?cb=20250413124104",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Goop_Action_Pose.png",
+        "width": 2000,
+        "height": 1946,
+        "enhance": false
+      },
+      {
+        "file": "Goop.png",
+        "caption": "Goop — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Goop (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/2e/Goop.png/revision/latest?cb=20250413123242",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Goop.png",
+        "width": 1267,
+        "height": 2000,
+        "enhance": false
+      },
+      {
+        "file": "vV (487).png",
+        "caption": "Goop in Alien Force",
+        "kind": "scene",
+        "section": "Alien Force",
+        "source": "Goop (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/0/04/VV_%28487%29.png/revision/latest?cb=20151025123201",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:VV_(487).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
