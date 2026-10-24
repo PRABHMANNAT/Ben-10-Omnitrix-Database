@@ -5174,6 +5174,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "UltimateSpidermonkey2.png",
+        "caption": "Ultimate Spidermonkey — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Spidermonkey/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/59/UltimateSpidermonkey2.png/revision/latest?cb=20210316132321",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UltimateSpidermonkey2.png",
+        "width": 1280,
+        "height": 1008,
+        "enhance": false
+      },
+      {
+        "file": "UltimateSpidermonkey.png",
+        "caption": "Ultimate Spidermonkey — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Ultimate Spidermonkey/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b9/UltimateSpidermonkey.png/revision/latest?cb=20210316132323",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:UltimateSpidermonkey.png",
+        "width": 1280,
+        "height": 737,
+        "enhance": false
+      },
+      {
+        "file": "TUH (544).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Ultimate Spidermonkey",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/3d/TUH_%28544%29.png/revision/latest?cb=20151221130756",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TUH_(544).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "MA (263).png",
+        "caption": "Ultimate Spidermonkey in Omniverse",
+        "kind": "scene",
+        "section": "Omniverse",
+        "source": "Ultimate Spidermonkey/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/dd/MA_%28263%29.png/revision/latest?cb=20150802095933",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:MA_(263).png",
+        "width": 1280,
+        "height": 718,
+        "enhance": false
       }
     ]
   },
