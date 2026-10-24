@@ -3865,6 +3865,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo NRG (1).png",
+        "caption": "NRG — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "NRG/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/d/d3/Pedro_Astudillo_NRG_%281%29.png/revision/latest?cb=20220223190408",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_NRG_(1).png",
+        "width": 1273,
+        "height": 1783,
+        "enhance": false
+      },
+      {
+        "file": "Pedro Astudillo NRG (2).png",
+        "caption": "NRG — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "NRG/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a6/Pedro_Astudillo_NRG_%282%29.png/revision/latest?cb=20220223190409",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Pedro_Astudillo_NRG_(2).png",
+        "width": 1241,
+        "height": 1775,
+        "enhance": false
+      },
+      {
+        "file": "Hot S67.png",
+        "caption": "Radioactive Energy Balls",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "NRG",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/5/58/Hot_S67.png/revision/latest?cb=20121108210408",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Hot_S67.png",
+        "width": 1324,
+        "height": 744,
+        "enhance": false
+      },
+      {
+        "file": "The More Things Change, Part 2 (52).png",
+        "caption": "Sturdy Containment Suit/Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "NRG",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/1/16/The_More_Things_Change%2C_Part_2_%2852%29.png/revision/latest?cb=20121231193227",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:The_More_Things_Change,_Part_2_(52).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
