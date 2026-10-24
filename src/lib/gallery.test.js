@@ -75,3 +75,13 @@ test('galleries open on action when available and fall back to artwork', () => {
   assert.equal(firstActionIndex([{ kind: 'concept' }]), 0);
   assert.equal(firstActionIndex([]), 0);
 });
+
+
+test('expanded archive has 566 images with the special five-image Alien X set', () => {
+  assert.equal(Object.values(manifest).reduce((sum, entry) => sum + entry.images.length, 0), 566);
+  for (const alien of aliens) {
+    const count = manifest[alien.id].images.length;
+    assert.ok(alien.id === 29 ? count === 5 : count === 7 || count === 8, alien.name);
+  }
+  assert.deepEqual(selection[29].images.slice(2).map(image => image.file), ['Alien X AP1.png', 'Alien X AP2.png', 'Alien X AP3.png']);
+});

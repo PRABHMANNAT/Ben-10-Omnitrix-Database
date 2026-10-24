@@ -4,7 +4,7 @@
 
 <p align="center">
   A fan-made <strong>React JavaScript Ben 10 encyclopedia</strong> with a matte black interface,<br />
-  281 curated images, detailed transformation files, comparisons, and your own named Omnitrix lineups.
+  566 curated images, detailed transformation files, comparisons, and your own named Omnitrix lineups.
 </p>
 
 <p align="center">
@@ -85,18 +85,24 @@ Matches come from the archive's listed abilities. Weaknesses and elemental immun
 
 ## See every form in action
 
-Open an alien’s dossier and choose **Gallery**. Explore **281 locally hosted images across all 72 aliens**, with **three or four images per transformation**: alternate series designs, power demonstrations, episode stills, and game appearances where available. Galleries open on an action shot when one is available.
+Open an alien’s dossier and choose **Gallery**. Explore **566 locally hosted images across all 72 aliens**, with **seven or eight images per transformation, with a special five-image Alien X gallery**: alternate series designs, power demonstrations, episode stills, and game appearances where available. Galleries open on an action shot when one is available.
 
-Select a thumbnail or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
+Swipe or scroll the thumbnail strip, select a picture, or use the image arrows; **← / →**, **Home**, and **End** work while a gallery control is focused. Open **Full resolution** for the complete image, or **Source & credits** for its original file page. Images keep their aspect ratio and are loaded when you open a gallery.
 
-<a href="docs/assets/gallery-desktop.jpg"><img src="docs/assets/gallery-desktop.jpg" alt="Heatblast visual archive with a high-resolution action frame, alternate artwork thumbnails, captions, and source credits." width="100%" /></a>
+<a href="docs/assets/gallery-expanded.jpg"><img src="docs/assets/gallery-expanded.jpg" alt="Heatblast visual archive with uncropped character artwork, eight images in a scrollable thumbnail strip, captions, and source credits." width="100%" /></a>
 
-Most sources retain their native resolution, including HD episode frames. **Eight smaller images are AI-enhanced** and visibly labeled, with original dimensions and a comparison link. The viewer always shows actual pixel dimensions. **Sandbox and Snakepit use explicitly labeled non-canon Thomas N. Perkins IV concepts**, including scale charts and isolated versions; Portaler’s gameplay and concepts are labeled separately. See the [image sources, credits, and enhancement notes](docs/GALLERY_SOURCES.md).
+<details>
+  <summary><strong>Alien X — the five-image replacement set</strong></summary>
+  <br />
+  <img src="docs/assets/gallery-alien-x.jpg" alt="Alien X gallery on image five of five, showing the new forward flight pose with the full figure visible." width="100%" />
+</details>
+
+The expansion preserves existing images and appends four new choices to every gallery except Alien X, whose last two images are replaced by three clear action poses. Images retain their native resolution, including HD episode frames; a few smaller illustrations display their actual dimensions. **Eight smaller images are AI-enhanced** and visibly labeled, with original dimensions and a comparison link. The viewer always shows actual pixel dimensions. **Sandbox and Snakepit include explicitly labeled non-canon Thomas N. Perkins IV concepts and credited fan interpretations**; Portaler’s gameplay and concepts are labeled separately. See the [image sources, credits, and enhancement notes](docs/GALLERY_SOURCES.md).
 
 <details>
   <summary><strong>Gallery on mobile</strong></summary>
   <br />
-  <img src="docs/assets/gallery-mobile.jpg" alt="The responsive image gallery on a narrow mobile screen." width="360" />
+  <img src="docs/assets/gallery-expanded-mobile.jpg" alt="The responsive image gallery on a narrow mobile screen." width="360" />
 </details>
 
 ## Ten picks. Two wildcards.
@@ -192,7 +198,7 @@ src/
 ├── lib/              Ability matching, team/gallery rules, and tests
 └── styles/           Black Edition design and responsive layouts
 public/aliens/        Cached character art and its source manifest
-public/gallery/       281 optimized full-resolution gallery images
+public/gallery/       566 optimized full-resolution gallery images
 scripts/              Artwork and gallery cache / encoding utilities
 docs/assets/          README banner, custom icons, and app screenshots
 jsconfig.json         JavaScript and JSX editor configuration
@@ -203,7 +209,7 @@ eslint.config.js      Browser React and Node tooling checks
 <details>
   <summary><strong>Artwork and data notes</strong></summary>
 
-  All 72 records have cover artwork, alongside 281 gallery images. Sandbox and Snakepit use the isolated Thomas N. Perkins IV concepts sourced from Ben 10 Wiki, with non-canon and AI-enhancement labels. Their illustrations appear in archive cards, profiles, comparisons, and team selection. Source references are recorded in [`public/aliens/sources.json`](public/aliens/sources.json); local paths are mapped in [`src/data/artwork.json`](src/data/artwork.json).
+  All 72 records have cover artwork, alongside 566 gallery images. Sandbox and Snakepit use the isolated Thomas N. Perkins IV concepts sourced from Ben 10 Wiki, with non-canon and AI-enhancement labels. Their illustrations appear in archive cards, profiles, comparisons, and team selection. Source references are recorded in [`public/aliens/sources.json`](public/aliens/sources.json); local paths are mapped in [`src/data/artwork.json`](src/data/artwork.json).
 
   [`scripts/cache-artwork.mjs`](scripts/cache-artwork.mjs) can refresh the cache from its sources and requires internet access. Normal app use does not need to run this script. Treat the numerical ratings as a fan comparison tool. If you spot a lore error, include an episode or reliable source when reporting it.
 
