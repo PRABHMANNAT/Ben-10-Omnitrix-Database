@@ -2584,6 +2584,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "ActionBigChill.PNG",
+        "caption": "Big Chill — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Big Chill (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/35/ActionBigChill.PNG/revision/latest?cb=20210319235401",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:ActionBigChill.PNG",
+        "width": 1153,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "BCH4C07 CA B10AFCAP copy.png",
+        "caption": "Big Chill — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Big Chill (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b1/BCH4C07_CA_B10AFCAP_copy.png/revision/latest?cb=20180711031919",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:BCH4C07_CA_B10AFCAP_copy.png",
+        "width": 2162,
+        "height": 1091,
+        "enhance": false
+      },
+      {
+        "file": "KBS (120).png",
+        "caption": "Wind Breath",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Big Chill (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/ab/KBS_%28120%29.png/revision/latest?cb=20151025131950",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:KBS_(120).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "TFoW1 (350).png",
+        "caption": "Freezing Breath",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Big Chill (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/3/3a/TFoW1_%28350%29.png/revision/latest?cb=20160102210424",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:TFoW1_(350).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
