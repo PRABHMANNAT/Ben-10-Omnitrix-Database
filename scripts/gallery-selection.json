@@ -6565,6 +6565,58 @@
         "width": 1280,
         "height": 720,
         "enhance": false
+      },
+      {
+        "file": "IaMBW1 (227).png",
+        "caption": "The Worst in It's a Mad, Mad, Mad Ben World: Part 1",
+        "kind": "scene",
+        "section": "It's a Mad, Mad, Mad Ben World: Part 1",
+        "source": "The Worst/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/fd/IaMBW1_%28227%29.png/revision/latest?cb=20160209180020",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:IaMBW1_(227).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "NHAB (181).png",
+        "caption": "The Worst in No Honor Among Bros",
+        "kind": "scene",
+        "section": "No Honor Among Bros",
+        "source": "The Worst/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/6c/NHAB_%28181%29.png/revision/latest?cb=20141018123402",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:NHAB_(181).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "IaMBW1 (234).png",
+        "caption": "The Worst in It's a Mad, Mad, Mad Ben World: Part 1",
+        "kind": "scene",
+        "section": "It's a Mad, Mad, Mad Ben World: Part 1",
+        "source": "The Worst/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/c/c6/IaMBW1_%28234%29.png/revision/latest?cb=20160209180236",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:IaMBW1_(234).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
+      },
+      {
+        "file": "NHAB (171.1).png",
+        "caption": "The Worst in No Honor Among Bros",
+        "kind": "scene",
+        "section": "No Honor Among Bros",
+        "source": "The Worst/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/e/ee/NHAB_%28171.1%29.png/revision/latest?cb=20160211145642",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:NHAB_(171.1).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
       }
     ]
   },
