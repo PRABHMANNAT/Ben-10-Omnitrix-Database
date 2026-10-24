@@ -1154,6 +1154,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "Cannonbolt omniverse pose.png",
+        "caption": "Cannonbolt — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Cannonbolt (Classic)/Gallery",
+        "era": "Omniverse",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/8/83/Cannonbolt_omniverse_pose.png/revision/latest?cb=20190820053919",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Cannonbolt_omniverse_pose.png",
+        "width": 2574,
+        "height": 2040,
+        "enhance": false
+      },
+      {
+        "file": "Cannonboll.png",
+        "caption": "Cannonbolt — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Cannonbolt (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/23/Cannonboll.png/revision/latest?cb=20190820054038",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Cannonboll.png",
+        "width": 2031,
+        "height": 3090,
+        "enhance": false
+      },
+      {
+        "file": "NHAB (305.1).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Cannonbolt (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/2/21/NHAB_%28305.1%29.png/revision/latest?cb=20160211180041",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:NHAB_(305.1).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Tick (827).png",
+        "caption": "Cannonbolt in Ben 10",
+        "kind": "scene",
+        "section": "Ben 10",
+        "source": "Cannonbolt (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/42/Tick_%28827%29.png/revision/latest?cb=20201013142300",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Tick_(827).png",
+        "width": 1920,
+        "height": 1080,
+        "enhance": false
       }
     ]
   },
