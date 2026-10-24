@@ -2474,6 +2474,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "JTR4C06 CA B10AFCAP copy.png",
+        "caption": "Jetray — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Jetray (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f4/JTR4C06_CA_B10AFCAP_copy.png/revision/latest?cb=20180716033150",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:JTR4C06_CA_B10AFCAP_copy.png",
+        "width": 2375,
+        "height": 689,
+        "enhance": false
+      },
+      {
+        "file": "JTR4C05 CA B10AFCAP copy.png",
+        "caption": "Jetray — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Jetray (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b0/JTR4C05_CA_B10AFCAP_copy.png/revision/latest?cb=20180716033138",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:JTR4C05_CA_B10AFCAP_copy.png",
+        "width": 2226,
+        "height": 648,
+        "enhance": false
+      },
+      {
+        "file": "Jetray AP1.png",
+        "caption": "Jetray — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Jetray (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/b/b6/Jetray_AP1.png/revision/latest?cb=20210316130819",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Jetray_AP1.png",
+        "width": 1271,
+        "height": 1280,
+        "enhance": false
+      },
+      {
+        "file": "EotB (183).png",
+        "caption": "Flight/Enhanced Speed",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Jetray (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/a/a7/EotB_%28183%29.png/revision/latest?cb=20150828170212",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:EotB_(183).png",
+        "width": 1024,
+        "height": 576,
+        "enhance": false
       }
     ]
   },
