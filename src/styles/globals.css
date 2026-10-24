@@ -71,7 +71,9 @@ h1, h2, h3, p { margin: 0; }
 .main-nav > button::after { content: ''; position: absolute; height: 2px; left: 0; right: 0; bottom: -1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 200ms; }
 .main-nav > button.active::after { transform: scaleX(1); }
 .nav-count { font: 9px var(--mono); background: #2d2e2d; color: var(--accent); padding: 2px 5px; border-radius: 3px; }
-.header-actions { display: flex; align-items: center; gap: 26px; margin-left: auto; }
+.header-actions { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.github-star { color: var(--accent); border-color: #49513e; }
+.github-star > svg { width: 13px; height: 13px; }
 .edition-label { font: 9px var(--mono); letter-spacing: 1.5px; color: #b7b7b6; white-space: nowrap; }
 .edition-label span { color: #686968; }
 .random-button > svg:first-child { width: 13px; height: 13px; }
@@ -277,6 +279,15 @@ h1, h2, h3, p { margin: 0; }
 .footer-links a, .footer-links button { display: inline-flex; align-items: center; gap: 7px; }
 .footer-links svg { width: 11px; height: 11px; }
 .footer-links > span { font: 6px var(--mono); letter-spacing: 1px; color: #747771; margin-top: 8px; }
+.footer-about { max-width: 270px; }
+.creator-credit { display: flex; flex-direction: column; align-items: flex-start; flex-shrink: 0; }
+.creator-credit > .eyebrow { font-size: 8px; letter-spacing: 1.2px; color: var(--quiet); }
+.creator-name { font-size: 15px; letter-spacing: -0.3px; color: var(--text); margin-top: 6px; }
+.site-footer .creator-credit > p { margin-top: 5px; font-size: 9px; color: var(--muted); }
+.creator-credit > a { display: inline-flex; align-items: center; gap: 7px; font: 8px var(--mono); color: var(--accent); margin-top: 10px; }
+.creator-credit > a:hover, .footer-star:hover { color: var(--text); }
+.creator-credit svg { width: 12px; height: 12px; }
+.footer-links .footer-star { min-height: 32px; padding: 7px 10px; border: 1px solid #454b3d; border-radius: 4px; color: var(--accent); }
 
 /* Dialogs: a readable dossier, with focus kept inside the open layer. */
 .modal-overlay { position: fixed; z-index: 100; inset: 0; background: #030503cc; backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; padding: 28px; }
@@ -432,6 +443,8 @@ h1, h2, h3, p { margin: 0; }
   .wordmark { height: 60px; font-size: 24px; gap: 9px; }
   .wordmark svg { width: 28px; height: 28px; }
   .header-actions { height: 60px; }
+  .github-star { width: 32px; min-height: 32px; padding: 7px; }
+  .github-star > span, .github-star > svg:last-child { display: none; }
   .random-button { font-size: 10px; gap: 7px; min-height: 32px; padding: 6px 9px; }
   .random-button > svg:last-child { display: none; }
   .main-nav { order: 3; width: 100%; height: 43px; gap: 32px; }
@@ -495,7 +508,10 @@ h1, h2, h3, p { margin: 0; }
   .list-name .alien-artwork { width: 28px; height: 46px; }
   .list-overall { font-size: 12px; }
   .list-overall small { display: none; }
-  .site-footer { align-items: flex-start; padding-top: 25px; margin-top: 30px; gap: 18px; }
+  .site-footer { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: flex-start; padding-top: 25px; margin-top: 30px; gap: 24px 18px; }
+  .footer-about { grid-column: 1 / -1; }
+  .creator-name { font-size: 14px; }
+  .site-footer .creator-credit > p { font-size: 8px; max-width: 155px; }
   .site-footer p { font-size: 8px; max-width: 195px; }
   .footer-links { font-size: 8px; }
   .footer-links > span { font-size: 5px; }
