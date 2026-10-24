@@ -604,6 +604,58 @@
         "width": 1920,
         "height": 1080,
         "enhance": false
+      },
+      {
+        "file": "four arms pose.png",
+        "caption": "Four Arms — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Four Arms (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/f/f3/Four_arms_pose.png/revision/latest?cb=20120901090112",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Four_arms_pose.png",
+        "width": 1912,
+        "height": 1368,
+        "enhance": false
+      },
+      {
+        "file": "HBO Max Pose Four Arms.png",
+        "caption": "Four Arms — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Four Arms (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/4/48/HBO_Max_Pose_Four_Arms.png/revision/latest?cb=20220204044011",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:HBO_Max_Pose_Four_Arms.png",
+        "width": 1227,
+        "height": 1519,
+        "enhance": false
+      },
+      {
+        "file": "LDtTWA (548).png",
+        "caption": "Enhanced Strength",
+        "kind": "power",
+        "section": "Powers and abilities",
+        "source": "Four Arms (Classic)",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/65/LDtTWA_%28548%29.png/revision/latest?cb=20150809121448",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:LDtTWA_(548).png",
+        "width": 1280,
+        "height": 720,
+        "enhance": false
+      },
+      {
+        "file": "Four Arms action pose.png",
+        "caption": "Four Arms — alternate character artwork",
+        "kind": "design",
+        "section": "Models and Poses",
+        "source": "Four Arms (Classic)/Gallery",
+        "era": "",
+        "originalUrl": "https://static.wikia.nocookie.net/ben10/images/6/65/Four_Arms_action_pose.png/revision/latest?cb=20200510154949",
+        "sourceFile": "https://ben10.fandom.com/wiki/File:Four_Arms_action_pose.png",
+        "width": 1280,
+        "height": 1178,
+        "enhance": false
       }
     ]
   },
